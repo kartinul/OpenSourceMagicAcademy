@@ -587,7 +587,8 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: SENTIS_ANALYTICS_ENABLED;APP_UI_EDITOR_ONLY
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -686,11 +687,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 018e6b0b-6ffa-498c-a039-4ecf08f96bcd
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: OpenSourceMagicAcademy
+  organizationId: unity_842898d01110529a6962
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
