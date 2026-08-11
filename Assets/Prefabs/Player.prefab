@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 7621214036957917442}
   - component: {fileID: 7465383541201179274}
   - component: {fileID: 5683222881831752351}
-  - component: {fileID: 7282414263160629835}
+  - component: {fileID: 3211843804706520333}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -234,7 +234,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.85212535, y: 0.15693694}
   m_EdgeRadius: 0
---- !u!50 &7282414263160629835
+--- !u!50 &3211843804706520333
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8999222721090412252}
   - component: {fileID: 8413230915687702150}
-  - component: {fileID: 7555376552881512554}
+  - component: {fileID: 8252140732969534596}
   m_Layer: 0
   m_Name: PlayerVisual
   m_TagString: Untagged
@@ -341,7 +341,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8588696538370453529, guid: 5efc8f664a7d843b1b2788403102fab8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -353,7 +353,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &7555376552881512554
+--- !u!95 &8252140732969534596
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
