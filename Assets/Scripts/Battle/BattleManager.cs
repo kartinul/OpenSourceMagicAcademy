@@ -1,5 +1,7 @@
-using UnityEngine;
+using System;
 using System.Collections;
+using UnityEngine;
+using TMPro;
 
 public class BattleManager : MonoBehaviour
 {
@@ -8,134 +10,246 @@ public class BattleManager : MonoBehaviour
         Start,
         PlayerTurn,
         EnemyTurn,
+        ShowingMessage,
         Victory,
         Defeat
     }
 
     [Header("Combatants")]
-    public Combatant player;
-    public Combatant enemy;
+    [SerializeField] private Combatant player;
+    [SerializeField] private Combatant enemy;
 
-    [Header("Battle State")]
-    public BattleState state;
+    [Header("UI Panels")]
+    [SerializeField] private GameObject textPanel;
+    [SerializeField] private GameObject leftPanel;
+    [SerializeField] private GameObject rightPanel;
+    [SerializeField] private TMP_Text battleText;
 
-    void Start()
+    [Header("Settings")]
+    [SerializeField] private float messageDuration = 1.5f;
+    [SerializeField] private float enemyTurnDelay = 0.8f;
+    [SerializeField] private float textTypingSpeed = 0.03f; // Delay per character (in seconds)
+
+    public BattleState State { get; private set; }
+
+    private EnemyAI enemyAI;
+
+    
+
+    private void Awake()
+    {
+        if (enemy != null)
+        {
+            enemyAI = enemy.GetComponent<EnemyAI>();
+            if (enemyAI == null)
+            {
+                Debug.LogError($"[BattleManager] {enemy.name} is missing an EnemyAI component!", this);
+            }
+        }
+    }
+
+    private void Start()
     {
         StartBattle();
     }
 
-    void StartBattle()
+    public void StartBattle()
     {
-        state = BattleState.Start;
-
+        SetState(BattleState.Start);
         Debug.Log($"A battle has begun! {enemy.combatantName} challenges you!");
-
-        StartPlayerTurn();
+        
+        SetState(BattleState.PlayerTurn);
     }
 
-    void StartPlayerTurn()
+    private void SetState(BattleState newState)
     {
-        if (CheckBattleEnd())
-            return;
+        State = newState;
 
-        state = BattleState.PlayerTurn;
+        switch (State)
+        {
+            case BattleState.PlayerTurn:
+                if (CheckBattleEnd()) return;
+                SetUIVisibility(showPlayerUI: true, showTextUI: false);
+                break;
 
-        // Debug.Log("Your turn");
+            case BattleState.EnemyTurn:
+                if (CheckBattleEnd()) return;
+                SetUIVisibility(showPlayerUI: false, showTextUI: false);
+                StartCoroutine(ProcessEnemyTurnRoutine());
+                break;
+
+            case BattleState.ShowingMessage:
+                SetUIVisibility(showPlayerUI: false, showTextUI: true);
+                break;
+
+            case BattleState.Victory:
+                SetUIVisibility(showPlayerUI: false, showTextUI: true);
+                StartCoroutine(ShowEndMessageRoutine("VICTORY!"));
+                break;
+
+            case BattleState.Defeat:
+                SetUIVisibility(showPlayerUI: false, showTextUI: true);
+                StartCoroutine(ShowEndMessageRoutine("DEFEAT..."));
+                break;
+        }
     }
+
 
     public void PlayerUseSpell(Spell spell)
     {
-        if (state != BattleState.PlayerTurn)
-            return;
+        if (State != BattleState.PlayerTurn || spell == null) return;
 
-        StartCoroutine(PlayerSpellRoutine(spell));
+        StartCoroutine(ExecuteTurnRoutine(player, enemy, spell, NextState: BattleState.EnemyTurn));
     }
 
-    IEnumerator PlayerSpellRoutine(Spell spell)
+    private IEnumerator ProcessEnemyTurnRoutine()
     {
-        state = BattleState.EnemyTurn;
-        ResolveSpell(player, enemy, spell);
+        yield return new WaitForSeconds(enemyTurnDelay);
 
-        yield return new WaitForSeconds(1f);
+        Spell selectedSpell = enemyAI != null ? enemyAI.ChooseSpell() : null;
 
-        if (CheckBattleEnd())
-            yield break;
-
-        StartEnemyTurn();
+        if (selectedSpell != null)
+        {
+            yield return ExecuteTurnRoutine(enemy, player, selectedSpell, NextState: BattleState.PlayerTurn);
+        }
+        else
+        {
+            Debug.LogWarning($"[BattleManager] {enemy.combatantName} skipped turn (no spell selected).");
+            SetState(BattleState.PlayerTurn);
+        }
     }
 
-    void StartEnemyTurn()
+    private IEnumerator ExecuteTurnRoutine(Combatant caster, Combatant target, Spell spell, BattleState NextState)
     {
-        state = BattleState.EnemyTurn;
+        SetState(BattleState.ShowingMessage);
 
-        Debug.Log("Enemy's turn.");
+        SpellResult result = ResolveSpell(caster, target, spell);
+        string message = BuildSpellMessage(caster, spell, result);
 
-        // temporary enemy AI
-        Spell enemySpell = enemy.GetComponent<EnemyAI>().ChooseSpell();
+        yield return DisplayMessageRoutine(message);
 
-        if (enemySpell != null) ResolveSpell(enemy, player, enemySpell);
+        if (CheckBattleEnd()) yield break;
 
-
-        if (CheckBattleEnd())
-            return;
-
-        StartPlayerTurn();
+        SetState(NextState);
     }
 
-    void ResolveSpell(
-        Combatant caster,
-        Combatant target,
-        Spell spell
-    )
+    private struct SpellResult
     {
-        Debug.Log(
-            $"{caster.combatantName} used {spell.spellName}!"
-        );
+        public bool IsHit;
+        public bool IsEffective;
+    }
 
-        if (Random.value > spell.accuracy)
+    private SpellResult ResolveSpell(Combatant caster, Combatant target, Spell spell)
+    {
+        Debug.Log($"{caster.combatantName} cast {spell.spellName.ToUpper()}!");
+
+        // Accuracy Check
+        if (UnityEngine.Random.value > spell.accuracy)
         {
             Debug.Log("The spell missed!");
-            return;
+            return new SpellResult { IsHit = false, IsEffective = false };
         }
+
+        bool effective = false;
 
         switch (spell.type)
         {
             case SpellType.Damage:
                 target.TakeDamage(spell.power);
+                effective = spell.power > 0;
                 break;
 
             case SpellType.Heal:
                 caster.Heal(spell.power);
+                effective = spell.power > 0;
                 break;
 
             case SpellType.Disable:
-                Debug.Log("disable effect not implemented yet.");
-                break;
-
             case SpellType.Special:
-                Debug.Log("special spell not implemented yet.");
+                Debug.LogWarning($"[BattleManager] {spell.type} spell effect is not implemented yet.");
+                effective = false;
                 break;
+        }
+
+        return new SpellResult { IsHit = true, IsEffective = effective };
+    }
+
+
+    private void SetUIVisibility(bool showPlayerUI, bool showTextUI)
+    {
+        if (leftPanel != null) leftPanel.SetActive(showPlayerUI);
+        if (rightPanel != null) rightPanel.SetActive(showPlayerUI);
+        if (textPanel != null) textPanel.SetActive(showTextUI);
+    }
+
+    private string BuildSpellMessage(Combatant caster, Spell spell, SpellResult result)
+    {
+        string spellName = spell.spellName.ToUpper();
+        if (!result.IsHit)
+        {
+            return $"{caster.combatantName} cast {spellName}!\nIt missed!";
+        }
+
+        switch (spell.type)
+        {
+            case SpellType.Damage:
+                return result.IsEffective
+                    ? $"{caster.combatantName} cast {spellName}!\nIt was effective!"
+                    : $"{caster.combatantName} cast {spellName}!\nIt wasn't effective...";
+
+            case SpellType.Heal:
+                return $"{caster.combatantName} cast {spellName}!\n{caster.combatantName} recovered {spell.power} HP!";
+
+            default:
+                return $"{caster.combatantName} cast {spellName}!";
         }
     }
 
-    void StartEnemyTurnDummy()
+    private IEnumerator DisplayMessageRoutine(string text)
     {
-        StartEnemyTurn();
+        if (battleText == null) yield break;
+
+        battleText.text = text;
+        battleText.maxVisibleCharacters = 0;
+        battleText.ForceMeshUpdate(); 
+
+        TMP_TextInfo textInfo = battleText.textInfo;
+        int totalVisibleCharacters = textInfo.characterCount;
+
+        for (int i = 0; i < totalVisibleCharacters; i++)
+        {
+            battleText.maxVisibleCharacters = i + 1;
+
+            char character = textInfo.characterInfo[i].character;
+            if (character == '\n')
+            {
+                yield return new WaitForSeconds(messageDuration * 0.7f);
+            }
+            else
+            {
+                yield return new WaitForSeconds(textTypingSpeed);
+            }
+        }
+
+        yield return new WaitForSeconds(messageDuration);
+    }
+    private IEnumerator ShowEndMessageRoutine(string message)
+    {
+        if (battleText != null) battleText.text = message;
+        yield return new WaitForSeconds(3.0f);
     }
 
-    bool CheckBattleEnd()
+    private bool CheckBattleEnd()
     {
-        if (enemy.IsDead) {
-            state = BattleState.Victory;
-            Debug.Log("VICTORY!");
-
+        if (enemy != null && enemy.IsDead)
+        {
+            SetState(BattleState.Victory);
             return true;
         }
 
-        if (player.IsDead) {
-            state = BattleState.Defeat;
-            Debug.Log("DEFEAT!");
-
+        if (player != null && player.IsDead)
+        {
+            SetState(BattleState.Defeat);
             return true;
         }
 
