@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class BattleManager : MonoBehaviour
@@ -20,15 +21,32 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private Combatant enemy;
 
     [Header("UI Panels")]
-    [SerializeField] private GameObject textPanel;
-    [SerializeField] private GameObject leftPanel;
-    [SerializeField] private GameObject rightPanel;
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject spellPanel;
+    [SerializeField] private GameObject hpPanel;
+
+    [Header("UI Text References")]
     [SerializeField] private TMP_Text battleText;
+    [SerializeField] private TMP_Text playerNameText;
+    [SerializeField] private TMP_Text playerHPText;
+    [SerializeField] private TMP_Text enemyNameText;
+    [SerializeField] private TMP_Text enemyHPText;
+
+    [Header("UI Health Bar Images")]
+    [SerializeField] private Image playerHPBarImage;
+    [SerializeField] private Image enemyHPBarImage;
 
     [Header("Settings")]
     [SerializeField] private float messageDuration = 1.5f;
     [SerializeField] private float enemyTurnDelay = 0.8f;
     [SerializeField] private float textTypingSpeed = 0.03f;
+    [SerializeField] private float hpBarAnimDuration = 0.4f;
+    private Coroutine playerHPAnimRoutine;
+    private Coroutine enemyHPAnimRoutine;
+
+    [Header("Player Control")]
+    [SerializeField] private Player playerController;
+    [SerializeField] private PlayerInteraction playerInteraction;
 
     public BattleState State { get; private set; }
 
@@ -49,6 +67,10 @@ public class BattleManager : MonoBehaviour
         messageWait = new WaitForSeconds(messageDuration);
         enemyDelayWait = new WaitForSeconds(enemyTurnDelay);
     }
+    private void Start()
+    {
+        EndBattle();
+    }
 
     public void StartBattle(Combatant opponent)
     {
@@ -61,9 +83,111 @@ public class BattleManager : MonoBehaviour
         enemy = opponent;
         enemyAI = enemy.GetComponent<EnemyAI>();
 
+        if (playerController != null)
+            playerController.canMove = false;
+
+        if (playerInteraction != null)
+            playerInteraction.canInteract = false;
+
+        InitializeUI();
+
         Debug.Log($"[BattleManager] A battle has begun! {enemy.combatantName} challenges you!");
 
         TransitionToState(BattleState.PlayerTurn);
+    }
+
+    private void InitializeUI()
+    {
+        if (player != null && playerNameText != null)
+            playerNameText.text = player.combatantName;
+
+        if (enemy != null && enemyNameText != null)
+            enemyNameText.text = enemy.combatantName;
+
+        UpdateHealthUI(animate: false);
+    }
+
+    private void UpdateHealthUI(bool animate = true)
+    {
+        if (player != null)
+        {
+            float targetPct = (float)player.currentHP / player.maxHP;
+            if (playerHPText != null) playerHPText.text = $"{player.currentHP} / {player.maxHP}";
+
+            if (playerHPBarImage != null)
+            {
+                if (animate && gameObject.activeInHierarchy)
+                {
+                    if (playerHPAnimRoutine != null) StopCoroutine(playerHPAnimRoutine);
+                    playerHPAnimRoutine = StartCoroutine(AnimateHealthBarRoutine(playerHPBarImage, targetPct));
+                }
+                else
+                {
+                    playerHPBarImage.fillAmount = targetPct;
+                    playerHPBarImage.color = GetHPColor(targetPct);
+                }
+            }
+        }
+
+        if (enemy != null)
+        {
+            float targetPct = (float)enemy.currentHP / enemy.maxHP;
+            if (enemyHPText != null) enemyHPText.text = $"{enemy.currentHP} / {enemy.maxHP}";
+
+            if (enemyHPBarImage != null)
+            {
+                if (animate && gameObject.activeInHierarchy)
+                {
+                    if (enemyHPAnimRoutine != null) StopCoroutine(enemyHPAnimRoutine);
+                    enemyHPAnimRoutine = StartCoroutine(AnimateHealthBarRoutine(enemyHPBarImage, targetPct));
+                }
+                else
+                {
+                    enemyHPBarImage.fillAmount = targetPct;
+                    enemyHPBarImage.color = GetHPColor(targetPct);
+                }
+            }
+        }
+    }
+
+    private IEnumerator AnimateHealthBarRoutine(Image barImage, float targetFill)
+    {
+        float startFill = barImage.fillAmount;
+        Color startColor = barImage.color;
+        Color targetColor = GetHPColor(targetFill);
+
+        float elapsed = 0f;
+
+        while (elapsed < hpBarAnimDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / hpBarAnimDuration);
+            float smoothT = Mathf.SmoothStep(0f, 1f, t);
+
+            barImage.fillAmount = Mathf.Lerp(startFill, targetFill, smoothT);
+            barImage.color = Color.Lerp(startColor, targetColor, smoothT);
+
+            yield return null;
+        }
+
+        barImage.fillAmount = targetFill;
+        barImage.color = targetColor;
+    }
+
+    private Color GetHPColor(float fillFraction)
+    {
+        fillFraction = Mathf.Clamp01(fillFraction);
+
+        if (fillFraction > 0.5f)
+        {
+            float t = (fillFraction - 0.5f) * 2f;
+            return Color.Lerp(Color.yellow, Color.green, t);
+        }
+        else
+        {
+            float t = fillFraction * 2f;
+            return Color.Lerp(Color.red, Color.yellow, t);
+        }
     }
 
     public void PlayerUseSpell(Spell spell)
@@ -86,26 +210,26 @@ public class BattleManager : MonoBehaviour
         {
             case BattleState.PlayerTurn:
                 if (CheckBattleEnd()) return;
-                SetUIVisibility(showPlayerUI: true, showTextUI: false);
+                SetUIVisibility(showSpells: true, showDialogue: false, showHP: true);
                 break;
 
             case BattleState.EnemyTurn:
                 if (CheckBattleEnd()) return;
-                SetUIVisibility(showPlayerUI: false, showTextUI: false);
+                SetUIVisibility(showSpells: false, showDialogue: false, showHP: true);
                 activeStateRoutine = StartCoroutine(ProcessEnemyTurnRoutine());
                 break;
 
             case BattleState.ShowingMessage:
-                SetUIVisibility(showPlayerUI: false, showTextUI: true);
+                SetUIVisibility(showSpells: false, showDialogue: true, showHP: true);
                 break;
 
             case BattleState.Victory:
-                SetUIVisibility(showPlayerUI: false, showTextUI: true);
+                SetUIVisibility(showSpells: false, showDialogue: true, showHP: true);
                 activeStateRoutine = StartCoroutine(ShowEndMessageRoutine("VICTORY!"));
                 break;
 
             case BattleState.Defeat:
-                SetUIVisibility(showPlayerUI: false, showTextUI: true);
+                SetUIVisibility(showSpells: false, showDialogue: true, showHP: true);
                 activeStateRoutine = StartCoroutine(ShowEndMessageRoutine("DEFEAT..."));
                 break;
         }
@@ -133,6 +257,9 @@ public class BattleManager : MonoBehaviour
         TransitionToState(BattleState.ShowingMessage);
 
         SpellResult result = ResolveSpell(caster, target, spell);
+        
+        UpdateHealthUI(animate: true);
+
         string message = BuildSpellMessage(caster, spell, result);
 
         yield return DisplayMessageRoutine(message);
@@ -141,7 +268,6 @@ public class BattleManager : MonoBehaviour
 
         TransitionToState(nextState);
     }
-
     private readonly struct SpellResult
     {
         public bool IsHit { get; }
@@ -166,7 +292,7 @@ public class BattleManager : MonoBehaviour
         bool isEffective = spell.type switch
         {
             SpellType.Damage => ApplyDamageSpell(target, spell.power),
-            SpellType.Heal   => ApplyHealSpell(caster, spell.power),
+            SpellType.Heal => ApplyHealSpell(caster, spell.power),
             _ => HandleUnsupportedSpell(spell.type)
         };
 
@@ -243,6 +369,25 @@ public class BattleManager : MonoBehaviour
         }
 
         yield return endWait;
+
+        EndBattle();
+    }
+
+    private void EndBattle()
+    {
+        SetUIVisibility(
+            showSpells: false,
+            showDialogue: false,
+            showHP: false
+        );
+
+        if (playerController != null)
+            playerController.canMove = true;
+
+        if (playerInteraction != null)
+            playerInteraction.canInteract = true;
+
+        Debug.Log("[BattleManager] Battle ended.");
     }
 
     private bool CheckBattleEnd()
@@ -262,10 +407,10 @@ public class BattleManager : MonoBehaviour
         return false;
     }
 
-    private void SetUIVisibility(bool showPlayerUI, bool showTextUI)
+    private void SetUIVisibility(bool showSpells, bool showDialogue, bool showHP)
     {
-        if (leftPanel != null) leftPanel.SetActive(showPlayerUI);
-        if (rightPanel != null) rightPanel.SetActive(showPlayerUI);
-        if (textPanel != null) textPanel.SetActive(showTextUI);
+        if (spellPanel != null) spellPanel.SetActive(showSpells);
+        if (dialoguePanel != null) dialoguePanel.SetActive(showDialogue);
+        if (hpPanel != null) hpPanel.SetActive(showHP);
     }
 }

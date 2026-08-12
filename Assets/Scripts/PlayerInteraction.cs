@@ -7,6 +7,7 @@ public class PlayerInteraction : MonoBehaviour
     [Header("Interaction")]
     public float interactionRange = 1.5f;
     public LayerMask interactableLayer;
+    public bool canInteract = true;
 
     [Header("Interaction UI")]
     public GameObject interactionPrompt;
@@ -16,33 +17,42 @@ public class PlayerInteraction : MonoBehaviour
 
     void Start()
     {
-        interactionPrompt.SetActive(false);
+        if (interactionPrompt != null)
+            interactionPrompt.SetActive(false);
     }
 
     void Update()
     {
         FindInteractable();
 
-        if (currentInteractable != null)
+        if (canInteract && currentInteractable != null)
         {
-            interactionPrompt.SetActive(true);
+            if (interactionPrompt != null && !interactionPrompt.activeSelf)
+                interactionPrompt.SetActive(true);
 
-            interactionText.text = currentInteractable.InteractionPrompt ;
+            if (interactionText != null)
+                interactionText.text = currentInteractable.InteractionPrompt;
 
-            if (Keyboard.current != null &&
-                Keyboard.current.eKey.wasPressedThisFrame)
+            if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
             {
                 currentInteractable.Interact();
             }
         }
         else
         {
-            interactionPrompt.SetActive(false);
+            if (interactionPrompt != null && interactionPrompt.activeSelf)
+                interactionPrompt.SetActive(false);
         }
     }
 
     void FindInteractable()
     {
+        if (!canInteract)
+        {
+            currentInteractable = null;
+            return;
+        }
+
         currentInteractable = null;
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(
@@ -60,10 +70,7 @@ public class PlayerInteraction : MonoBehaviour
             if (interactable == null)
                 continue;
 
-            float distance = Vector2.Distance(
-                transform.position,
-                hit.transform.position
-            );
+            float distance = Vector2.Distance(transform.position, hit.transform.position);
 
             if (distance < closestDistance)
             {
@@ -75,6 +82,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
+        Gizmos.color = canInteract ? Color.green : Color.red;
         Gizmos.DrawWireSphere(
             transform.position,
             interactionRange

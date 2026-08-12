@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
 
+    public bool canMove = true;
     [Header("Animation")]
     public Animator animator;
 
@@ -41,8 +42,12 @@ public class Player : MonoBehaviour
 
     void ReadInput()
     {
+        
         movement = Vector2.zero;
 
+        if (!canMove || Keyboard.current == null)
+            return;
+            
         if (Keyboard.current == null)
             return;
 

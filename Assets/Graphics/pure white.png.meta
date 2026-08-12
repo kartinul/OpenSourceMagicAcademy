@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ccdb4ce737c1eb4468a4cb7a53187a42
+guid: 6f50a57c1f0816c4f9964326b7c19554
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -519052415876542791
-    second: scroll_0
+      213: -3597346926995499305
+    second: pure white_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scroll_0
+      name: pure white_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3
-        width: 92
-        height: 125
+        x: 0
+        y: 0
+        width: 76
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9becedbe394fbc8f0800000000000000
-      internalID: -519052415876542791
+      spriteID: 7d6179a8708a31ec0800000000000000
+      internalID: -3597346926995499305
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      scroll_0: -519052415876542791
+      pure white_0: -3597346926995499305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
