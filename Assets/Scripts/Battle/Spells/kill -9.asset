@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spell
   spellName: kill -9
   description: Deal damage to the enemy.
+  educationalDescription: 
   type: 0
-  power: 20
+  power: 25
   accuracy: 1
-  turnCost: 1
