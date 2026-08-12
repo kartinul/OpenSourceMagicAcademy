@@ -16,9 +16,9 @@ public class BattleManager : MonoBehaviour
         Defeat
     }
 
-    [Header("Combatants")]
+    [Header("Player")]
+    [Tooltip("Leave empty to auto-find by 'Player' tag")]
     [SerializeField] private Combatant player;
-    [SerializeField] private Combatant enemy;
 
     [Header("UI Panels")]
     [SerializeField] private GameObject dialoguePanel;
@@ -41,16 +41,17 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private float enemyTurnDelay = 0.8f;
     [SerializeField] private float textTypingSpeed = 0.03f;
     [SerializeField] private float hpBarAnimDuration = 0.4f;
-    private Coroutine playerHPAnimRoutine;
-    private Coroutine enemyHPAnimRoutine;
-
-    [Header("Player Control")]
-    [SerializeField] private Player playerController;
-    [SerializeField] private PlayerInteraction playerInteraction;
 
     public BattleState State { get; private set; }
 
+    // Automatically assigned references (Hidden from Inspector)
+    private Combatant enemy;
     private EnemyAI enemyAI;
+    private Player playerController;
+    private PlayerInteraction playerInteraction;
+    
+    private Coroutine playerHPAnimRoutine;
+    private Coroutine enemyHPAnimRoutine;
     private Coroutine activeStateRoutine;
 
     private WaitForSeconds typingWait;
@@ -66,10 +67,37 @@ public class BattleManager : MonoBehaviour
         endWait = new WaitForSeconds(3.0f);
         messageWait = new WaitForSeconds(messageDuration);
         enemyDelayWait = new WaitForSeconds(enemyTurnDelay);
+
+        AutoSetupPlayer();
     }
+
     private void Start()
     {
         EndBattle();
+    }
+
+    private void AutoSetupPlayer()
+    {
+        // 1. Try to find the player by Tag if not assigned in Inspector
+        if (player == null)
+        {
+            GameObject playerObj = GameObject.FindWithTag("Player");
+            if (playerObj != null)
+            {
+                player = playerObj.GetComponent<Combatant>();
+            }
+        }
+
+        // 2. Automatically grab control components from the player object
+        if (player != null)
+        {
+            playerController = player.GetComponent<Player>();
+            playerInteraction = player.GetComponent<PlayerInteraction>();
+        }
+        else
+        {
+            Debug.LogWarning("[BattleManager] Player reference is missing! Please assign it or tag the player GameObject as 'Player'.");
+        }
     }
 
     public void StartBattle(Combatant opponent)
@@ -80,6 +108,7 @@ public class BattleManager : MonoBehaviour
             return;
         }
 
+        // Auto-assign enemy and its AI component
         enemy = opponent;
         enemyAI = enemy.GetComponent<EnemyAI>();
 
@@ -268,6 +297,7 @@ public class BattleManager : MonoBehaviour
 
         TransitionToState(nextState);
     }
+
     private readonly struct SpellResult
     {
         public bool IsHit { get; }
