@@ -1,16 +1,22 @@
 using UnityEngine;
 using TMPro;
 
-public class Combatant : MonoBehaviour
+public class Combatant : MonoBehaviour, IInteractable
 {
     [Header("Stats")]
     public string combatantName = "Combatant";
     public int maxHP = 100;
-    public TextMeshProUGUI hpText;
+     public TextMeshProUGUI hpText;
+
     [HideInInspector]
     public int currentHP;
 
+    [Header("Battle")]
+    public BattleManager battleManager;
+
     public bool IsDead => currentHP <= 0;
+
+    public string InteractionPrompt => "Fight";
 
 
     void Awake()
@@ -23,6 +29,7 @@ public class Combatant : MonoBehaviour
         hpText.text = $"{currentHP} HP";
     }
 
+
     public void TakeDamage(int amount)
     {
         amount = Mathf.Max(0, amount);
@@ -32,7 +39,9 @@ public class Combatant : MonoBehaviour
 
         Debug.Log($"{combatantName} took {amount} damage!");
         UpdateHPText();
+
     }
+
 
     public void Heal(int amount)
     {
@@ -43,5 +52,21 @@ public class Combatant : MonoBehaviour
 
         Debug.Log($"{combatantName} healed {amount} HP!");
         UpdateHPText();
+
+    }
+
+
+    public void Interact()
+    {
+        if (battleManager == null)
+        {
+            Debug.LogError(
+                $"{combatantName} has no BattleManager assigned!"
+            );
+
+            return;
+        }
+
+        battleManager.StartBattle(this);
     }
 }
