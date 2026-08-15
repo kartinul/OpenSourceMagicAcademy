@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 390456463063097651}
   - component: {fileID: 4767427363989312740}
   m_Layer: 0
-  m_Name: CataCombs
+  m_Name: 1 - MAIN CATACOMBS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
