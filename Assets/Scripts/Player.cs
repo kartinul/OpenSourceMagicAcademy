@@ -3,97 +3,110 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-  [Header("Movement")]
-  public float moveSpeed = 5f;
-  public Rigidbody2D rb;
-  public bool canMove = true;
+    [Header("Movement")]
+    public float moveSpeed = 5f;
+    public Rigidbody2D rb;
 
-  [Header("Animation")]
-  public Animator animator;
-  public PlayerSO playerSO;
+    public bool canMove = true;
+    [Header("Animation")]
+    public Animator animator;
 
-  private Vector2 movement;
-  private Vector2 facingDirection = Vector2.down;
+    private Vector2 movement;
+    private Vector2 facingDirection = Vector2.down;
 
-  void Awake()
-  {
-    if (rb == null)
-      rb = GetComponent<Rigidbody2D>();
-
-    if (animator == null)
-      animator = GetComponentInChildren<Animator>();
-  }
-
-  void Update()
-  {
-    ReadInput();
-    UpdateAnimation();
-  }
-
-  void FixedUpdate()
-  {
-    if (rb != null)
+    void Awake()
     {
-      rb.MovePosition(
-          rb.position +
-          movement * moveSpeed * Time.fixedDeltaTime
-      );
+        if (rb == null)
+            rb = GetComponent<Rigidbody2D>();
+
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
     }
-  }
 
-  void ReadInput()
-  {
-    movement = Vector2.zero;
+    void Update()
+    {
+        ReadInput();
+        UpdateAnimation();
+    }
 
-    if (!canMove || Keyboard.current == null)
-      return;
+    void FixedUpdate()
+    {
+        if (rb != null)
+        {
+            rb.MovePosition(
+                rb.position +
+                movement * moveSpeed * Time.fixedDeltaTime
+            );
+        }
+    }
 
-    if (Keyboard.current.wKey.isPressed ||
-        Keyboard.current.upArrowKey.isPressed)
-      movement.y += 1;
+    void ReadInput()
+    {
+        
+        movement = Vector2.zero;
 
-    if (Keyboard.current.sKey.isPressed ||
-        Keyboard.current.downArrowKey.isPressed)
-      movement.y -= 1;
+        if (!canMove || Keyboard.current == null)
+            return;
+            
+        if (Keyboard.current == null)
+            return;
 
-    if (Keyboard.current.aKey.isPressed ||
-        Keyboard.current.leftArrowKey.isPressed)
-      movement.x -= 1;
+        if (Keyboard.current.wKey.isPressed ||
+            Keyboard.current.upArrowKey.isPressed)
+        {
+            movement.y += 1;
+        }
 
-    if (Keyboard.current.dKey.isPressed ||
-        Keyboard.current.rightArrowKey.isPressed)
-      movement.x += 1;
+        if (Keyboard.current.sKey.isPressed ||
+            Keyboard.current.downArrowKey.isPressed)
+        {
+            movement.y -= 1;
+        }
 
-    movement = movement.normalized;
-  }
+        if (Keyboard.current.aKey.isPressed ||
+            Keyboard.current.leftArrowKey.isPressed)
+        {
+            movement.x -= 1;
+        }
 
-  void UpdateAnimation()
-  {
-    bool isMoving = movement.sqrMagnitude > 0.001f;
+        if (Keyboard.current.dKey.isPressed ||
+            Keyboard.current.rightArrowKey.isPressed)
+        {
+            movement.x += 1;
+        }
 
-    if (isMoving)
-      facingDirection = GetAnimationDirection(movement);
+        movement = movement.normalized;
+    }
 
-    AnimationClip clip;
+    void UpdateAnimation()
+    {
+        bool isMoving = movement.sqrMagnitude > 0.001f;
 
-    if (facingDirection == Vector2.up)
-      clip = isMoving ? playerSO.walkBack : playerSO.idleBack;
-    else if (facingDirection == Vector2.down)
-      clip = isMoving ? playerSO.walkFront : playerSO.idleFront;
-    else if (facingDirection == Vector2.left)
-      clip = isMoving ? playerSO.walkLeft : playerSO.idleLeft;
-    else
-      clip = isMoving ? playerSO.walkRight : playerSO.idleRight;
+        if (isMoving)
+        {
+            facingDirection = GetAnimationDirection(movement);
+        }
 
-    if (clip != null)
-      animator.Play(clip.name);
-  }
+        animator.SetBool("isMoving", isMoving);
 
-  Vector2 GetAnimationDirection(Vector2 direction)
-  {
-    if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
-      return new Vector2(Mathf.Sign(direction.x), 0f);
+        animator.SetFloat("moveX", facingDirection.x);
+        animator.SetFloat("moveY", facingDirection.y);
+    }
 
-    return new Vector2(0f, Mathf.Sign(direction.y));
-  }
+    Vector2 GetAnimationDirection(Vector2 direction)
+    {
+
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            return new Vector2(
+                Mathf.Sign(direction.x),
+                0f
+            );
+        }
+
+        return new Vector2(
+            0f,
+            Mathf.Sign(direction.y)
+        );
+    }
 }
