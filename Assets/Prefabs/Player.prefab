@@ -2832,9 +2832,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 5
-  rb: {fileID: 0}
+  rb: {fileID: 3211843804706520333}
   canMove: 1
-  animator: {fileID: 0}
+  animator: {fileID: 8252140732969534596}
+  playerSO: {fileID: 11400000, guid: d61ce6d2ec6af45a08446ab884dfa704, type: 2}
 --- !u!61 &5683222881831752351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3061,7 +3062,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8588696538370453529, guid: 5efc8f664a7d843b1b2788403102fab8, type: 3}
+  m_Sprite: {fileID: -2615874204119335, guid: 25e667b6739e04904ac65252a9132a82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
