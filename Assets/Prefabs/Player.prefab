@@ -2557,9 +2557,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 5
-  rb: {fileID: 0}
+  rb: {fileID: 3211843804706520333}
   canMove: 1
-  animator: {fileID: 0}
+  animator: {fileID: 8252140732969534596}
+  playerSO: {fileID: 11400000, guid: d61ce6d2ec6af45a08446ab884dfa704, type: 2}
 --- !u!61 &5683222881831752351
 BoxCollider2D:
   m_ObjectHideFlags: 0
