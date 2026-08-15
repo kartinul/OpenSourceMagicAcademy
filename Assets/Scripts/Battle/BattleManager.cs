@@ -22,6 +22,7 @@ public class BattleManager : MonoBehaviour
 
     [Header("UI Panels")]
     [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject dialogueSpecificContainer;
     [SerializeField] private GameObject spellPanel;
     [SerializeField] private GameObject hpPanel;
 
@@ -441,6 +442,7 @@ public class BattleManager : MonoBehaviour
     {
         if (spellPanel != null) spellPanel.SetActive(showSpells);
         if (dialoguePanel != null) dialoguePanel.SetActive(showDialogue);
+        if (dialogueSpecificContainer != null) dialogueSpecificContainer.SetActive(false);
         if (hpPanel != null) hpPanel.SetActive(showHP);
     }
 }
