@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
   m_Name: TestDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: son goku
+  speakerName: Lord Gabe
   lines:
-  - HI! i am son goku.
-  - "Lorem Ipsum dolor sie amet, i forgot the filler text after that.\t\t"
-  - Anyway, dialogues fully work now. so that is cool. Harsh bhaiya pizza khila do.
+  - You there! I need your help.
+  - There's a dark force somewhere in this room.....
+  - 'Something.......
+
+'
+  - ...........ominous.
+  - I need you to explore and find the threat, then VANQUISH IT!

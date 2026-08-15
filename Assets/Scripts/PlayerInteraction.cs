@@ -13,7 +13,7 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject interactionPrompt;
     public TMP_Text interactionText;
 
-    private IInteractable currentInteractable;
+    public IInteractable currentInteractable { get; private set; }
 
     void Start()
     {

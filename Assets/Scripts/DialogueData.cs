@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(
     fileName = "NewDialogue",
@@ -10,4 +11,6 @@ public class DialogueData : ScriptableObject
 
     [TextArea(2, 5)]
     public string[] lines;
+
+    public UnityEvent onDialogueComplete;
 }

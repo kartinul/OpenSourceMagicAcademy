@@ -1,12 +1,16 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
+using Unity.Cinemachine; // Cinemachine 3.x
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("UI Panels")]
+    [Tooltip("Outer shared panel container")]
     [SerializeField] private GameObject dialoguePanel;
+    [Tooltip("Inner dialogue-only panel container (Speaker Name, [SPACE] Prompt)")]
     [SerializeField] private GameObject dialogueSpecificContainer;
 
     [Header("UI Text References")]
@@ -16,9 +20,11 @@ public class DialogueManager : MonoBehaviour
     [Header("Typing Settings")]
     [SerializeField] private float typingSpeed = 0.03f;
 
-    [Header("Player Control (Optional / Auto-Found)")]
-    [SerializeField] private Player playerController;
-    [SerializeField] private PlayerInteraction playerInteraction;
+    // Component references resolved to root Player
+    private Player playerController;
+    private PlayerInteraction playerInteraction;
+    private CinemachineTargetGroup targetGroup;
+    private Transform playerRootTransform;
 
     private DialogueData currentDialogue;
     private int currentLine;
@@ -33,13 +39,18 @@ public class DialogueManager : MonoBehaviour
     {
         typingWait = new WaitForSeconds(typingSpeed);
 
+        playerRootTransform = transform.root;
+        playerController = playerRootTransform.GetComponent<Player>();
+        playerInteraction = playerRootTransform.GetComponent<PlayerInteraction>();
+        targetGroup = playerRootTransform.GetComponentInChildren<CinemachineTargetGroup>();
+
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
 
         if (dialogueSpecificContainer != null)
             dialogueSpecificContainer.SetActive(false);
-
-        AutoSetupPlayer();
+        targetGroup.Targets.Clear();
+        targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
     }
 
     private void Update()
@@ -53,20 +64,27 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void AutoSetupPlayer()
+    // this is really shitty architecture but i honestly dont know what to do at this point
+    // im exhausted
+    public void StartDialogue(DialogueData dialogue)
     {
-        if (playerController == null)
+        Transform npcTarget = null;
+
+        if (playerInteraction == null)
+            playerInteraction = transform.root.GetComponent<PlayerInteraction>();
+
+        if (playerInteraction != null && playerInteraction.currentInteractable != null)
         {
-            GameObject playerObj = GameObject.FindWithTag("Player");
-            if (playerObj != null)
+            if (playerInteraction.currentInteractable is Component interactableComponent)
             {
-                playerController = playerObj.GetComponent<Player>();
-                playerInteraction = playerObj.GetComponent<PlayerInteraction>();
+                npcTarget = interactableComponent.transform;
             }
         }
+
+        StartDialogue(dialogue, npcTarget);
     }
 
-    public void StartDialogue(DialogueData dialogue)
+    public void StartDialogue(DialogueData dialogue, Transform npcTransform)
     {
         if (dialogue == null || dialogue.lines == null || dialogue.lines.Length == 0)
         {
@@ -74,7 +92,20 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+
         SetPlayerControlsActive(false);
+
+        if (targetGroup != null)
+        {
+            targetGroup.Targets.Clear();
+
+            targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
+
+            if (npcTransform != null)
+            {
+                targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = npcTransform, Weight = 1f, Radius = 1f });
+            }
+        }
 
         currentDialogue = dialogue;
         currentLine = 0;
@@ -162,11 +193,24 @@ public class DialogueManager : MonoBehaviour
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
 
+        if (targetGroup != null)
+        {
+            targetGroup.Targets.Clear();
+            targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
+        }
+
         SetPlayerControlsActive(true);
     }
 
     private void SetPlayerControlsActive(bool active)
     {
+        if (playerController == null || playerInteraction == null)
+        {
+            playerRootTransform = transform.root;
+            if (playerController == null) playerController = playerRootTransform.GetComponent<Player>();
+            if (playerInteraction == null) playerInteraction = playerRootTransform.GetComponent<PlayerInteraction>();
+        }
+
         if (playerController != null)
             playerController.canMove = active;
 
