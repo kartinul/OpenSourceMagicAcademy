@@ -2990,6 +2990,7 @@ GameObject:
   - component: {fileID: 8999222721090412252}
   - component: {fileID: 8413230915687702150}
   - component: {fileID: 8252140732969534596}
+  - component: {fileID: 5187734564879813075}
   m_Layer: 0
   m_Name: PlayerVisual
   m_TagString: Untagged
@@ -3093,6 +3094,59 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5187734564879813075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423042249651550544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.ShadowCaster2D
+  m_ShadowGroup: 0
+  m_Priority: 4
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000e9e818bc5581a41f9b5169b607eeb549
+  m_ShapePath:
+  - {x: -0.16, y: -0.00000023841858, z: 0}
+  - {x: -0.16, y: 0.63999987, z: 0}
+  - {x: 0.16, y: 0.63999987, z: 0}
+  - {x: 0.16, y: -0.00000023841858, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 8413230915687702150}
+  m_ShadowShape2DProvider:
+    rid: 7740770015477760257
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0.0049972534, y: 0.30499268, z: 0}
+      m_Extent: {x: 0.04499054, y: 0.16499329, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.08
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0.08
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0.08
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 8413230915687702150}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7740770015477760257
+      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
 --- !u!1 &4432581473400252098
 GameObject:
   m_ObjectHideFlags: 0
