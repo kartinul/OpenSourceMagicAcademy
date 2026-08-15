@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1666.5, y: 131.4}
-  m_SizeDelta: {x: 439.5256, y: 50}
+  m_AnchoredPosition: {x: -1476.8435, y: 131.08392}
+  m_SizeDelta: {x: 818.8384, y: 49.3678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6614650918624173603
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Speaker Name Here
+  m_text: Speaker Name here (arigato)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36c34350dc4de264cada5673f20e15f4, type: 2}
   m_sharedMaterial: {fileID: 2548881455621347821, guid: 36c34350dc4de264cada5673f20e15f4, type: 2}
