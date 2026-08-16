@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
-  m_Name: NewDialogue
+  m_Name: Guardian1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: Kavya
+  speakerName: Eye of Torvalds
   lines:
-  - mera aesprite nahi chal raha
-  - 'please fix kardo pls plepslpslpsalepl please fix kardo pls plepslpslpsalepl
-    please fix kardo pls plepslpslpsalepl '
+  - Halt.
+  - You seek the spell hidden within these archives.
+  - But knowledge is not given freely here....
+  - If you wish to wield it, you must prove that you are worthy.
+  - Defeat me, and the spell shall be yours.
   onDialogueComplete:
     m_PersistentCalls:
       m_Calls: []

@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d53b969d59694e340a4e0932c0cd5ce4, type: 3}
-  m_Name: kill -9
+  m_Name: rm -rf
   m_EditorClassIdentifier: Assembly-CSharp::Spell
-  spellName: kill -9
-  description: Deal large damage to the enemy.
-  educationalDescription: A force-quit signal sent directly by the OS kernel that
-    instantly terminates a target process.
+  spellName: sudo rm -rf
+  description: The final forbidden spell, powerful enough to break Lord Voldemort's
+    curse and free the world's software.
+  educationalDescription: Executes a command with elevated privileges that recursively
+    removes files and directories.
   type: 0
-  power: 30
-  accuracy: 0.6
+  power: 5000
+  accuracy: 1

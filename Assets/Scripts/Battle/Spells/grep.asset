@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d53b969d59694e340a4e0932c0cd5ce4, type: 3}
-  m_Name: Print
+  m_Name: grep
   m_EditorClassIdentifier: Assembly-CSharp::Spell
-  spellName: PRINT
-  description: Deal small damage to an enemy.
-  educationalDescription: 'print() is used to display information
-
-    when writing
-    a program. It is one of the
-
-    first things many programmers learn.'
+  spellName: 'grep '
+  description: A highly accurate medium-damage attack.
+  educationalDescription: grep searches through text and finds what you're looking
+    for. Programmers use it to quickly find patterns, errors, and information across
+    files.
   type: 0
-  power: 15
-  accuracy: 1
+  power: 20
+  accuracy: 0.99
