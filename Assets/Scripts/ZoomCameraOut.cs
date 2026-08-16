@@ -10,15 +10,9 @@ public class ZoomCameraOut : MonoBehaviour
   [SerializeField] private float cameraDistance = 13f;
   [SerializeField] private float zoomSpeed = 2f;
 
-  Player player;
   private CinemachinePositionComposer positionComposer;
   private Coroutine zoomCoroutine;
   private float initialCameraDistance;
-
-  void Start()
-  {
-    player = GameStarter.PlayerInstance;
-  }
 
   void OnTriggerEnter2D(Collider2D collision)
   {
