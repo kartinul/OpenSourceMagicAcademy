@@ -34,6 +34,12 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private WaitForSeconds typingWait;
     public UnityEvent OnDialogueEnded = new UnityEvent();
+    [SerializeField] private DialogueSpeaker currentSpeaker;
+
+    [SerializeField] private DialogueData startingDialogue;
+ 
+
+
 
     private void Awake()
     {
@@ -51,6 +57,8 @@ public class DialogueManager : MonoBehaviour
             dialogueSpecificContainer.SetActive(false);
         targetGroup.Targets.Clear();
         targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
+        
+        if (startingDialogue != null)  StartDialogue(startingDialogue);
     }
 
     private void Update()
@@ -120,11 +128,21 @@ public class DialogueManager : MonoBehaviour
         if (speakerText != null)
             speakerText.text = dialogue.speakerName;
 
+        currentSpeaker = npcTransform != null
+            ? npcTransform.GetComponentInParent<DialogueSpeaker>()
+            : null;
+
+        if (currentSpeaker != null)
+            currentSpeaker.StartSpeaking();
+
         ShowCurrentLine();
     }
 
     private void ShowCurrentLine()
     {
+        if (currentSpeaker != null)
+            currentSpeaker.StartSpeaking();
+        
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
@@ -148,6 +166,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
+        if (currentSpeaker != null) currentSpeaker.StopSpeaking();
     }
 
     private void AdvanceDialogue()
@@ -197,6 +216,12 @@ public class DialogueManager : MonoBehaviour
         {
             targetGroup.Targets.Clear();
             targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
+        }
+
+        if (currentSpeaker != null)
+        {
+            currentSpeaker.StopSpeaking();
+            currentSpeaker = null;
         }
 
         SetPlayerControlsActive(true);

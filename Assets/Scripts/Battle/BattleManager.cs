@@ -79,10 +79,10 @@ public class BattleManager : MonoBehaviour
         AutoSetupPlayer();
     }
 
-    private void Start()
-    {
-        EndBattle();
-    }
+    // private void Start()
+    // {
+    //     EndBattle();
+    // }
 
     private void AutoSetupPlayer()
     {

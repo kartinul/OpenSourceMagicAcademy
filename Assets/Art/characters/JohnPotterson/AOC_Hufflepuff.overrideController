@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AOC_Hufflepuff
+  m_Controller: {fileID: 9100000, guid: 11e9df2f093b3d10c9ad296deccfe7b4, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 4ab90120f271bf14eb313ff3f75cc626, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 87713722d3af28b4bba9b3e4c820d005, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ffd41333099c8674f8df2e0bf86427c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 30b1c72c1ea546b4ca264b5cc27dfa1c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8f49624e38fee01429bbb61b44969aff, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6b58157788bbd924c882e6248c4f06b1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4ad43d5d5a5caab4a8c0504339a9953a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: faf63f7e3272f3d4f96a808883db2db0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2c4bf9a775b389c45a8b699ac00cecc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 70c7a6081cb9fda418332ce09f0d4812, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 48763ba2c8232de41b095afd3498635a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b66c1620c9b99e247b60d5c568c9469f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 19d57ce6c193bac4ca416f6af5247302, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c2dffed60fb140d4fb5c75b67c4ed2c0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cb7121f4d9ac53840b79c5a24bcada50, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a55438ddb424d6449a9f72f7bb66a2e3, type: 2}
