@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d53b969d59694e340a4e0932c0cd5ce4, type: 3}
   m_Name: rm -rf
   m_EditorClassIdentifier: Assembly-CSharp::Spell
-  spellName: sudo rm -rf
+  spellName: sudo rm -rf /
   description: The final forbidden spell, powerful enough to break Lord Voldemort's
     curse and free the world's software.
   educationalDescription: Executes a command with elevated privileges that recursively

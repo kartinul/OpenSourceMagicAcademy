@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
+  m_Name: Guardian2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  speakerName: Hand of Torvalds
+  lines:
+  - You have learned to find what you seek.
+  - But open source is about more than finding code.
+  - It is about sharing it.
+  - When many people are free to build upon the same code, mistakes are bound to
+    happen.
+  - But mistakes don't have to be permanent.
+  - Mistakes may be reversed.
+  - Defeat me, and I shall teach you the spell.
