@@ -1,18 +1,34 @@
+using System;
+using Unity.AppUI.Editor;
+using Unity.InferenceEngine;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 public class NPC : MonoBehaviour, IInteractable
 {
-    [Header("Interaction")]
-    [SerializeField] private string interactionPrompt = "Talk";
+  [Header("Interaction")]
+  [SerializeField] private string interactionPrompt = "Talk";
+  [SerializeField] private DialogueData dialogueData;
 
-    [SerializeField] private UnityEvent onInteract;
 
-    public string InteractionPrompt => interactionPrompt;
+  public static event EventHandler<InteractEventArgs> OnNPCInteract;
+  public class InteractEventArgs : EventArgs { public DialogueData dialogueData; public Combatant enemy; };
 
-    public void Interact()
+  public string InteractionPrompt => interactionPrompt;
+  private Combatant enemy;
+
+  public void Start()
+  {
+    enemy = gameObject.GetComponent<Combatant>();
+  }
+
+  public void Interact()
+  {
+    OnNPCInteract?.Invoke(this, new InteractEventArgs
     {
-        onInteract?.Invoke();
-    }
+      dialogueData = dialogueData,
+      enemy = enemy
+    });
+  }
 
 }
