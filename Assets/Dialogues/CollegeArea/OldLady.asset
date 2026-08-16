@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
   m_Name: OldLady
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: 
+  speakerName: Old Lady
   lines:
-  - Founder's Memorial -->
+  - Hello
   onDialogueComplete:
     m_PersistentCalls:
       m_Calls:
