@@ -18,4 +18,4 @@ MonoBehaviour:
     instantly terminates a target process.
   type: 0
   power: 30
-  accuracy: 0.6
+  accuracy: 0.837
