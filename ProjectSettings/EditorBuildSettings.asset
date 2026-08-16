@@ -15,14 +15,29 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/SelectHouse.unity
     guid: 96377107c92bf8e40b40ba3b96a572a1
   - enabled: 1
+    path: Assets/Scenes/Levels/OpenWorld.unity
+    guid: 467c39b09d442447e8c52bd13dfab8e3
+  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: a93dd2a2f5e2f42d98fd419782642e7a
   - enabled: 1
     path: Assets/Scenes/Levels/Level1_Floor1.unity
     guid: 8eab360371515479dbc815509aa03282
   - enabled: 1
-    path: Assets/Scenes/Levels/OpenWorld.unity
-    guid: 467c39b09d442447e8c52bd13dfab8e3
+    path: Assets/Scenes/Levels/Level2.unity
+    guid: 0defaae352df74105820d51e0448b25b
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level3.unity
+    guid: d9091a8e36b5f49d8ba784d7e03ecd3f
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level3_Floor1.unity
+    guid: a5bcf536df0694d2ab444490311debef
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level4.unity
+    guid: 40ed81461b2ac409fbc50727665ca264
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level5_Academy.unity
+    guid: d975c3ce0287644309b653b6ed0b29db
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

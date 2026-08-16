@@ -1,14 +1,33 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class SceneChanger : MonoBehaviour
 {
   [SerializeField] private Object sceneToLoad;
+  [SerializeField] private int spawnId = 0;
+
+  public void changeScene()
+  {
+    LoadWithTransition();
+  }
 
   private void OnTriggerEnter2D(Collider2D other)
   {
     if (other.gameObject.GetComponent<Player>() != null)
+    {
+      LoadWithTransition();
+    }
+  }
+
+  private void LoadWithTransition()
+  {
+    PlayerPrefs.SetInt("spawnId", spawnId);
+
+    if (SceneFader.Instance != null)
+    {
+      SceneFader.Instance.FadeAndLoad(sceneToLoad.name);
+    }
+    else
     {
       SceneManager.LoadScene(sceneToLoad.name);
     }

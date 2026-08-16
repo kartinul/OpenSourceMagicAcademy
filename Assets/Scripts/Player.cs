@@ -1,112 +1,137 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed = 5f;
-    public Rigidbody2D rb;
+  [Header("Movement")]
+  public float moveSpeed = 5f;
+  public Rigidbody2D rb;
 
-    public bool canMove = true;
-    [Header("Animation")]
-    public Animator animator;
+  public bool canMove = true;
+  [Header("Animation")]
+  public Animator animator;
 
-    private Vector2 movement;
-    private Vector2 facingDirection = Vector2.down;
+  private Vector2 movement;
+  private Vector2 facingDirection = Vector2.down;
 
-    void Awake()
+  void Awake()
+  {
+    if (rb == null)
+      rb = GetComponent<Rigidbody2D>();
+
+    if (animator == null)
+      animator = GetComponentInChildren<Animator>();
+
+  }
+
+  void OnEnable()
+  {
+    SceneManager.sceneLoaded += OnSceneLoaded;
+  }
+
+  void OnDisable()
+  {
+    SceneManager.sceneLoaded -= OnSceneLoaded;
+  }
+
+  void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+  {
+    GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("PlayerSpawn");
+
+    if (spawnPoints.Length > 0)
     {
-        if (rb == null)
-            rb = GetComponent<Rigidbody2D>();
+      foreach (GameObject spawnPoint in spawnPoints)
+      {
+        if (spawnPoint.GetComponent<PlayerSpawn>().spawnId == PlayerPrefs.GetInt("spawnId"))
+          transform.position = spawnPoint.transform.position;
+      }
+    }
+  }
+  void Update()
+  {
+    ReadInput();
+    UpdateAnimation();
+  }
 
-        if (animator == null)
-            animator = GetComponentInChildren<Animator>();
+  void FixedUpdate()
+  {
+    if (rb != null)
+    {
+      rb.MovePosition(
+          rb.position +
+          movement * moveSpeed * Time.fixedDeltaTime
+      );
+    }
+  }
+
+  void ReadInput()
+  {
+
+    movement = Vector2.zero;
+
+    if (!canMove || Keyboard.current == null)
+      return;
+
+    if (Keyboard.current == null)
+      return;
+
+    if (Keyboard.current.wKey.isPressed ||
+        Keyboard.current.upArrowKey.isPressed)
+    {
+      movement.y += 1;
     }
 
-    void Update()
+    if (Keyboard.current.sKey.isPressed ||
+        Keyboard.current.downArrowKey.isPressed)
     {
-        ReadInput();
-        UpdateAnimation();
+      movement.y -= 1;
     }
 
-    void FixedUpdate()
+    if (Keyboard.current.aKey.isPressed ||
+        Keyboard.current.leftArrowKey.isPressed)
     {
-        if (rb != null)
-        {
-            rb.MovePosition(
-                rb.position +
-                movement * moveSpeed * Time.fixedDeltaTime
-            );
-        }
+      movement.x -= 1;
     }
 
-    void ReadInput()
+    if (Keyboard.current.dKey.isPressed ||
+        Keyboard.current.rightArrowKey.isPressed)
     {
-        
-        movement = Vector2.zero;
-
-        if (!canMove || Keyboard.current == null)
-            return;
-            
-        if (Keyboard.current == null)
-            return;
-
-        if (Keyboard.current.wKey.isPressed ||
-            Keyboard.current.upArrowKey.isPressed)
-        {
-            movement.y += 1;
-        }
-
-        if (Keyboard.current.sKey.isPressed ||
-            Keyboard.current.downArrowKey.isPressed)
-        {
-            movement.y -= 1;
-        }
-
-        if (Keyboard.current.aKey.isPressed ||
-            Keyboard.current.leftArrowKey.isPressed)
-        {
-            movement.x -= 1;
-        }
-
-        if (Keyboard.current.dKey.isPressed ||
-            Keyboard.current.rightArrowKey.isPressed)
-        {
-            movement.x += 1;
-        }
-
-        movement = movement.normalized;
+      movement.x += 1;
     }
 
-    void UpdateAnimation()
+    movement = movement.normalized;
+  }
+
+  void UpdateAnimation()
+  {
+    bool isMoving = movement.sqrMagnitude > 0.001f;
+
+    if (isMoving)
     {
-        bool isMoving = movement.sqrMagnitude > 0.001f;
-
-        if (isMoving)
-        {
-            facingDirection = GetAnimationDirection(movement);
-        }
-
-        animator.SetBool("isMoving", isMoving);
-
-        animator.SetFloat("moveX", facingDirection.x);
-        animator.SetFloat("moveY", facingDirection.y);
+      facingDirection = GetAnimationDirection(movement);
     }
 
-    Vector2 GetAnimationDirection(Vector2 direction)
+    animator.SetBool("isMoving", isMoving);
+
+    animator.SetFloat("moveX", facingDirection.x);
+    animator.SetFloat("moveY", facingDirection.y);
+  }
+
+  Vector2 GetAnimationDirection(Vector2 direction)
+  {
+
+    if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
     {
-
-        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
-        {
-            return new Vector2(
-                Mathf.Sign(direction.x),
-                0f
-            );
-        }
-
-        return new Vector2(
-            0f,
-            Mathf.Sign(direction.y)
-        );
+      return new Vector2(
+          Mathf.Sign(direction.x),
+          0f
+      );
     }
+
+    return new Vector2(
+        0f,
+        Mathf.Sign(direction.y)
+    );
+  }
 }
