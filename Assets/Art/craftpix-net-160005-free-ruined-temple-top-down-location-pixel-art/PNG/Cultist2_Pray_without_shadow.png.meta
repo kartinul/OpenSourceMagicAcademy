@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: c670b4b9662884872a643744b089a70b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2140526307131649407
+    second: Cultist2_Pray_without_shadow_0
+  - first:
+      213: 6918249820895897554
+    second: Cultist2_Pray_without_shadow_1
+  - first:
+      213: 3891020852631029973
+    second: Cultist2_Pray_without_shadow_2
+  - first:
+      213: 7828113500869044764
+    second: Cultist2_Pray_without_shadow_3
+  - first:
+      213: -3539509529553270055
+    second: Cultist2_Pray_without_shadow_4
+  - first:
+      213: 926903045201466926
+    second: Cultist2_Pray_without_shadow_5
+  - first:
+      213: -313030277334754922
+    second: Cultist2_Pray_without_shadow_6
+  - first:
+      213: 6409977605742867400
+    second: Cultist2_Pray_without_shadow_7
+  - first:
+      213: -5065070883990915663
+    second: Cultist2_Pray_without_shadow_8
+  - first:
+      213: 4858523755195596471
+    second: Cultist2_Pray_without_shadow_9
+  - first:
+      213: -6793335465924645975
+    second: Cultist2_Pray_without_shadow_10
+  - first:
+      213: 6455278981838697378
+    second: Cultist2_Pray_without_shadow_11
+  - first:
+      213: -8584621856685838613
+    second: Cultist2_Pray_without_shadow_12
+  - first:
+      213: -1660777666186171450
+    second: Cultist2_Pray_without_shadow_13
+  - first:
+      213: -6164907830084814222
+    second: Cultist2_Pray_without_shadow_14
+  - first:
+      213: -6282881567982819755
+    second: Cultist2_Pray_without_shadow_15
+  - first:
+      213: 1725239456083096830
+    second: Cultist2_Pray_without_shadow_16
+  - first:
+      213: 4471410011298178015
+    second: Cultist2_Pray_without_shadow_17
+  - first:
+      213: -5360537347427592428
+    second: Cultist2_Pray_without_shadow_18
+  - first:
+      213: 1335247789822624830
+    second: Cultist2_Pray_without_shadow_19
+  - first:
+      213: 6033548184327406502
+    second: Cultist2_Pray_without_shadow_20
+  - first:
+      213: -7644691477668164831
+    second: Cultist2_Pray_without_shadow_21
+  - first:
+      213: -8766525606228418766
+    second: Cultist2_Pray_without_shadow_22
+  - first:
+      213: -7347660431846668372
+    second: Cultist2_Pray_without_shadow_23
+  - first:
+      213: -7839660957125075531
+    second: Cultist2_Pray_without_shadow_24
+  - first:
+      213: 3159528494829784155
+    second: Cultist2_Pray_without_shadow_25
+  - first:
+      213: 6861839663920299386
+    second: Cultist2_Pray_without_shadow_26
+  - first:
+      213: 1280569700581385347
+    second: Cultist2_Pray_without_shadow_27
+  - first:
+      213: -1683623838948512271
+    second: Cultist2_Pray_without_shadow_28
+  - first:
+      213: 4061996377649601825
+    second: Cultist2_Pray_without_shadow_29
+  - first:
+      213: 3012808170577674726
+    second: Cultist2_Pray_without_shadow_30
+  - first:
+      213: 7396421568551303112
+    second: Cultist2_Pray_without_shadow_31
+  - first:
+      213: 1038683365415275623
+    second: Cultist2_Pray_without_shadow_32
+  - first:
+      213: 8861455450760530829
+    second: Cultist2_Pray_without_shadow_33
+  - first:
+      213: -610302783557917322
+    second: Cultist2_Pray_without_shadow_34
+  - first:
+      213: 1453078900502883836
+    second: Cultist2_Pray_without_shadow_35
+  - first:
+      213: -1029418809151298570
+    second: Cultist2_Pray_without_shadow_36
+  - first:
+      213: -2288642335958548912
+    second: Cultist2_Pray_without_shadow_37
+  - first:
+      213: -1202570837032186048
+    second: Cultist2_Pray_without_shadow_38
+  - first:
+      213: 480053478486265103
+    second: Cultist2_Pray_without_shadow_39
+  - first:
+      213: -3398221803947989484
+    second: Cultist2_Pray_without_shadow_40
+  - first:
+      213: -3840933914164456020
+    second: Cultist2_Pray_without_shadow_41
+  - first:
+      213: -6180848747003582490
+    second: Cultist2_Pray_without_shadow_42
+  - first:
+      213: 4703767811235245594
+    second: Cultist2_Pray_without_shadow_43
+  - first:
+      213: 1541742606139973714
+    second: Cultist2_Pray_without_shadow_44
+  - first:
+      213: 2959064581232304376
+    second: Cultist2_Pray_without_shadow_45
+  - first:
+      213: 5621499007836157142
+    second: Cultist2_Pray_without_shadow_46
+  - first:
+      213: 7315708975257547065
+    second: Cultist2_Pray_without_shadow_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7de5f8d55da4bd10800000000000000
+      internalID: 2140526307131649407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7e8e1ce8f820060800000000000000
+      internalID: 6918249820895897554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8c5b699deaff530800000000000000
+      internalID: 3891020852631029973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a2db001cb03ac60800000000000000
+      internalID: 7828113500869044764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da0ed306d221eec0800000000000000
+      internalID: -3539509529553270055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26167e98650ddc00800000000000000
+      internalID: 926903045201466926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699158b0f94e7abf0800000000000000
+      internalID: -313030277334754922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c33380cba0d4f850800000000000000
+      internalID: 6409977605742867400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b53c8dedd045b9b0800000000000000
+      internalID: -5065070883990915663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7befa312d91fc6340800000000000000
+      internalID: 4858523755195596471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abaf79e26939b1a0800000000000000
+      internalID: -6793335465924645975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a37a8e4802c59950800000000000000
+      internalID: 6455278981838697378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beeaf2597eb4dd880800000000000000
+      internalID: -8584621856685838613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb2214038bb3f8e0800000000000000
+      internalID: -1660777666186171450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a35caddf8d17aa0800000000000000
+      internalID: -6164907830084814222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556e8868088bec8a0800000000000000
+      internalID: -6282881567982819755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef43254052841f710800000000000000
+      internalID: 1725239456083096830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 68
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3ad88f6b3ad0e30800000000000000
+      internalID: 4471410011298178015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 68
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4171d511fab8b95b0800000000000000
+      internalID: -5360537347427592428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_19
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 68
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34c0875ac0c78210800000000000000
+      internalID: 1335247789822624830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 68
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3c9064b187bb350800000000000000
+      internalID: 6033548184327406502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 68
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b0228ba9998e590800000000000000
+      internalID: -7644691477668164831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_22
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 68
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f936e786b075680800000000000000
+      internalID: -8766525606228418766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7069d44cdd70a90800000000000000
+      internalID: -7347660431846668372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd9f0355ede33390800000000000000
+      internalID: -7839660957125075531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ccd081d66e8db20800000000000000
+      internalID: 3159528494829784155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7db7a991d62a3f50800000000000000
+      internalID: 6861839663920299386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3842841ab5f75c110800000000000000
+      internalID: 1280569700581385347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_28
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd2818e90192a8e0800000000000000
+      internalID: -1683623838948512271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_29
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 36
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d5ab02f2c1f5830800000000000000
+      internalID: 4061996377649601825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 36
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e14daf8115afc920800000000000000
+      internalID: 3012808170577674726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_31
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 36
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7b98a8a3e55a660800000000000000
+      internalID: 7396421568551303112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_32
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 36
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c4fa584052a6e00800000000000000
+      internalID: 1038683365415275623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_33
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 36
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bc78f48c63afa70800000000000000
+      internalID: 8861455450760530829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_34
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 36
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67529941ad4c787f0800000000000000
+      internalID: -610302783557917322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_35
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfde61faf8f5a2410800000000000000
+      internalID: 1453078900502883836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f36e631c05c6b1f0800000000000000
+      internalID: -1029418809151298570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_37
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e3543dbeb1d30e0800000000000000
+      internalID: -2288642335958548912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_38
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fc379f13c9f4fe0800000000000000
+      internalID: -1202570837032186048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_39
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d4d52681e79a600800000000000000
+      internalID: 480053478486265103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_40
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41661bb164717d0d0800000000000000
+      internalID: -3398221803947989484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_41
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca51a7884f242bac0800000000000000
+      internalID: -3840933914164456020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 4
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7ee68efc6393aa0800000000000000
+      internalID: -6180848747003582490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_43
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 4
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ee79617e3274140800000000000000
+      internalID: 4703767811235245594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_44
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250ee065bbe556510800000000000000
+      internalID: 1541742606139973714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_45
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0aacf0f85b01920800000000000000
+      internalID: 2959064581232304376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_46
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4f84b4093930e40800000000000000
+      internalID: 5621499007836157142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist2_Pray_without_shadow_47
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931fc5e7d8e968560800000000000000
+      internalID: 7315708975257547065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cultist2_Pray_without_shadow_0: 2140526307131649407
+      Cultist2_Pray_without_shadow_1: 6918249820895897554
+      Cultist2_Pray_without_shadow_10: -6793335465924645975
+      Cultist2_Pray_without_shadow_11: 6455278981838697378
+      Cultist2_Pray_without_shadow_12: -8584621856685838613
+      Cultist2_Pray_without_shadow_13: -1660777666186171450
+      Cultist2_Pray_without_shadow_14: -6164907830084814222
+      Cultist2_Pray_without_shadow_15: -6282881567982819755
+      Cultist2_Pray_without_shadow_16: 1725239456083096830
+      Cultist2_Pray_without_shadow_17: 4471410011298178015
+      Cultist2_Pray_without_shadow_18: -5360537347427592428
+      Cultist2_Pray_without_shadow_19: 1335247789822624830
+      Cultist2_Pray_without_shadow_2: 3891020852631029973
+      Cultist2_Pray_without_shadow_20: 6033548184327406502
+      Cultist2_Pray_without_shadow_21: -7644691477668164831
+      Cultist2_Pray_without_shadow_22: -8766525606228418766
+      Cultist2_Pray_without_shadow_23: -7347660431846668372
+      Cultist2_Pray_without_shadow_24: -7839660957125075531
+      Cultist2_Pray_without_shadow_25: 3159528494829784155
+      Cultist2_Pray_without_shadow_26: 6861839663920299386
+      Cultist2_Pray_without_shadow_27: 1280569700581385347
+      Cultist2_Pray_without_shadow_28: -1683623838948512271
+      Cultist2_Pray_without_shadow_29: 4061996377649601825
+      Cultist2_Pray_without_shadow_3: 7828113500869044764
+      Cultist2_Pray_without_shadow_30: 3012808170577674726
+      Cultist2_Pray_without_shadow_31: 7396421568551303112
+      Cultist2_Pray_without_shadow_32: 1038683365415275623
+      Cultist2_Pray_without_shadow_33: 8861455450760530829
+      Cultist2_Pray_without_shadow_34: -610302783557917322
+      Cultist2_Pray_without_shadow_35: 1453078900502883836
+      Cultist2_Pray_without_shadow_36: -1029418809151298570
+      Cultist2_Pray_without_shadow_37: -2288642335958548912
+      Cultist2_Pray_without_shadow_38: -1202570837032186048
+      Cultist2_Pray_without_shadow_39: 480053478486265103
+      Cultist2_Pray_without_shadow_4: -3539509529553270055
+      Cultist2_Pray_without_shadow_40: -3398221803947989484
+      Cultist2_Pray_without_shadow_41: -3840933914164456020
+      Cultist2_Pray_without_shadow_42: -6180848747003582490
+      Cultist2_Pray_without_shadow_43: 4703767811235245594
+      Cultist2_Pray_without_shadow_44: 1541742606139973714
+      Cultist2_Pray_without_shadow_45: 2959064581232304376
+      Cultist2_Pray_without_shadow_46: 5621499007836157142
+      Cultist2_Pray_without_shadow_47: 7315708975257547065
+      Cultist2_Pray_without_shadow_5: 926903045201466926
+      Cultist2_Pray_without_shadow_6: -313030277334754922
+      Cultist2_Pray_without_shadow_7: 6409977605742867400
+      Cultist2_Pray_without_shadow_8: -5065070883990915663
+      Cultist2_Pray_without_shadow_9: 4858523755195596471
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

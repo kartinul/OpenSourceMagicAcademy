@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: 597971c3f92384c9d89a87038c9afb30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4776281497903001916
+    second: Leader_Idle_without_shadow_0
+  - first:
+      213: 8745775786114553048
+    second: Leader_Idle_without_shadow_1
+  - first:
+      213: -5569885763070521425
+    second: Leader_Idle_without_shadow_2
+  - first:
+      213: 565757773883692223
+    second: Leader_Idle_without_shadow_3
+  - first:
+      213: -3147613103677855726
+    second: Leader_Idle_without_shadow_4
+  - first:
+      213: 153626063359401633
+    second: Leader_Idle_without_shadow_5
+  - first:
+      213: 6289044072457973809
+    second: Leader_Idle_without_shadow_6
+  - first:
+      213: 1762992208150791654
+    second: Leader_Idle_without_shadow_7
+  - first:
+      213: -6027993606035247283
+    second: Leader_Idle_without_shadow_8
+  - first:
+      213: 815347022792747417
+    second: Leader_Idle_without_shadow_9
+  - first:
+      213: -5241491834328013412
+    second: Leader_Idle_without_shadow_10
+  - first:
+      213: -547558645972410411
+    second: Leader_Idle_without_shadow_11
+  - first:
+      213: -2348934413629796275
+    second: Leader_Idle_without_shadow_12
+  - first:
+      213: -2730753852679782283
+    second: Leader_Idle_without_shadow_13
+  - first:
+      213: 468345255577805534
+    second: Leader_Idle_without_shadow_14
+  - first:
+      213: 4774314343426336717
+    second: Leader_Idle_without_shadow_15
+  - first:
+      213: -8630898597242734690
+    second: Leader_Idle_without_shadow_16
+  - first:
+      213: 6665282905419870575
+    second: Leader_Idle_without_shadow_17
+  - first:
+      213: -8514518878697129274
+    second: Leader_Idle_without_shadow_18
+  - first:
+      213: 4032786392510242974
+    second: Leader_Idle_without_shadow_19
+  - first:
+      213: -446376375865480974
+    second: Leader_Idle_without_shadow_20
+  - first:
+      213: -1946443535018703639
+    second: Leader_Idle_without_shadow_21
+  - first:
+      213: -465178208406738995
+    second: Leader_Idle_without_shadow_22
+  - first:
+      213: -7942345180308800971
+    second: Leader_Idle_without_shadow_23
+  - first:
+      213: -7383258641246649904
+    second: Leader_Idle_without_shadow_24
+  - first:
+      213: 7707252342314367006
+    second: Leader_Idle_without_shadow_25
+  - first:
+      213: 6120352265698405559
+    second: Leader_Idle_without_shadow_26
+  - first:
+      213: 5665129092453912082
+    second: Leader_Idle_without_shadow_27
+  - first:
+      213: -541993025774690796
+    second: Leader_Idle_without_shadow_28
+  - first:
+      213: 2028906086038990437
+    second: Leader_Idle_without_shadow_29
+  - first:
+      213: -1945460691382903755
+    second: Leader_Idle_without_shadow_30
+  - first:
+      213: -5073941819076500831
+    second: Leader_Idle_without_shadow_31
+  - first:
+      213: 6550127475584190586
+    second: Leader_Idle_without_shadow_32
+  - first:
+      213: -8686861793932615437
+    second: Leader_Idle_without_shadow_33
+  - first:
+      213: 3957380353394807250
+    second: Leader_Idle_without_shadow_34
+  - first:
+      213: -5686237403204896154
+    second: Leader_Idle_without_shadow_35
+  - first:
+      213: -6073581862143036769
+    second: Leader_Idle_without_shadow_36
+  - first:
+      213: -5993612012609805953
+    second: Leader_Idle_without_shadow_37
+  - first:
+      213: 9205197834235130632
+    second: Leader_Idle_without_shadow_38
+  - first:
+      213: 1365028931803167169
+    second: Leader_Idle_without_shadow_39
+  - first:
+      213: 4994556744766394891
+    second: Leader_Idle_without_shadow_40
+  - first:
+      213: -3622316507884394568
+    second: Leader_Idle_without_shadow_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3177cd67b2c84240800000000000000
+      internalID: 4776281497903001916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d412988dbc3f5970800000000000000
+      internalID: 8745775786114553048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf0da4b86ac3b2b0800000000000000
+      internalID: -5569885763070521425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4d045a2b9f9d700800000000000000
+      internalID: 565757773883692223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218aae81f8e6154d0800000000000000
+      internalID: -3147613103677855726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae57c6371ac12200800000000000000
+      internalID: 153626063359401633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13032ab534c274750800000000000000
+      internalID: 6289044072457973809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 97
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e50c949218677810800000000000000
+      internalID: 1762992208150791654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 97
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f61f3c0c3485ca0800000000000000
+      internalID: -6027993606035247283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 97
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999eb3e1cc1b05b00800000000000000
+      internalID: 815347022792747417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95a4c182fa7247b0800000000000000
+      internalID: -5241491834328013412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 97
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfde15005ea668f0800000000000000
+      internalID: -547558645972410411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40d7e29898e66fd0800000000000000
+      internalID: -2348934413629796275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5700ef1d6d96a1ad0800000000000000
+      internalID: -2730753852679782283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed264fe4785ef7600800000000000000
+      internalID: 468345255577805534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7aaf59995c14240800000000000000
+      internalID: 4774314343426336717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97fdea4473e83880800000000000000
+      internalID: -8630898597242734690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61f8010d77df7c50800000000000000
+      internalID: 6665282905419870575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca76e1113a56d980800000000000000
+      internalID: -8514518878697129274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_19
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 65
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e902a9c7bd557f730800000000000000
+      internalID: 4032786392510242974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 65
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f869681d072ec9f0800000000000000
+      internalID: -446376375865480974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 65
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4cad7eae7dcf4e0800000000000000
+      internalID: -1946443535018703639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_22
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 65
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7e9a252ea5b89f0800000000000000
+      internalID: -465178208406738995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 65
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a782c832f17c190800000000000000
+      internalID: -7942345180308800971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d109ab4265698990800000000000000
+      internalID: -7383258641246649904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18f1f9ab29a5fa60800000000000000
+      internalID: 7707252342314367006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bce53965fbdfe450800000000000000
+      internalID: 6120352265698405559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e427af4e49e9e40800000000000000
+      internalID: 5665129092453912082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ed5f3f6347a78f0800000000000000
+      internalID: -541993025774690796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_29
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e6bfce55f182c10800000000000000
+      internalID: 2028906086038990437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cd2a50fc55005e0800000000000000
+      internalID: -1945460691382903755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 33
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a222f66cccb599b0800000000000000
+      internalID: -5073941819076500831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_32
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 33
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78c8b72c3ab6ea50800000000000000
+      internalID: 6550127475584190586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_33
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 33
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0ebbf2931127780800000000000000
+      internalID: -8686861793932615437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_34
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 33
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1153dd6707be630800000000000000
+      internalID: 3957380353394807250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_35
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 33
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66abe61753d6611b0800000000000000
+      internalID: -5686237403204896154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9275b0c97d46bba0800000000000000
+      internalID: -6073581862143036769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_37
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71e0ea41a962dca0800000000000000
+      internalID: -5993612012609805953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_38
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803b7c4b8ae6fbf70800000000000000
+      internalID: 9205197834235130632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_39
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9324cc49e81f210800000000000000
+      internalID: 1365028931803167169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_40
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b021556a5ea305540800000000000000
+      internalID: 4994556744766394891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leader_Idle_without_shadow_41
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b76483f352fabdc0800000000000000
+      internalID: -3622316507884394568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Leader_Idle_without_shadow_0: 4776281497903001916
+      Leader_Idle_without_shadow_1: 8745775786114553048
+      Leader_Idle_without_shadow_10: -5241491834328013412
+      Leader_Idle_without_shadow_11: -547558645972410411
+      Leader_Idle_without_shadow_12: -2348934413629796275
+      Leader_Idle_without_shadow_13: -2730753852679782283
+      Leader_Idle_without_shadow_14: 468345255577805534
+      Leader_Idle_without_shadow_15: 4774314343426336717
+      Leader_Idle_without_shadow_16: -8630898597242734690
+      Leader_Idle_without_shadow_17: 6665282905419870575
+      Leader_Idle_without_shadow_18: -8514518878697129274
+      Leader_Idle_without_shadow_19: 4032786392510242974
+      Leader_Idle_without_shadow_2: -5569885763070521425
+      Leader_Idle_without_shadow_20: -446376375865480974
+      Leader_Idle_without_shadow_21: -1946443535018703639
+      Leader_Idle_without_shadow_22: -465178208406738995
+      Leader_Idle_without_shadow_23: -7942345180308800971
+      Leader_Idle_without_shadow_24: -7383258641246649904
+      Leader_Idle_without_shadow_25: 7707252342314367006
+      Leader_Idle_without_shadow_26: 6120352265698405559
+      Leader_Idle_without_shadow_27: 5665129092453912082
+      Leader_Idle_without_shadow_28: -541993025774690796
+      Leader_Idle_without_shadow_29: 2028906086038990437
+      Leader_Idle_without_shadow_3: 565757773883692223
+      Leader_Idle_without_shadow_30: -1945460691382903755
+      Leader_Idle_without_shadow_31: -5073941819076500831
+      Leader_Idle_without_shadow_32: 6550127475584190586
+      Leader_Idle_without_shadow_33: -8686861793932615437
+      Leader_Idle_without_shadow_34: 3957380353394807250
+      Leader_Idle_without_shadow_35: -5686237403204896154
+      Leader_Idle_without_shadow_36: -6073581862143036769
+      Leader_Idle_without_shadow_37: -5993612012609805953
+      Leader_Idle_without_shadow_38: 9205197834235130632
+      Leader_Idle_without_shadow_39: 1365028931803167169
+      Leader_Idle_without_shadow_4: -3147613103677855726
+      Leader_Idle_without_shadow_40: 4994556744766394891
+      Leader_Idle_without_shadow_41: -3622316507884394568
+      Leader_Idle_without_shadow_5: 153626063359401633
+      Leader_Idle_without_shadow_6: 6289044072457973809
+      Leader_Idle_without_shadow_7: 1762992208150791654
+      Leader_Idle_without_shadow_8: -6027993606035247283
+      Leader_Idle_without_shadow_9: 815347022792747417
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: da92c1107289d4bfea6940d88aa85263
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7569446108732702049
+    second: Cultist6_Idle_without_shadow_0
+  - first:
+      213: 5195909825758087357
+    second: Cultist6_Idle_without_shadow_1
+  - first:
+      213: -7058940629849693426
+    second: Cultist6_Idle_without_shadow_2
+  - first:
+      213: 7246451669024047623
+    second: Cultist6_Idle_without_shadow_3
+  - first:
+      213: -3504787842688198871
+    second: Cultist6_Idle_without_shadow_4
+  - first:
+      213: -6262679727771147483
+    second: Cultist6_Idle_without_shadow_5
+  - first:
+      213: -3236239495209927466
+    second: Cultist6_Idle_without_shadow_6
+  - first:
+      213: 5760337492225380629
+    second: Cultist6_Idle_without_shadow_7
+  - first:
+      213: -4257415851121974192
+    second: Cultist6_Idle_without_shadow_8
+  - first:
+      213: 7299285984273213929
+    second: Cultist6_Idle_without_shadow_9
+  - first:
+      213: 4475946535313369575
+    second: Cultist6_Idle_without_shadow_10
+  - first:
+      213: 5536959094186377688
+    second: Cultist6_Idle_without_shadow_11
+  - first:
+      213: -7083790005871201564
+    second: Cultist6_Idle_without_shadow_12
+  - first:
+      213: -186936406007783176
+    second: Cultist6_Idle_without_shadow_13
+  - first:
+      213: 3378089427388392691
+    second: Cultist6_Idle_without_shadow_14
+  - first:
+      213: 2103864016390663198
+    second: Cultist6_Idle_without_shadow_15
+  - first:
+      213: -3313820446842825176
+    second: Cultist6_Idle_without_shadow_16
+  - first:
+      213: -1076091362583480750
+    second: Cultist6_Idle_without_shadow_17
+  - first:
+      213: 6279730879094984715
+    second: Cultist6_Idle_without_shadow_18
+  - first:
+      213: -2336155417555768911
+    second: Cultist6_Idle_without_shadow_19
+  - first:
+      213: 7724205821361763440
+    second: Cultist6_Idle_without_shadow_20
+  - first:
+      213: 7128817419090112873
+    second: Cultist6_Idle_without_shadow_21
+  - first:
+      213: 2986951006464380198
+    second: Cultist6_Idle_without_shadow_22
+  - first:
+      213: 7174233522300973609
+    second: Cultist6_Idle_without_shadow_23
+  - first:
+      213: 5555850913500209901
+    second: Cultist6_Idle_without_shadow_24
+  - first:
+      213: -236970452057444038
+    second: Cultist6_Idle_without_shadow_25
+  - first:
+      213: 6323772177867295737
+    second: Cultist6_Idle_without_shadow_26
+  - first:
+      213: -3314023946695532891
+    second: Cultist6_Idle_without_shadow_27
+  - first:
+      213: 3784731245207709287
+    second: Cultist6_Idle_without_shadow_28
+  - first:
+      213: -5244127436571671136
+    second: Cultist6_Idle_without_shadow_29
+  - first:
+      213: 2951981661717476812
+    second: Cultist6_Idle_without_shadow_30
+  - first:
+      213: 2397884487421562671
+    second: Cultist6_Idle_without_shadow_31
+  - first:
+      213: 4276942207748812605
+    second: Cultist6_Idle_without_shadow_32
+  - first:
+      213: 5647131723865785102
+    second: Cultist6_Idle_without_shadow_33
+  - first:
+      213: 168552461936145712
+    second: Cultist6_Idle_without_shadow_34
+  - first:
+      213: 8348489030296753145
+    second: Cultist6_Idle_without_shadow_35
+  - first:
+      213: -7906477474051227057
+    second: Cultist6_Idle_without_shadow_36
+  - first:
+      213: -8515269779385704906
+    second: Cultist6_Idle_without_shadow_37
+  - first:
+      213: -776169327924394500
+    second: Cultist6_Idle_without_shadow_38
+  - first:
+      213: 4869733782717678650
+    second: Cultist6_Idle_without_shadow_39
+  - first:
+      213: -8796585048328516416
+    second: Cultist6_Idle_without_shadow_40
+  - first:
+      213: 3554108863273165949
+    second: Cultist6_Idle_without_shadow_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16db97991231c0960800000000000000
+      internalID: 7569446108732702049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8c54915749b1840800000000000000
+      internalID: 5195909825758087357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03ac33a5ea990e90800000000000000
+      internalID: -7058940629849693426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702073e4661909460800000000000000
+      internalID: 7246451669024047623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9275677b60e7c5fc0800000000000000
+      internalID: -3504787842688198871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523292cf7fd7619a0800000000000000
+      internalID: -6262679727771147483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc3cef43519613d0800000000000000
+      internalID: -3236239495209927466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511557afd64d0ff40800000000000000
+      internalID: 5760337492225380629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054e1c417de9ae4c0800000000000000
+      internalID: -4257415851121974192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9a79eede54c4560800000000000000
+      internalID: 7299285984273213929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_10
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e96ef6c8a1cd1e30800000000000000
+      internalID: 4475946535313369575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 100
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d109d8c5fa37dc40800000000000000
+      internalID: 5536959094186377688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2b59c658251bd90800000000000000
+      internalID: -7083790005871201564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f06154445ed76df0800000000000000
+      internalID: -186936406007783176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4ecf2bf6261ee20800000000000000
+      internalID: 3378089427388392691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c21b81d2d623d10800000000000000
+      internalID: 2103864016390663198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826d1886cd1f202d0800000000000000
+      internalID: -3313820446842825176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256785b6b94f011f0800000000000000
+      internalID: -1076091362583480750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00128d86f5162750800000000000000
+      internalID: 6279730879094984715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_19
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 68
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9eb74760f449fd0800000000000000
+      internalID: -2336155417555768911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 68
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074b54a1544e13b60800000000000000
+      internalID: 7724205821361763440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 68
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961bb7d2ca5aee260800000000000000
+      internalID: 7128817419090112873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_22
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 68
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d0ec56d18c37920800000000000000
+      internalID: 2986951006464380198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922f278b06fff8360800000000000000
+      internalID: 7174233522300973609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2a53c38f85a1d40800000000000000
+      internalID: 5555850913500209901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a313ade11ac16bcf0800000000000000
+      internalID: -236970452057444038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb474e7a4d82c750800000000000000
+      internalID: 6323772177867295737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae131867c83202d0800000000000000
+      internalID: -3314023946695532891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_28
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7666de0e301168430800000000000000
+      internalID: 3784731245207709287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5044a81ed1937b0800000000000000
+      internalID: -5244127436571671136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5332a5eab87f820800000000000000
+      internalID: 2951981661717476812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 36
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f8e2d9c3ff64120800000000000000
+      internalID: 2397884487421562671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_32
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 36
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f2eb91740ca5b30800000000000000
+      internalID: 4276942207748812605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_33
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 36
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e030cd01264ae5e40800000000000000
+      internalID: 5647131723865785102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_34
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 36
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035b8b33291d65200800000000000000
+      internalID: 168552461936145712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_35
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f355167a8acbd370800000000000000
+      internalID: 8348489030296753145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 4
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f428c8ea0ac864290800000000000000
+      internalID: -7906477474051227057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 4
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e9811604fa3d980800000000000000
+      internalID: -8515269779385704906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_38
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 4
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5438bcb1e7a35f0800000000000000
+      internalID: -776169327924394500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_39
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 4
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a344b9d0315c49340800000000000000
+      internalID: 4869733782717678650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_40
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 4
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cccddd31804ce580800000000000000
+      internalID: -8796585048328516416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist6_Idle_without_shadow_41
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74e6704e2bb25130800000000000000
+      internalID: 3554108863273165949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cultist6_Idle_without_shadow_0: 7569446108732702049
+      Cultist6_Idle_without_shadow_1: 5195909825758087357
+      Cultist6_Idle_without_shadow_10: 4475946535313369575
+      Cultist6_Idle_without_shadow_11: 5536959094186377688
+      Cultist6_Idle_without_shadow_12: -7083790005871201564
+      Cultist6_Idle_without_shadow_13: -186936406007783176
+      Cultist6_Idle_without_shadow_14: 3378089427388392691
+      Cultist6_Idle_without_shadow_15: 2103864016390663198
+      Cultist6_Idle_without_shadow_16: -3313820446842825176
+      Cultist6_Idle_without_shadow_17: -1076091362583480750
+      Cultist6_Idle_without_shadow_18: 6279730879094984715
+      Cultist6_Idle_without_shadow_19: -2336155417555768911
+      Cultist6_Idle_without_shadow_2: -7058940629849693426
+      Cultist6_Idle_without_shadow_20: 7724205821361763440
+      Cultist6_Idle_without_shadow_21: 7128817419090112873
+      Cultist6_Idle_without_shadow_22: 2986951006464380198
+      Cultist6_Idle_without_shadow_23: 7174233522300973609
+      Cultist6_Idle_without_shadow_24: 5555850913500209901
+      Cultist6_Idle_without_shadow_25: -236970452057444038
+      Cultist6_Idle_without_shadow_26: 6323772177867295737
+      Cultist6_Idle_without_shadow_27: -3314023946695532891
+      Cultist6_Idle_without_shadow_28: 3784731245207709287
+      Cultist6_Idle_without_shadow_29: -5244127436571671136
+      Cultist6_Idle_without_shadow_3: 7246451669024047623
+      Cultist6_Idle_without_shadow_30: 2951981661717476812
+      Cultist6_Idle_without_shadow_31: 2397884487421562671
+      Cultist6_Idle_without_shadow_32: 4276942207748812605
+      Cultist6_Idle_without_shadow_33: 5647131723865785102
+      Cultist6_Idle_without_shadow_34: 168552461936145712
+      Cultist6_Idle_without_shadow_35: 8348489030296753145
+      Cultist6_Idle_without_shadow_36: -7906477474051227057
+      Cultist6_Idle_without_shadow_37: -8515269779385704906
+      Cultist6_Idle_without_shadow_38: -776169327924394500
+      Cultist6_Idle_without_shadow_39: 4869733782717678650
+      Cultist6_Idle_without_shadow_4: -3504787842688198871
+      Cultist6_Idle_without_shadow_40: -8796585048328516416
+      Cultist6_Idle_without_shadow_41: 3554108863273165949
+      Cultist6_Idle_without_shadow_5: -6262679727771147483
+      Cultist6_Idle_without_shadow_6: -3236239495209927466
+      Cultist6_Idle_without_shadow_7: 5760337492225380629
+      Cultist6_Idle_without_shadow_8: -4257415851121974192
+      Cultist6_Idle_without_shadow_9: 7299285984273213929
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

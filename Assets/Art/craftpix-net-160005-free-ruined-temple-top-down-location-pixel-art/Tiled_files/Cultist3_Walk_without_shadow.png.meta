@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: c723e2926b92b4179912bb75223b83de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4130813609947419135
+    second: Cultist3_Walk_without_shadow_0
+  - first:
+      213: 430739713469034045
+    second: Cultist3_Walk_without_shadow_1
+  - first:
+      213: 6047978986714585100
+    second: Cultist3_Walk_without_shadow_2
+  - first:
+      213: -7115250236695980664
+    second: Cultist3_Walk_without_shadow_3
+  - first:
+      213: 225923163267576784
+    second: Cultist3_Walk_without_shadow_4
+  - first:
+      213: 6412940324423649637
+    second: Cultist3_Walk_without_shadow_5
+  - first:
+      213: 6820705158960265931
+    second: Cultist3_Walk_without_shadow_6
+  - first:
+      213: -9199758257862198426
+    second: Cultist3_Walk_without_shadow_7
+  - first:
+      213: -1454386720762718665
+    second: Cultist3_Walk_without_shadow_8
+  - first:
+      213: 9111841928174452988
+    second: Cultist3_Walk_without_shadow_9
+  - first:
+      213: -5673120460489686655
+    second: Cultist3_Walk_without_shadow_10
+  - first:
+      213: -3119314737779687612
+    second: Cultist3_Walk_without_shadow_11
+  - first:
+      213: -8163398782669742452
+    second: Cultist3_Walk_without_shadow_12
+  - first:
+      213: -8092072642417325010
+    second: Cultist3_Walk_without_shadow_13
+  - first:
+      213: -1246009494121309733
+    second: Cultist3_Walk_without_shadow_14
+  - first:
+      213: -455631153197384144
+    second: Cultist3_Walk_without_shadow_15
+  - first:
+      213: -2945543878844696087
+    second: Cultist3_Walk_without_shadow_16
+  - first:
+      213: -9013151474980148314
+    second: Cultist3_Walk_without_shadow_17
+  - first:
+      213: -4719736422219475559
+    second: Cultist3_Walk_without_shadow_18
+  - first:
+      213: -1895159392811411221
+    second: Cultist3_Walk_without_shadow_19
+  - first:
+      213: -2044888572631217010
+    second: Cultist3_Walk_without_shadow_20
+  - first:
+      213: -8564646154378625054
+    second: Cultist3_Walk_without_shadow_21
+  - first:
+      213: -2034461683906381862
+    second: Cultist3_Walk_without_shadow_22
+  - first:
+      213: -3502818797315691544
+    second: Cultist3_Walk_without_shadow_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 100
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e2cb168e66ca6c0800000000000000
+      internalID: -4130813609947419135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ea9fbbc7b4af500800000000000000
+      internalID: 430739713469034045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08562848dcbee350800000000000000
+      internalID: 6047978986714585100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 100
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885d8b1ab9d814d90800000000000000
+      internalID: -7115250236695980664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3b8158be3a22300800000000000000
+      internalID: 225923163267576784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 100
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569cc037f375ff850800000000000000
+      internalID: 6412940324423649637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 68
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca3085543308ae50800000000000000
+      internalID: 6820705158960265931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 68
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b38ac5b94e35080800000000000000
+      internalID: -9199758257862198426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 68
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73694eeabfaf0dbe0800000000000000
+      internalID: -1454386720762718665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_9
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 68
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0495205f3c37e70800000000000000
+      internalID: 9111841928174452988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 68
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1810388aff60541b0800000000000000
+      internalID: -5673120460489686655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_11
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 68
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f3008d5c7f5b4d0800000000000000
+      internalID: -3119314737779687612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e1d170f08c5be80800000000000000
+      internalID: -8163398782669742452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 36
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c0f0c2ece23bf80800000000000000
+      internalID: -8092072642417325010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 36
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9922c77f845bee0800000000000000
+      internalID: -1246009494121309733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 36
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e711551e54da9f0800000000000000
+      internalID: -455631153197384144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 36
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9b227c2735f17d0800000000000000
+      internalID: -2945543878844696087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 36
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab250bbc7adae280800000000000000
+      internalID: -9013151474980148314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 4
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9959220fab0208eb0800000000000000
+      internalID: -4719736422219475559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 4
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be81bbeb29a03b5e0800000000000000
+      internalID: -1895159392811411221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c8f0f6da81f93e0800000000000000
+      internalID: -2044888572631217010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_21
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 4
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efb85533b3442980800000000000000
+      internalID: -8564646154378625054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 4
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7fd95a0e324c3e0800000000000000
+      internalID: -2034461683906381862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultist3_Walk_without_shadow_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebef61dcdc736fc0800000000000000
+      internalID: -3502818797315691544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cultist3_Walk_without_shadow_0: -4130813609947419135
+      Cultist3_Walk_without_shadow_1: 430739713469034045
+      Cultist3_Walk_without_shadow_10: -5673120460489686655
+      Cultist3_Walk_without_shadow_11: -3119314737779687612
+      Cultist3_Walk_without_shadow_12: -8163398782669742452
+      Cultist3_Walk_without_shadow_13: -8092072642417325010
+      Cultist3_Walk_without_shadow_14: -1246009494121309733
+      Cultist3_Walk_without_shadow_15: -455631153197384144
+      Cultist3_Walk_without_shadow_16: -2945543878844696087
+      Cultist3_Walk_without_shadow_17: -9013151474980148314
+      Cultist3_Walk_without_shadow_18: -4719736422219475559
+      Cultist3_Walk_without_shadow_19: -1895159392811411221
+      Cultist3_Walk_without_shadow_2: 6047978986714585100
+      Cultist3_Walk_without_shadow_20: -2044888572631217010
+      Cultist3_Walk_without_shadow_21: -8564646154378625054
+      Cultist3_Walk_without_shadow_22: -2034461683906381862
+      Cultist3_Walk_without_shadow_23: -3502818797315691544
+      Cultist3_Walk_without_shadow_3: -7115250236695980664
+      Cultist3_Walk_without_shadow_4: 225923163267576784
+      Cultist3_Walk_without_shadow_5: 6412940324423649637
+      Cultist3_Walk_without_shadow_6: 6820705158960265931
+      Cultist3_Walk_without_shadow_7: -9199758257862198426
+      Cultist3_Walk_without_shadow_8: -1454386720762718665
+      Cultist3_Walk_without_shadow_9: 9111841928174452988
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

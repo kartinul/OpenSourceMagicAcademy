@@ -1,0 +1,21 @@
+The Lost Tomb: Dungeon Asset Pack Free Version License Agreement
+
+This agreement is between the creator of The Lost Tomb: Dungeon Asset Pack ("Licensor") and the user ("Licensee"). By downloading and using the free version of the asset pack, the Licensee agrees to the following terms:
+
+1)What You Can Do:
+
+-You can use these assets in your non-commercial games and projects without any charge.
+-You may modify the assets as you wish.
+
+2)What You Can't Do:
+
+-You cannot use these assets for commercial purposes.
+-You can't sell, redistribute, print and resell, or give away (even if it is modified) these assets on their own. Also, don't use them in a way that breaks the law or harms someone else.
+-You cannot use this asset as a database for AI training.
+
+3)Giving Credit (Optional):
+
+It's appreciated if you mention the creator, but it's not mandatory for the free version.
+No Guarantees:
+
+The assets are provided as-is, without any promises.
