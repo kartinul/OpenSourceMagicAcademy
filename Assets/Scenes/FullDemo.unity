@@ -15906,10 +15906,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1360554096791800599, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 202
-      objectReference: {fileID: 0}
     - target: {fileID: 4113065237077139379, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -15918,22 +15914,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
       objectReference: {fileID: 614746516}
-    - target: {fileID: 6891119787016358232, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 581.8627
-      objectReference: {fileID: 0}
-    - target: {fileID: 6891119787016358232, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 186.7557
-      objectReference: {fileID: 0}
-    - target: {fileID: 6891119787016358232, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6891119787016358232, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 46.773
-      objectReference: {fileID: 0}
     - target: {fileID: 7621214036957917442, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
@@ -15973,10 +15953,6 @@ PrefabInstance:
     - target: {fileID: 7621214036957917442, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8076556770853247376, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
