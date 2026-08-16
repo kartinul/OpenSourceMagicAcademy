@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
-using Unity.Cinemachine; // Cinemachine 3.x
+using Unity.Cinemachine;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -19,8 +20,6 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Typing Settings")]
     [SerializeField] private float typingSpeed = 0.03f;
-
-    // Component references resolved to root Player
     private Player playerController;
     private PlayerInteraction playerInteraction;
     private CinemachineTargetGroup targetGroup;
@@ -34,6 +33,7 @@ public class DialogueManager : MonoBehaviour
 
     private Coroutine typingCoroutine;
     private WaitForSeconds typingWait;
+    public UnityEvent OnDialogueEnded = new UnityEvent();
 
     private void Awake()
     {
@@ -200,6 +200,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         SetPlayerControlsActive(true);
+
+        OnDialogueEnded?.Invoke();
+        OnDialogueEnded.RemoveAllListeners();
     }
 
     private void SetPlayerControlsActive(bool active)

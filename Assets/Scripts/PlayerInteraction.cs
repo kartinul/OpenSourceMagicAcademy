@@ -4,6 +4,8 @@ using TMPro;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    [SerializeField] private SpellBook spellBook;
+
     [Header("Interaction")]
     public float interactionRange = 1.5f;
     public LayerMask interactableLayer;
@@ -15,6 +17,8 @@ public class PlayerInteraction : MonoBehaviour
 
     public IInteractable currentInteractable { get; private set; }
 
+    private IInteractable blockedInteractable;
+
     void Start()
     {
         if (interactionPrompt != null)
@@ -23,6 +27,16 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+        if (Keyboard.current != null &&
+            Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            if (spellBook != null && spellBook.IsUnlockPanelOpen)
+            {
+                spellBook.CloseSpellUnlock();
+                return;
+            }
+        }
+
         FindInteractable();
 
         if (canInteract && currentInteractable != null)
@@ -33,8 +47,10 @@ public class PlayerInteraction : MonoBehaviour
             if (interactionText != null)
                 interactionText.text = currentInteractable.InteractionPrompt;
 
-            if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+            if (Keyboard.current != null &&
+                Keyboard.current.eKey.wasPressedThisFrame)
             {
+                blockedInteractable = currentInteractable;
                 currentInteractable.Interact();
             }
         }
@@ -62,15 +78,26 @@ public class PlayerInteraction : MonoBehaviour
         );
 
         float closestDistance = Mathf.Infinity;
+        bool blockedStillInRange = false;
 
         foreach (Collider2D hit in hits)
         {
-            IInteractable interactable = hit.GetComponentInParent<IInteractable>();
+            IInteractable interactable =
+                hit.GetComponentInParent<IInteractable>();
 
             if (interactable == null)
                 continue;
 
-            float distance = Vector2.Distance(transform.position, hit.transform.position);
+            if (interactable == blockedInteractable)
+            {
+                blockedStillInRange = true;
+                continue;
+            }
+
+            float distance = Vector2.Distance(
+                transform.position,
+                hit.transform.position
+            );
 
             if (distance < closestDistance)
             {
@@ -78,11 +105,15 @@ public class PlayerInteraction : MonoBehaviour
                 currentInteractable = interactable;
             }
         }
+
+        if (!blockedStillInRange)
+            blockedInteractable = null;
     }
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = canInteract ? Color.green : Color.red;
+
         Gizmos.DrawWireSphere(
             transform.position,
             interactionRange

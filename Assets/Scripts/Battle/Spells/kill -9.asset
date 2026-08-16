@@ -16,5 +16,5 @@ MonoBehaviour:
   description: Deal damage to the enemy.
   educationalDescription: 
   type: 0
-  power: 25
+  power: 85
   accuracy: 1

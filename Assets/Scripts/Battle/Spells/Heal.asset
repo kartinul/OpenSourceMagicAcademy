@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d53b969d59694e340a4e0932c0cd5ce4, type: 3}
   m_Name: Heal
   m_EditorClassIdentifier: Assembly-CSharp::Spell
-  spellName: Heal
+  spellName: GIT REVERT
   description: Restore your HP.
+  educationalDescription: 
   type: 1
   power: 25
   accuracy: 1
-  turnCost: 1

@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class BattleManager : MonoBehaviour
 {
@@ -23,8 +24,13 @@ public class BattleManager : MonoBehaviour
     [Header("UI Panels")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject dialogueSpecificContainer;
-    [SerializeField] private GameObject spellPanel;
     [SerializeField] private GameObject hpPanel;
+    [SerializeField] private GameObject spellPanel;
+
+    [Header("Spell UI")]
+    [SerializeField] private Transform spellButtonParent;
+    [SerializeField] private GameObject spellButtonPrefab;
+    [SerializeField] private SpellBook spellBook;
 
     [Header("UI Text References")]
     [SerializeField] private TMP_Text battleText;
@@ -45,12 +51,11 @@ public class BattleManager : MonoBehaviour
 
     public BattleState State { get; private set; }
 
-    // Automatically assigned references (Hidden from Inspector)
     private Combatant enemy;
     private EnemyAI enemyAI;
     private Player playerController;
     private PlayerInteraction playerInteraction;
-    
+
     private Coroutine playerHPAnimRoutine;
     private Coroutine enemyHPAnimRoutine;
     private Coroutine activeStateRoutine;
@@ -60,6 +65,8 @@ public class BattleManager : MonoBehaviour
     private WaitForSeconds endWait;
     private WaitForSeconds messageWait;
     private WaitForSeconds enemyDelayWait;
+
+    public UnityEvent OnVictory;
 
     private void Awake()
     {
@@ -79,7 +86,6 @@ public class BattleManager : MonoBehaviour
 
     private void AutoSetupPlayer()
     {
-        // 1. Try to find the player by Tag if not assigned in Inspector
         if (player == null)
         {
             GameObject playerObj = GameObject.FindWithTag("Player");
@@ -89,7 +95,6 @@ public class BattleManager : MonoBehaviour
             }
         }
 
-        // 2. Automatically grab control components from the player object
         if (player != null)
         {
             playerController = player.GetComponent<Player>();
@@ -109,9 +114,13 @@ public class BattleManager : MonoBehaviour
             return;
         }
 
-        // Auto-assign enemy and its AI component
         enemy = opponent;
         enemyAI = enemy.GetComponent<EnemyAI>();
+
+        enemy.battleManager = this;
+        enemy.RegisterVictoryReward();
+
+        BuildSpellButtons();
 
         if (playerController != null)
             playerController.canMove = false;
@@ -254,13 +263,14 @@ public class BattleManager : MonoBehaviour
                 break;
 
             case BattleState.Victory:
+                OnVictory?.Invoke();
                 SetUIVisibility(showSpells: false, showDialogue: true, showHP: true);
                 activeStateRoutine = StartCoroutine(ShowEndMessageRoutine("VICTORY!"));
                 break;
 
             case BattleState.Defeat:
                 SetUIVisibility(showSpells: false, showDialogue: true, showHP: true);
-                activeStateRoutine = StartCoroutine(ShowEndMessageRoutine("DEFEAT..."));
+                activeStateRoutine = StartCoroutine(ShowEndMessageRoutine("You were defeated..."));
                 break;
         }
     }
@@ -287,7 +297,7 @@ public class BattleManager : MonoBehaviour
         TransitionToState(BattleState.ShowingMessage);
 
         SpellResult result = ResolveSpell(caster, target, spell);
-        
+
         UpdateHealthUI(animate: true);
 
         string message = BuildSpellMessage(caster, spell, result);
@@ -322,7 +332,7 @@ public class BattleManager : MonoBehaviour
 
         bool isEffective = spell.type switch
         {
-            SpellType.Damage => ApplyDamageSpell(target, spell.power),
+            SpellType.Damage => ApplyDamageSpell(target, spell.power, caster.transform),
             SpellType.Heal => ApplyHealSpell(caster, spell.power),
             _ => HandleUnsupportedSpell(spell.type)
         };
@@ -330,9 +340,9 @@ public class BattleManager : MonoBehaviour
         return new SpellResult(isHit: true, isEffective: isEffective);
     }
 
-    private bool ApplyDamageSpell(Combatant target, int power)
+    private bool ApplyDamageSpell(Combatant target, int power, Transform casterTransform)
     {
-        target.TakeDamage(power);
+        target.TakeDamage(power, casterTransform);
         return power > 0;
     }
 
@@ -444,5 +454,44 @@ public class BattleManager : MonoBehaviour
         if (dialoguePanel != null) dialoguePanel.SetActive(showDialogue);
         if (dialogueSpecificContainer != null) dialogueSpecificContainer.SetActive(false);
         if (hpPanel != null) hpPanel.SetActive(showHP);
+    }
+
+    public void StartBattleAfterDialogue(Combatant enemy)
+    {
+        DialogueManager dialogueManager = FindFirstObjectByType<DialogueManager>();
+
+        if (dialogueManager != null)
+        {
+            dialogueManager.OnDialogueEnded.AddListener(() =>
+            {
+                StartBattle(enemy);
+            });
+        }
+        else
+        {
+            StartBattle(enemy);
+        }
+    }
+
+    private void BuildSpellButtons()
+    {
+        foreach (Transform child in spellButtonParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (Spell spell in spellBook.UnlockedSpells)
+        {
+            GameObject buttonObject =
+                Instantiate(
+                    spellButtonPrefab,
+                    spellButtonParent
+                );
+
+            SpellButton button =
+                buttonObject.GetComponent<SpellButton>();
+
+            button.Initialize(spell, this);
+        }
     }
 }
