@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 527ceead37a9e769d89a715199db0805
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6794134045756231999
+    second: walk_yellow_0
+  - first:
+      213: -6694849644798428777
+    second: walk_yellow_1
+  - first:
+      213: -3267238473751676366
+    second: walk_yellow_2
+  - first:
+      213: 1734409283023523274
+    second: walk_yellow_3
+  - first:
+      213: -1590402373417373477
+    second: walk_yellow_4
+  - first:
+      213: -7596995628704750573
+    second: walk_yellow_5
+  - first:
+      213: 8795805441916770803
+    second: walk_yellow_6
+  - first:
+      213: -8783171212096173477
+    second: walk_yellow_7
+  - first:
+      213: -8934800344123267085
+    second: walk_yellow_8
+  - first:
+      213: -8600583509222652584
+    second: walk_yellow_9
+  - first:
+      213: 2572525742498566502
+    second: walk_yellow_10
+  - first:
+      213: -2723876067027302095
+    second: walk_yellow_11
+  - first:
+      213: -5860570664645502721
+    second: walk_yellow_12
+  - first:
+      213: -4941843504924357464
+    second: walk_yellow_13
+  - first:
+      213: 3875116000112147393
+    second: walk_yellow_14
+  - first:
+      213: 2998697372140703698
+    second: walk_yellow_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walk_yellow_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 199
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3110b1faec994e50800000000000000
+      internalID: 6794134045756231999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 199
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799b32908bd1713a0800000000000000
+      internalID: -6694849644798428777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 199
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23aba8f2bef68a2d0800000000000000
+      internalID: -3267238473751676366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 199
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdc1c9bd0cd11810800000000000000
+      internalID: 1734409283023523274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 135
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0f48ab771cde9e0800000000000000
+      internalID: -1590402373417373477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 135
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314abdee9bc029690800000000000000
+      internalID: -7596995628704750573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 135
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f995ee727af01a70800000000000000
+      internalID: 8795805441916770803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 135
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a029d5158eb1680800000000000000
+      internalID: -8783171212096173477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 70
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7ae75fc66310480800000000000000
+      internalID: -8934800344123267085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 71
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85583bfbdd694a880800000000000000
+      internalID: -8600583509222652584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 70
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661dc21788273b320800000000000000
+      internalID: 2572525742498566502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 71
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13946a41629d23ad0800000000000000
+      internalID: -2723876067027302095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8dab8f7021baea0800000000000000
+      internalID: -5860570664645502721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 7
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac8969e38b0b6bb0800000000000000
+      internalID: -4941843504924357464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 6
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbfd1a887d27c530800000000000000
+      internalID: 3875116000112147393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_yellow_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 7
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df08574f538d9920800000000000000
+      internalID: 2998697372140703698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      walk_yellow_0: 6794134045756231999
+      walk_yellow_1: -6694849644798428777
+      walk_yellow_10: 2572525742498566502
+      walk_yellow_11: -2723876067027302095
+      walk_yellow_12: -5860570664645502721
+      walk_yellow_13: -4941843504924357464
+      walk_yellow_14: 3875116000112147393
+      walk_yellow_15: 2998697372140703698
+      walk_yellow_2: -3267238473751676366
+      walk_yellow_3: 1734409283023523274
+      walk_yellow_4: -1590402373417373477
+      walk_yellow_5: -7596995628704750573
+      walk_yellow_6: 8795805441916770803
+      walk_yellow_7: -8783171212096173477
+      walk_yellow_8: -8934800344123267085
+      walk_yellow_9: -8600583509222652584
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
