@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameStarter : MonoBehaviour
 {
+    [SerializeField] private GameObject nakliPlayerPrefab;
     [SerializeField] private GameObject playerPrefab;
-    [SerializeField] private Transform playerSpawnPoint;
 
     [SerializeField] private TMP_InputField nameInput;
     [SerializeField] private AnimatorOverrideController[] houseAnimators;
@@ -39,11 +39,11 @@ public class GameStarter : MonoBehaviour
         int house =
             PlayerPrefs.GetInt("PlayerHouse", 0);
 
+        Destroy(nakliPlayerPrefab);
+
         GameObject playerObject =
             Instantiate(
-                playerPrefab,
-                playerSpawnPoint.position,
-                Quaternion.identity
+                playerPrefab,new Vector3(0,0,0),Quaternion.identity
             );
 
         Player player = playerObject.GetComponent<Player>();
