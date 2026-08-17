@@ -94,7 +94,7 @@ public class CollegeExteriorSequence : MonoBehaviour
     // Give the screen flash a tiny bit of time before cutting the scene instantly
     yield return new WaitForSeconds(0.5f);
 
-    SceneManager.LoadScene("CollegeExterior");
+    SceneChanger.changeScene(0, "CollegeExterior");
   }
 
   /// <summary>

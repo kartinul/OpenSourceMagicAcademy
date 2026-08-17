@@ -10,6 +10,10 @@ public class SceneChanger : MonoBehaviour
   {
     LoadWithTransition();
   }
+  public static void changeScene(int spawnId, string sceneName)
+  {
+    LoadWithTransition(spawnId, sceneName);
+  }
 
   private void OnTriggerEnter2D(Collider2D other)
   {
@@ -20,6 +24,19 @@ public class SceneChanger : MonoBehaviour
   }
 
   private void LoadWithTransition()
+  {
+    PlayerPrefs.SetInt("spawnId", spawnId);
+
+    if (SceneFader.Instance != null)
+    {
+      SceneFader.Instance.FadeAndLoad(sceneName);
+    }
+    else
+    {
+      SceneManager.LoadScene(sceneName);
+    }
+  }
+  public static void LoadWithTransition(int spawnId, string sceneName)
   {
     PlayerPrefs.SetInt("spawnId", spawnId);
 
