@@ -33,6 +33,7 @@ public class DialogueManager : MonoBehaviour
   private bool isTyping;
   private bool dialogueActive;
   private bool playAudio = false;
+  private float? currentPitch = null;
 
   private Coroutine typingCoroutine;
   private WaitForSeconds typingWait;
@@ -40,6 +41,7 @@ public class DialogueManager : MonoBehaviour
   [SerializeField] private DialogueSpeaker currentSpeaker;
 
   [SerializeField] private DialogueData startingDialogue;
+  [SerializeField] private bool playStartingDialogueAudio = false;
   public static event EventHandler<DialogueFinishArgs> OnDialogueFinish;
   public class DialogueFinishArgs : EventArgs { public Combatant enemy; };
 
@@ -53,7 +55,7 @@ public class DialogueManager : MonoBehaviour
 
   private void NPC_OnNPCInteract(object sender, NPC.InteractEventArgs e)
   {
-    StartDialogue(e.dialogueData, e.playTalkingSound);
+    StartDialogue(e.dialogueData, e.playTalkingSound, e.pitch);
 
     if (e.enemy is not null)
     {
@@ -90,7 +92,7 @@ public class DialogueManager : MonoBehaviour
     targetGroup.Targets.Clear();
     targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
 
-    if (startingDialogue != null) StartDialogue(startingDialogue);
+    if (startingDialogue != null) StartDialogue(startingDialogue, playStartingDialogueAudio);
   }
 
   private void Update()
@@ -113,7 +115,7 @@ public class DialogueManager : MonoBehaviour
 
   // this is really shitty architecture but i honestly dont know what to do at this point
   // im exhausted
-  public void StartDialogue(DialogueData dialogue, bool playAudio = false)
+  public void StartDialogue(DialogueData dialogue, bool playAudio = false, float? pitch = null)
   {
     Transform npcTarget = null;
 
@@ -128,12 +130,13 @@ public class DialogueManager : MonoBehaviour
       }
     }
 
-    StartDialogue(dialogue, npcTarget, playAudio);
+    StartDialogue(dialogue, npcTarget, playAudio, pitch);
   }
 
-  public void StartDialogue(DialogueData dialogue, Transform npcTransform, bool playAudio = false)
+  public void StartDialogue(DialogueData dialogue, Transform npcTransform, bool playAudio = false, float? pitch = null)
   {
     this.playAudio = playAudio;
+    this.currentPitch = pitch;
 
     if (dialogue == null || dialogue.lines == null || dialogue.lines.Length == 0)
     {
@@ -174,7 +177,7 @@ public class DialogueManager : MonoBehaviour
         : null;
 
     if (this.playAudio)
-      audioManagerInstance?.PlayTalkingAudio();
+      audioManagerInstance?.PlayTalkingAudio(this.currentPitch);
     if (currentSpeaker != null)
       currentSpeaker.StartSpeaking();
 
@@ -184,7 +187,7 @@ public class DialogueManager : MonoBehaviour
   private void ShowCurrentLine()
   {
     if (this.playAudio)
-      audioManagerInstance?.PlayTalkingAudio();
+      audioManagerInstance?.PlayTalkingAudio(this.currentPitch);
     if (currentSpeaker != null)
       currentSpeaker.StartSpeaking();
 

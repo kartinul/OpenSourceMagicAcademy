@@ -112,14 +112,22 @@ public class AudioManager : MonoBehaviour
     }
   }
 
-  public void PlayTalkingAudio()
+  public void PlayTalkingAudio(float? pitch = null)
   {
     if (!isTalking)
     {
       isTalking = true;
       if (talkingClip != null)
       {
-        talkingAudioSource.pitch = Random.Range(minPitch, maxPitch);
+        if (pitch.HasValue)
+        {
+          talkingAudioSource.pitch = pitch.Value;
+        }
+        else
+        {
+          talkingAudioSource.pitch = Random.Range(minPitch, maxPitch);
+        }
+        
         if (talkingClip.loadState == AudioDataLoadState.Loaded)
         {
           talkingAudioSource.time = Random.Range(0f, talkingClip.length);

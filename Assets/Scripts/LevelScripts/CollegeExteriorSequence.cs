@@ -128,6 +128,7 @@ public class CollegeExteriorSequence : MonoBehaviour
     dialogueManager.OnDialogueEnded.AddListener(onEnd);
     dialogueManager.StartDialogue(data);
 
+
     yield return new WaitUntil(() => isFinished);
   }
 }
