@@ -68,6 +68,8 @@ public class BattleManager : MonoBehaviour
 
   public UnityEvent OnVictory;
 
+  private AudioManager audioManagerInstance;
+
   private void Awake()
   {
     typingWait = new WaitForSeconds(textTypingSpeed);
@@ -77,6 +79,11 @@ public class BattleManager : MonoBehaviour
     enemyDelayWait = new WaitForSeconds(enemyTurnDelay);
 
     AutoSetupPlayer();
+  }
+
+  void Start()
+  {
+    audioManagerInstance = AudioManager.Instance;
   }
 
 
@@ -131,6 +138,10 @@ public class BattleManager : MonoBehaviour
 
     enemy = opponent;
     enemyAI = enemy.GetComponent<EnemyAI>();
+
+    Debug.Log(audioManagerInstance.name);
+    Debug.Log(enemy.musicAudioClip);
+    audioManagerInstance.PlayMusic(enemy.musicAudioClip);
 
     enemy.battleManager = this;
     enemy.RegisterVictoryReward();
@@ -443,6 +454,9 @@ public class BattleManager : MonoBehaviour
     if (playerInteraction != null)
       playerInteraction.canInteract = true;
 
+    audioManagerInstance.StopMusic();
+    enemy.Revive();
+
     Debug.Log("[BattleManager] Battle ended.");
   }
 
@@ -474,6 +488,7 @@ public class BattleManager : MonoBehaviour
   public void StartBattleAfterDialogue(Combatant enemy)
   {
     DialogueManager dialogueManager = FindFirstObjectByType<DialogueManager>();
+
 
     if (dialogueManager != null)
     {
