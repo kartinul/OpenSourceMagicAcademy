@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spell
   spellName: kill -9
   description: Deal large damage to the enemy.
+  spellAudio: {fileID: 8300000, guid: 4076bd7952ac9439f937b715e6561c49, type: 3}
   educationalDescription: A force-quit signal sent directly by the OS kernel that
     instantly terminates a target process.
   type: 0

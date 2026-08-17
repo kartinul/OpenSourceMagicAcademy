@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spell
   spellName: print()
   description: Deal small damage to an enemy.
+  spellAudio: {fileID: 8300000, guid: 4076bd7952ac9439f937b715e6561c49, type: 3}
   educationalDescription: 'print() is used to display information
 
     when writing

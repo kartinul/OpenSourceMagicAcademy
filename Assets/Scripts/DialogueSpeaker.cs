@@ -13,7 +13,6 @@ public class DialogueSpeaker : MonoBehaviour
   private Vector3 originalScale;
   private Coroutine speakingCoroutine;
 
-  private AudioManager audioManagerInstance;
 
   private void Awake()
   {
@@ -29,7 +28,6 @@ public class DialogueSpeaker : MonoBehaviour
 
   void Start()
   {
-    audioManagerInstance = AudioManager.Instance;
   }
 
   public void StartSpeaking()
@@ -40,13 +38,11 @@ public class DialogueSpeaker : MonoBehaviour
     if (speakingCoroutine != null)
       StopCoroutine(speakingCoroutine);
 
-    audioManagerInstance.PlayTalkingAudio();
     speakingCoroutine = StartCoroutine(SpeakingRoutine());
   }
 
   public void StopSpeaking()
   {
-    audioManagerInstance.StopTalkingAudio();
     if (speakingCoroutine != null)
     {
       StopCoroutine(speakingCoroutine);

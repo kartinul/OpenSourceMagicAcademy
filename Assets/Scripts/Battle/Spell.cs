@@ -2,10 +2,10 @@ using UnityEngine;
 
 public enum SpellType
 {
-    Damage,
-    Heal,
-    Disable,
-    Special
+  Damage,
+  Heal,
+  Disable,
+  Special
 }
 
 [CreateAssetMenu(
@@ -14,21 +14,23 @@ public enum SpellType
 )]
 public class Spell : ScriptableObject
 {
-    [Header("Spell")]
-    public string spellName;
+  [Header("Spell")]
+  public string spellName;
 
-    [TextArea(2, 4)]
-    public string description;
+  [TextArea(2, 4)]
+  public string description;
 
-    [Header("What you'll learn")]
-    [TextArea(3, 6)]
-    public string educationalDescription;
+  public AudioClip spellAudio;
 
-    [Header("Battle")]
-    public SpellType type;
+  [Header("What you'll learn")]
+  [TextArea(3, 6)]
+  public string educationalDescription;
 
-    public int power = 20;
+  [Header("Battle")]
+  public SpellType type;
 
-    [Range(0f, 1f)]
-    public float accuracy = 1f;
+  public int power = 20;
+
+  [Range(0f, 1f)]
+  public float accuracy = 1f;
 }

@@ -101,7 +101,7 @@ public class AudioManager : MonoBehaviour
     StopMusic();
     musicAudioSource.clip = clip;
     musicAudioSource.loop = true;
-    musicAudioSource.volume = 0f; // Start at zero and let Update fade it in
+    musicAudioSource.volume = 0f;
     musicAudioSource.Play();
   }
 

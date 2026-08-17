@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
 
   private void NPC_OnNPCInteract(object sender, NPC.InteractEventArgs e)
   {
-    StartDialogue(e.dialogueData);
+    StartDialogue(e.dialogueData, e.playTalkingSound);
 
     if (e.enemy is not null)
     {
