@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class BattleManager : MonoBehaviour
 {
@@ -70,6 +72,10 @@ public class BattleManager : MonoBehaviour
 
   private AudioManager audioManagerInstance;
 
+  private int currentSpellSelectionIndex = 0;
+  private List<SpellButton> spellButtons = new List<SpellButton>();
+  private bool isUsingKeyboard = false;
+
   private void Awake()
   {
     typingWait = new WaitForSeconds(textTypingSpeed);
@@ -126,6 +132,86 @@ public class BattleManager : MonoBehaviour
     {
       Debug.LogWarning("[BattleManager] Player reference is missing! Please assign it or tag the player GameObject as 'Player'.");
     }
+  }
+
+  private void Update()
+  {
+    if (State == BattleState.PlayerTurn && spellButtons.Count > 0)
+    {
+      bool mouseMoved = Mouse.current != null && (Mouse.current.delta.ReadValue().sqrMagnitude > 0.1f || Mouse.current.leftButton.wasPressedThisFrame);
+      bool touched = Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed;
+
+      if (mouseMoved || touched)
+      {
+        if (isUsingKeyboard)
+        {
+          isUsingKeyboard = false;
+          if (currentSpellSelectionIndex >= 0 && currentSpellSelectionIndex < spellButtons.Count)
+          {
+            spellButtons[currentSpellSelectionIndex].SetVisualInactive();
+          }
+        }
+      }
+
+      if (Keyboard.current != null)
+      {
+        int nextIndex = currentSpellSelectionIndex;
+        int cols = spellButtons.Count <= 2 ? 1 : 2;
+        int maxIndex = spellButtons.Count - 1;
+        bool keyboardPressedThisFrame = false;
+
+        if (Keyboard.current.wKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame)
+        {
+          if (nextIndex - cols >= 0) nextIndex -= cols;
+          keyboardPressedThisFrame = true;
+        }
+        else if (Keyboard.current.sKey.wasPressedThisFrame || Keyboard.current.downArrowKey.wasPressedThisFrame)
+        {
+          if (nextIndex + cols <= maxIndex) nextIndex += cols;
+          keyboardPressedThisFrame = true;
+        }
+        else if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame)
+        {
+          if (nextIndex % cols > 0) nextIndex -= 1;
+          keyboardPressedThisFrame = true;
+        }
+        else if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame)
+        {
+          if (nextIndex % cols < cols - 1 && nextIndex + 1 <= maxIndex) nextIndex += 1;
+          keyboardPressedThisFrame = true;
+        }
+
+        if (keyboardPressedThisFrame)
+        {
+          if (!isUsingKeyboard)
+          {
+            isUsingKeyboard = true;
+            if (currentSpellSelectionIndex >= 0 && currentSpellSelectionIndex < spellButtons.Count)
+            {
+              spellButtons[currentSpellSelectionIndex].SetVisualActive();
+            }
+          }
+          if (nextIndex != currentSpellSelectionIndex)
+          {
+            SetSpellSelectionIndex(nextIndex);
+          }
+        }
+
+        if (isUsingKeyboard && (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.enterKey.wasPressedThisFrame))
+        {
+          PlayerUseSpell(spellBook.UnlockedSpells[currentSpellSelectionIndex]);
+        }
+      }
+    }
+  }
+
+  private void SetSpellSelectionIndex(int newIndex)
+  {
+    if (spellButtons.Count == 0 || newIndex < 0 || newIndex >= spellButtons.Count) return;
+
+    spellButtons[currentSpellSelectionIndex].SetVisualInactive();
+    currentSpellSelectionIndex = newIndex;
+    spellButtons[currentSpellSelectionIndex].SetVisualActive();
   }
 
   public void StartBattle(Combatant opponent)
@@ -259,6 +345,11 @@ public class BattleManager : MonoBehaviour
   {
     if (State != BattleState.PlayerTurn || spell == null) return;
 
+    if (spellButtons.Count > 0 && currentSpellSelectionIndex >= 0 && currentSpellSelectionIndex < spellButtons.Count)
+    {
+      spellButtons[currentSpellSelectionIndex].SetVisualInactive();
+    }
+
     StartCoroutine(ExecuteTurnRoutine(player, enemy, spell, nextState: BattleState.EnemyTurn));
   }
 
@@ -276,6 +367,17 @@ public class BattleManager : MonoBehaviour
       case BattleState.PlayerTurn:
         if (CheckBattleEnd()) return;
         SetUIVisibility(showSpells: true, showDialogue: false, showHP: true);
+        if (spellButtons.Count > 0)
+        {
+          if (isUsingKeyboard)
+          {
+            SetSpellSelectionIndex(0);
+          }
+          else
+          {
+            currentSpellSelectionIndex = 0;
+          }
+        }
         break;
 
       case BattleState.EnemyTurn:
@@ -512,6 +614,8 @@ public class BattleManager : MonoBehaviour
       Destroy(child.gameObject);
     }
 
+    spellButtons.Clear();
+
     foreach (Spell spell in spellBook.UnlockedSpells)
     {
       GameObject buttonObject =
@@ -524,6 +628,7 @@ public class BattleManager : MonoBehaviour
           buttonObject.GetComponent<SpellButton>();
 
       button.Initialize(spell, this);
+      spellButtons.Add(button);
     }
   }
 }

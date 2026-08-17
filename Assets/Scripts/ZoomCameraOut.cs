@@ -48,7 +48,10 @@ public class ZoomCameraOut : MonoBehaviour
         {
           StopCoroutine(zoomCoroutine);
         }
-        zoomCoroutine = StartCoroutine(SmoothZoom(initialCameraDistance));
+        if (gameObject.activeInHierarchy)
+        {
+          zoomCoroutine = StartCoroutine(SmoothZoom(initialCameraDistance));
+        }
       }
     }
   }

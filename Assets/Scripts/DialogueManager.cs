@@ -100,7 +100,7 @@ public class DialogueManager : MonoBehaviour
 
     if (Keyboard.current.spaceKey.wasPressedThisFrame)
     {
-      audioManagerInstance.StopTalkingAudio();
+      audioManagerInstance?.StopTalkingAudio();
       AdvanceDialogue();
     }
   }
@@ -168,7 +168,7 @@ public class DialogueManager : MonoBehaviour
         : null;
 
     if (this.playAudio)
-      audioManagerInstance.PlayTalkingAudio();
+      audioManagerInstance?.PlayTalkingAudio();
     if (currentSpeaker != null)
       currentSpeaker.StartSpeaking();
 
@@ -178,7 +178,7 @@ public class DialogueManager : MonoBehaviour
   private void ShowCurrentLine()
   {
     if (this.playAudio)
-      audioManagerInstance.PlayTalkingAudio();
+      audioManagerInstance?.PlayTalkingAudio();
     if (currentSpeaker != null)
       currentSpeaker.StartSpeaking();
 
@@ -205,7 +205,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     isTyping = false;
-    audioManagerInstance.StopTalkingAudio();
+    audioManagerInstance?.StopTalkingAudio();
     if (currentSpeaker != null) { currentSpeaker.StopSpeaking(); }
   }
 
@@ -259,7 +259,7 @@ public class DialogueManager : MonoBehaviour
       targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
     }
 
-    audioManagerInstance.StopTalkingAudio();
+    audioManagerInstance?.StopTalkingAudio();
     if (currentSpeaker != null)
     {
       currentSpeaker.StopSpeaking();
