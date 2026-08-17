@@ -14,13 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: Humbledore
   lines:
-  - Ah! There you are.
-  - Welcome to the Open Source Magic Academy.
-  - Have you settled into your house and made friends yet? I assure you, the-
-  - '[LOUD RUMBLE]
+  - Young wizard, your journey has made me proud.
+  - Coldemort has done what no wizard should ever have the power to do.
+  - Code that was once free to read, free to change, and free to share now belongs
+    to him.
+  - Among us all, only you have the power to reverse this great sin.
+  - 'My dear boy, the reason the ancient guardians speak to you... '
+  - .....is because.....
+  - 'You are the last descendant of Sir Linus Torvalds himself.
 
-'
-  - 'Hmm?
-
-    That is... unusual.'
-  - Everyone, stay back!
+    It''s in your
+    blood.'
+  - 'Go on, the final guardian awaits your arrival greatly. I think you''ll recognize
+    him. '
+  - I'm afraid this is where my journey ends.
+  - Go on, young wizard. You are burdened with glorious purpose.
