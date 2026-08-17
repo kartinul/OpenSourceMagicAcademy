@@ -5,6 +5,7 @@ public class SceneChanger : MonoBehaviour
 {
   [SerializeField] private string sceneName;
   [SerializeField] private int spawnId = 0;
+  [SerializeField] private AudioClip sceneMusic;
 
   public void changeScene()
   {
