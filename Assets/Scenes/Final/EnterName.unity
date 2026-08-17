@@ -288,10 +288,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 723430292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -1183.1445, y: 0}
+  m_SizeDelta: {x: 1045.8688, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223749594
 MonoBehaviour:
@@ -1917,7 +1917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -64.922, y: 0}
+  m_AnchoredPosition: {x: -37, y: 0}
   m_SizeDelta: {x: 526.65, y: 113.8741}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1541228869
@@ -2043,8 +2043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdbffa617151fc94e8c8c64c463af239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStarter
+  nakliPlayerPrefab: {fileID: 0}
   playerPrefab: {fileID: 4113065237077139379, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-  playerSpawnPoint: {fileID: 0}
   nameInput: {fileID: 346052318}
   houseAnimators:
   - {fileID: 22100000, guid: 74cce2ee1f5438346ba17695f79cd4be, type: 2}
