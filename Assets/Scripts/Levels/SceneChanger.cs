@@ -7,8 +7,16 @@ public class SceneChanger : MonoBehaviour
   [SerializeField] private int spawnId = 0;
   [SerializeField] private AudioClip sceneMusic;
 
+
+  private AudioManager audioManager;
+
+  void Start()
+  {
+    audioManager = AudioManager.Instance;
+  }
   public void changeScene()
   {
+    audioManager.PlayMusic(sceneMusic);
     LoadWithTransition();
   }
   public static void changeScene(int spawnId, string sceneName)

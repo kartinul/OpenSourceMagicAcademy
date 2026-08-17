@@ -155,6 +155,15 @@ public class AudioManager : MonoBehaviour
     musicAudioSource.Play();
   }
 
+  public AudioClip GetCurrentMusicClip()
+  {
+    if (musicAudioSource != null)
+    {
+      return musicAudioSource.clip;
+    }
+    return null;
+  }
+
   public void StopMusic()
   {
     isMusicStopping = true;

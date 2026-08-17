@@ -72,6 +72,7 @@ public class BattleManager : MonoBehaviour
   public UnityEvent OnDefeat;
 
   private AudioManager audioManagerInstance;
+  private AudioClip previousMusicClip;
 
   private int currentSpellSelectionIndex = 0;
   private List<SpellButton> spellButtons = new List<SpellButton>();
@@ -253,6 +254,7 @@ public class BattleManager : MonoBehaviour
     if (audioManagerInstance != null)
     {
       Debug.Log(audioManagerInstance.name);
+      previousMusicClip = audioManagerInstance.GetCurrentMusicClip();
       if (enemy.musicAudioClip)
         audioManagerInstance.PlayMusic(enemy.musicAudioClip);
     }
@@ -587,7 +589,20 @@ public class BattleManager : MonoBehaviour
     if (playerInteraction != null)
       playerInteraction.canInteract = true;
 
-    audioManagerInstance?.StopMusic();
+    if (audioManagerInstance != null)
+    {
+        if (previousMusicClip != null)
+        {
+            if (enemy != null && enemy.musicAudioClip != null)
+            {
+                audioManagerInstance.PlayMusic(previousMusicClip);
+            }
+        }
+        else
+        {
+            audioManagerInstance.StopMusic();
+        }
+    }
     enemy.Revive();
 
     Debug.Log("[BattleManager] Battle ended.");
