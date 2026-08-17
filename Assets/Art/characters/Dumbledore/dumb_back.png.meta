@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b440260080209b4b3aca37689a56d1ee
+guid: 092b48402a4cd9347add8ccbd7360c66
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2328903698778831591
-    second: voldie back view_0
+      213: -9191941495245029060
+    second: dumb_back_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: voldie back view_0
+      name: dumb_back_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 7
-        width: 28
-        height: 48
+        x: 0
+        y: 5
+        width: 32
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ea3ec1339de15020800000000000000
-      internalID: 2328903698778831591
+      spriteID: c314fbb39e9af6080800000000000000
+      internalID: -9191941495245029060
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      voldie back view_0: 2328903698778831591
+      dumb_back_0: -9191941495245029060
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
