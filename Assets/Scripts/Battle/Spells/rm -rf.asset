@@ -15,7 +15,7 @@ MonoBehaviour:
   spellName: sudo rm -rf /
   description: The final forbidden spell, powerful enough to break Lord Voldemort's
     curse and free the world's software.
-  spellAudio: {fileID: 8300000, guid: 4076bd7952ac9439f937b715e6561c49, type: 3}
+  spellAudio: {fileID: 8300000, guid: 6e597f2f110544a2e86b08c0e4069e4f, type: 3}
   educationalDescription: Executes a command with elevated privileges that recursively
     removes files and directories.
   type: 0

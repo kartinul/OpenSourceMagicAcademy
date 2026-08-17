@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
 
   private AudioSource talkingAudioSource;
   private bool isTalking = false;
+  private bool isMusicStopping = false;
 
   private void Awake()
   {
@@ -44,28 +45,69 @@ public class AudioManager : MonoBehaviour
 
   void Update()
   {
-    if (isTalking && talkingAudioSource.isPlaying)
+    if (talkingAudioSource.isPlaying)
     {
       float targetSfxVolume = sfxAudioSource.volume;
-      if (talkingFadeDuration > 0f)
+      float talkingRate = (targetSfxVolume > 0.01f ? targetSfxVolume : 1f) / (talkingFadeDuration > 0f ? talkingFadeDuration : 0.01f);
+
+      if (isTalking)
       {
-        talkingAudioSource.volume = Mathf.MoveTowards(talkingAudioSource.volume, targetSfxVolume, (targetSfxVolume / talkingFadeDuration) * Time.deltaTime);
+        if (talkingFadeDuration > 0f)
+        {
+          talkingAudioSource.volume = Mathf.MoveTowards(talkingAudioSource.volume, targetSfxVolume, talkingRate * Time.deltaTime);
+        }
+        else
+        {
+          talkingAudioSource.volume = targetSfxVolume;
+        }
       }
       else
       {
-        talkingAudioSource.volume = targetSfxVolume;
+        if (talkingFadeDuration > 0f)
+        {
+          talkingAudioSource.volume = Mathf.MoveTowards(talkingAudioSource.volume, 0f, talkingRate * Time.deltaTime);
+        }
+        else
+        {
+          talkingAudioSource.volume = 0f;
+        }
+
+        if (talkingAudioSource.volume <= 0f)
+        {
+          talkingAudioSource.Stop();
+        }
       }
     }
 
     if (musicAudioSource != null && musicAudioSource.isPlaying)
     {
-      if (musicFadeDuration > 0f)
+      if (!isMusicStopping)
       {
-        musicAudioSource.volume = Mathf.MoveTowards(musicAudioSource.volume, targetMusicVolume, (1f / musicFadeDuration) * Time.deltaTime);
+        if (musicFadeDuration > 0f)
+        {
+          musicAudioSource.volume = Mathf.MoveTowards(musicAudioSource.volume, targetMusicVolume, (1f / musicFadeDuration) * Time.deltaTime);
+        }
+        else
+        {
+          musicAudioSource.volume = targetMusicVolume;
+        }
       }
       else
       {
-        musicAudioSource.volume = targetMusicVolume;
+        if (musicFadeDuration > 0f)
+        {
+          musicAudioSource.volume = Mathf.MoveTowards(musicAudioSource.volume, 0f, (1f / musicFadeDuration) * Time.deltaTime);
+        }
+        else
+        {
+          musicAudioSource.volume = 0f;
+        }
+
+        if (musicAudioSource.volume <= 0f)
+        {
+          musicAudioSource.Stop();
+          isMusicStopping = false;
+        }
       }
     }
   }
@@ -88,17 +130,14 @@ public class AudioManager : MonoBehaviour
   public void StopTalkingAudio()
   {
     isTalking = false;
-    if (talkingAudioSource != null)
-    {
-      talkingAudioSource.Stop();
-    }
   }
 
   public void PlayMusic(AudioClip clip)
   {
     if (clip == null) return;
 
-    StopMusic();
+    musicAudioSource.Stop();
+    isMusicStopping = false;
     musicAudioSource.clip = clip;
     musicAudioSource.loop = true;
     musicAudioSource.volume = 0f;
@@ -107,7 +146,7 @@ public class AudioManager : MonoBehaviour
 
   public void StopMusic()
   {
-    musicAudioSource.Stop();
+    isMusicStopping = true;
   }
 
   public void PlaySFX(AudioClip clip)

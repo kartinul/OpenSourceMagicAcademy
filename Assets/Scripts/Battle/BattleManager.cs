@@ -320,10 +320,11 @@ public class BattleManager : MonoBehaviour
 
   private IEnumerator ExecuteTurnRoutine(Combatant caster, Combatant target, Spell spell, BattleState nextState)
   {
-    audioManagerInstance.PlaySFX(spell.spellAudio);
     TransitionToState(BattleState.ShowingMessage);
 
     SpellResult result = ResolveSpell(caster, target, spell);
+    if (result.IsHit)
+      audioManagerInstance.PlaySFX(spell.spellAudio);
 
     UpdateHealthUI(animate: true);
 

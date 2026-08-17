@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spell
   spellName: 'grep '
   description: A highly accurate medium-damage attack.
-  spellAudio: {fileID: 8300000, guid: 4076bd7952ac9439f937b715e6561c49, type: 3}
+  spellAudio: {fileID: 8300000, guid: 6e597f2f110544a2e86b08c0e4069e4f, type: 3}
   educationalDescription: grep searches through text and finds what you're looking
     for. Programmers use it to quickly find patterns, errors, and information across
     files.

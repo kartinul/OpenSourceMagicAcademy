@@ -100,6 +100,7 @@ public class DialogueManager : MonoBehaviour
 
     if (Keyboard.current.spaceKey.wasPressedThisFrame)
     {
+      audioManagerInstance.StopTalkingAudio();
       AdvanceDialogue();
     }
   }
