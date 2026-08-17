@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using Unity.Cinemachine;
 using UnityEngine.Events;
 using System;
+using UnityEngine.Playables;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class DialogueManager : MonoBehaviour
 
   private bool isTyping;
   private bool dialogueActive;
+  private bool playAudio = false;
 
   private Coroutine typingCoroutine;
   private WaitForSeconds typingWait;
@@ -42,10 +44,13 @@ public class DialogueManager : MonoBehaviour
   public class DialogueFinishArgs : EventArgs { public Combatant enemy; };
 
 
+  private AudioManager audioManagerInstance;
+
   private void OnEnable()
   {
     NPC.OnNPCInteract += NPC_OnNPCInteract;
   }
+
   private void NPC_OnNPCInteract(object sender, NPC.InteractEventArgs e)
   {
     StartDialogue(e.dialogueData);
@@ -71,6 +76,7 @@ public class DialogueManager : MonoBehaviour
   {
     typingWait = new WaitForSeconds(typingSpeed);
 
+    audioManagerInstance = AudioManager.Instance;
     playerRootTransform = transform.root;
     playerController = playerRootTransform.GetComponent<Player>();
     playerInteraction = playerRootTransform.GetComponent<PlayerInteraction>();
@@ -100,7 +106,7 @@ public class DialogueManager : MonoBehaviour
 
   // this is really shitty architecture but i honestly dont know what to do at this point
   // im exhausted
-  public void StartDialogue(DialogueData dialogue)
+  public void StartDialogue(DialogueData dialogue, bool playAudio = false)
   {
     Transform npcTarget = null;
 
@@ -115,11 +121,13 @@ public class DialogueManager : MonoBehaviour
       }
     }
 
-    StartDialogue(dialogue, npcTarget);
+    StartDialogue(dialogue, npcTarget, playAudio);
   }
 
-  public void StartDialogue(DialogueData dialogue, Transform npcTransform)
+  public void StartDialogue(DialogueData dialogue, Transform npcTransform, bool playAudio = false)
   {
+    this.playAudio = playAudio;
+
     if (dialogue == null || dialogue.lines == null || dialogue.lines.Length == 0)
     {
       Debug.LogError("[DialogueManager] Tried to start null or empty dialogue.");
@@ -158,6 +166,8 @@ public class DialogueManager : MonoBehaviour
         ? npcTransform.GetComponentInParent<DialogueSpeaker>()
         : null;
 
+    if (this.playAudio)
+      audioManagerInstance.PlayTalkingAudio();
     if (currentSpeaker != null)
       currentSpeaker.StartSpeaking();
 
@@ -166,6 +176,8 @@ public class DialogueManager : MonoBehaviour
 
   private void ShowCurrentLine()
   {
+    if (this.playAudio)
+      audioManagerInstance.PlayTalkingAudio();
     if (currentSpeaker != null)
       currentSpeaker.StartSpeaking();
 
@@ -192,7 +204,8 @@ public class DialogueManager : MonoBehaviour
     }
 
     isTyping = false;
-    if (currentSpeaker != null) currentSpeaker.StopSpeaking();
+    audioManagerInstance.StopTalkingAudio();
+    if (currentSpeaker != null) { currentSpeaker.StopSpeaking(); }
   }
 
   private void AdvanceDialogue()
@@ -223,6 +236,7 @@ public class DialogueManager : MonoBehaviour
     dialogueActive = false;
     isTyping = false;
 
+
     if (typingCoroutine != null)
     {
       StopCoroutine(typingCoroutine);
@@ -244,6 +258,7 @@ public class DialogueManager : MonoBehaviour
       targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = playerRootTransform, Weight = 1f, Radius = 1f });
     }
 
+    audioManagerInstance.StopTalkingAudio();
     if (currentSpeaker != null)
     {
       currentSpeaker.StopSpeaking();
