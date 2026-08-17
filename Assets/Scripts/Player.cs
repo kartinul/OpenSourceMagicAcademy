@@ -19,15 +19,12 @@ public class Player : MonoBehaviour
 
   void Awake()
   {
-    if (Instance == null)
-    {
       Instance = this;
-    }
-    else
-    {
-      Destroy(gameObject);
-      return;
-    }
+    // else
+    // {
+    //   Destroy(gameObject);
+    //   return;
+    // }
 
     if (rb == null)
       rb = GetComponent<Rigidbody2D>();

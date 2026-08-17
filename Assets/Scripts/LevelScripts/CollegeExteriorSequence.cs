@@ -13,10 +13,7 @@ public class CollegeExteriorSequence : MonoBehaviour
 
   private void Start()
   {
-    if (dialogueManager == null && Player.Instance != null)
-    {
-      dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>();
-    }
+    dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>();
 
     StartCoroutine(RunSequence());
   }
