@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
   m_Name: Guardian3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: Hand of Torvalds
+  speakerName: Will of Torvalds
   lines:
   - You have learned the power of sharing.
   - But freedom means little if you cannot control what you create.
