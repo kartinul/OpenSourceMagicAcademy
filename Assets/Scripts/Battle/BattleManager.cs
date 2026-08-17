@@ -140,8 +140,8 @@ public class BattleManager : MonoBehaviour
     enemyAI = enemy.GetComponent<EnemyAI>();
 
     Debug.Log(audioManagerInstance.name);
-    Debug.Log(enemy.musicAudioClip);
-    audioManagerInstance.PlayMusic(enemy.musicAudioClip);
+    if (enemy.musicAudioClip)
+      audioManagerInstance.PlayMusic(enemy.musicAudioClip);
 
     enemy.battleManager = this;
     enemy.RegisterVictoryReward();
