@@ -31,6 +31,14 @@ public class Player : MonoBehaviour
     if (rb == null)
       rb = GetComponent<Rigidbody2D>();
 
+    if (UnityEngine.EventSystems.EventSystem.current == null)
+    {
+      GameObject esObj = new GameObject("EventSystem");
+      esObj.AddComponent<UnityEngine.EventSystems.EventSystem>();
+      esObj.AddComponent<UnityEngine.InputSystem.UI.InputSystemUIInputModule>();
+      DontDestroyOnLoad(esObj);
+    }
+
     if (animator == null)
       animator = GetComponentInChildren<Animator>();
 

@@ -17,9 +17,4 @@ public class SetSpriteLayer : MonoBehaviour
     }
   }
 
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
 }

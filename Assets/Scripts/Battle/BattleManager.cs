@@ -292,7 +292,7 @@ public class BattleManager : MonoBehaviour
   {
     if (player != null)
     {
-      float targetPct = (float)player.currentHP / player.maxHP;
+      float targetPct = player.maxHP > 0 ? (float)player.currentHP / player.maxHP : 0f;
       if (playerHPText != null) playerHPText.text = $"{player.currentHP} / {player.maxHP}";
 
       if (playerHPBarImage != null)
@@ -312,7 +312,7 @@ public class BattleManager : MonoBehaviour
 
     if (enemy != null)
     {
-      float targetPct = (float)enemy.currentHP / enemy.maxHP;
+      float targetPct = enemy.maxHP > 0 ? (float)enemy.currentHP / enemy.maxHP : 0f;
       if (enemyHPText != null) enemyHPText.text = $"{enemy.currentHP} / {enemy.maxHP}";
 
       if (enemyHPBarImage != null)

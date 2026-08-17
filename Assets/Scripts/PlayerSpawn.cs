@@ -14,7 +14,10 @@ public class PlayerSpawn : MonoBehaviour
       return;
     }
 
-    player.transform.position = transform.position;
-    player.transform.rotation = transform.rotation;
+    if (spawnId == PlayerPrefs.GetInt("spawnId", 0))
+    {
+      player.transform.position = transform.position;
+      player.transform.rotation = transform.rotation;
+    }
   }
 }

@@ -20,6 +20,11 @@ public class CollegeExteriorSequence : MonoBehaviour
 
   private IEnumerator RunSequence()
   {
+    if (Player.Instance != null) {
+        Player.Instance.canMove = false;
+        PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+        if (interact != null) interact.canInteract = false;
+    }
     // --- STEP 1: Dumbledore Welcome ---
     EventHelpers.FocusCameraOn(dumbledore);
     yield return PlayDialogueAndWait(CreateDialogue("Humbledore",
@@ -91,6 +96,12 @@ public class CollegeExteriorSequence : MonoBehaviour
     // Give the screen flash a tiny bit of time before cutting the scene instantly
     yield return new WaitForSeconds(0.5f);
 
+    if (Player.Instance != null) {
+        Player.Instance.canMove = true;
+        PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+        if (interact != null) interact.canInteract = true;
+    }
+
     SceneChanger.changeScene(0, "CollegeExterior");
   }
 
@@ -130,5 +141,11 @@ public class CollegeExteriorSequence : MonoBehaviour
 
 
     yield return new WaitUntil(() => isFinished);
+
+    if (Player.Instance != null) {
+        Player.Instance.canMove = false;
+        PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+        if (interact != null) interact.canInteract = false;
+    }
   }
 }

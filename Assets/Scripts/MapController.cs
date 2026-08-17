@@ -153,6 +153,8 @@ public class MapController : MonoBehaviour
         return 3;
       case "Level4":
         return 4;
+      case "3Level5":
+        return 5;
       default:
         return 0;
     }

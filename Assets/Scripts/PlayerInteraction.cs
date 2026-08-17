@@ -63,27 +63,31 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    void FindInteractable()
-    {
-        if (!canInteract)
+        private Collider2D[] interactionHits = new Collider2D[10];
+
+        void FindInteractable()
         {
+            if (!canInteract)
+            {
+                currentInteractable = null;
+                return;
+            }
+
             currentInteractable = null;
-            return;
-        }
 
-        currentInteractable = null;
+            int hitCount = Physics2D.OverlapCircleNonAlloc(
+                transform.position,
+                interactionRange,
+                interactionHits,
+                interactableLayer
+            );
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(
-            transform.position,
-            interactionRange,
-            interactableLayer
-        );
+            float closestDistance = Mathf.Infinity;
+            bool blockedStillInRange = false;
 
-        float closestDistance = Mathf.Infinity;
-        bool blockedStillInRange = false;
-
-        foreach (Collider2D hit in hits)
-        {
+            for (int i = 0; i < hitCount; i++)
+            {
+                Collider2D hit = interactionHits[i];
             IInteractable interactable =
                 hit.GetComponentInParent<IInteractable>();
 

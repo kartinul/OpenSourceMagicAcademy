@@ -72,6 +72,11 @@ public class CollegeBossSequence : MonoBehaviour
 
     private IEnumerator RunSequence()
     {
+        if (Player.Instance != null) {
+            Player.Instance.canMove = false;
+            PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+            if (interact != null) interact.canInteract = false;
+        }
         // 1. Coldemort Dialog
         bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
         EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, bossCameraZoom);
@@ -154,6 +159,12 @@ public class CollegeBossSequence : MonoBehaviour
                     // Sequence end
                     EventHelpers.ClearCameraFocus();
                     Debug.Log("College Boss Sequence Completed.");
+                    
+                    if (Player.Instance != null) {
+                        Player.Instance.canMove = true;
+                        PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+                        if (interact != null) interact.canInteract = true;
+                    }
                 }
                 else
                 {
@@ -203,5 +214,11 @@ public class CollegeBossSequence : MonoBehaviour
         dialogueManager.StartDialogue(data);
 
         yield return new WaitUntil(() => isFinished);
+
+        if (Player.Instance != null) {
+            Player.Instance.canMove = false;
+            PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+            if (interact != null) interact.canInteract = false;
+        }
     }
 }
