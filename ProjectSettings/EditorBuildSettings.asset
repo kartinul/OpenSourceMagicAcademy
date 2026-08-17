@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/OpenArea.unity
     guid: a57820a1a9a9b052cb698e660ef5e737
   - enabled: 1
+    path: Assets/Scenes/Final/1CollegeExteriorIntro.unity
+    guid: 9d6346f4e7589f440b3cc8e6fe3e2770
+  - enabled: 1
+    path: Assets/Scenes/Final/3Level5.unity
+    guid: 979bdc233f06542ff8fb82ebc1823936
+  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: a93dd2a2f5e2f42d98fd419782642e7a
   - enabled: 1
@@ -44,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FullDemo.unity
     guid: 686ffe37fd261c54e8698c8af14b7cbc
+  - enabled: 1
+    path: Assets/Scenes/Final/CollegeExteriorEnding.unity
+    guid: d29d6156c31a3d940bbfecc668fd69cf
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -1,26 +1,19 @@
 using UnityEngine;
 using Unity.Cinemachine;
 using System.Collections;
+using System.Linq;
 using UnityEngine.UI;
 
-public class EventHelpers : MonoBehaviour
+public static class EventHelpers
 {
-    private CinemachineImpulseSource impulseSource;
-
-    private void Start()
-    {
-        // Auto-fetch from the Player Singleton instance right away
-        if (Player.Instance != null)
-        {
-            impulseSource = Player.Instance.GetComponentInChildren<CinemachineImpulseSource>();
-        }
-    }
-
     /// <summary>
     /// Generates a default camera shake based on the impulse source attached to the Player.
     /// </summary>
-    public void ShakeScreen(float duration = 0.5f)
+    public static void ShakeScreen(float duration = 0.5f)
     {
+        if (Player.Instance == null) return;
+        var impulseSource = Player.Instance.GetComponentInChildren<CinemachineImpulseSource>();
+
         if (impulseSource != null)
         {
             impulseSource.ImpulseDefinition.ImpulseDuration = duration;
@@ -43,8 +36,11 @@ public class EventHelpers : MonoBehaviour
     /// <summary>
     /// Generates a camera shake with a specific force.
     /// </summary>
-    public void ShakeScreenWithForce(float force, float duration = 0.5f)
+    public static void ShakeScreenWithForce(float force, float duration = 0.5f)
     {
+        if (Player.Instance == null) return;
+        var impulseSource = Player.Instance.GetComponentInChildren<CinemachineImpulseSource>();
+
         if (impulseSource != null)
         {
             impulseSource.ImpulseDefinition.ImpulseDuration = duration;
@@ -55,43 +51,48 @@ public class EventHelpers : MonoBehaviour
     /// <summary>
     /// Logs a custom message to the console. Useful for debugging UnityEvents.
     /// </summary>
-    public void LogMessage(string message)
+    public static void LogMessage(string message)
     {
         Debug.Log($"[EventHelpers] {message}");
     }
 
     /// <summary>
-    /// Spawns a prefab at the position of this GameObject.
+    /// Spawns a prefab at a specific position.
     /// </summary>
-    public void SpawnPrefab(GameObject prefab)
+    public static void SpawnPrefab(GameObject prefab, Vector3 position, Quaternion rotation)
     {
         if (prefab != null)
         {
-            Instantiate(prefab, transform.position, transform.rotation);
+            GameObject.Instantiate(prefab, position, rotation);
         }
     }
 
     /// <summary>
     /// Flashes the screen white briefly.
     /// </summary>
-    public void FlashScreenWhite()
+    public static void FlashScreenWhite()
     {
-        StartCoroutine(FlashRoutine(Color.white, 0.5f));
+        if (Player.Instance != null)
+        {
+            Player.Instance.StartCoroutine(FlashRoutine(Color.white, 0.5f));
+        }
     }
 
     /// <summary>
     /// Flashes the screen red briefly.
     /// </summary>
-    public void FlashScreenRed()
+    public static void FlashScreenRed()
     {
-        StartCoroutine(FlashRoutine(Color.red, 0.5f));
+        if (Player.Instance != null)
+        {
+            Player.Instance.StartCoroutine(FlashRoutine(Color.red, 0.5f));
+        }
     }
 
     /// <summary>
     /// Adds a GameObject to the Player's CinemachineTargetGroup so the camera focuses on it.
-    /// This 1-argument version shows up in the Unity Inspector. It uses a default zoom out of 10.
     /// </summary>
-    public void FocusCameraOn(GameObject target)
+    public static void FocusCameraOn(GameObject target)
     {
         FocusCameraOnWithZoom(target, 10f);
     }
@@ -99,41 +100,62 @@ public class EventHelpers : MonoBehaviour
     /// <summary>
     /// Advanced version for scripts that want to specify exactly how much to zoom out.
     /// </summary>
-    public void FocusCameraOnWithZoom(GameObject target, float zoomOut)
+    public static void FocusCameraOnWithZoom(GameObject target, float zoomOut)
     {
-        if (target == null || Player.Instance == null) return;
-
-        CinemachineTargetGroup targetGroup = Player.Instance.GetComponentInChildren<CinemachineTargetGroup>();
-        if (targetGroup != null)
+        if (target == null)
         {
-            // Clear the player and any other targets so the camera centers perfectly on the new target
-            targetGroup.Targets.Clear();
+            Debug.LogError("EventHelpers: FocusCameraOn was called, but the Target GameObject is missing/null!");
+            return;
+        }
 
-            // Using zoomOut as the radius forces the camera to frame it wider (zoom out)
-            targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = target.transform, Weight = 1f, Radius = zoomOut });
+        if (Player.Instance == null)
+        {
+            Debug.LogError("EventHelpers: Player.Instance is null, cannot focus camera!");
+            return;
+        }
+
+        var vcam = Player.Instance.GetComponentInChildren<CinemachineCamera>();
+        if (vcam != null)
+        {
+            // Directly hijack the camera's tracking target! This is 100% reliable.
+            vcam.Target.TrackingTarget = target.transform;
         }
         else
         {
-            Debug.LogWarning("EventHelpers: No CinemachineTargetGroup found in Player children for FocusCameraOn.");
+            Debug.LogWarning("EventHelpers: No CinemachineCamera found in Player children!");
+        }
+
+        var composer = Player.Instance.GetComponentInChildren<CinemachinePositionComposer>();
+        if (composer != null)
+        {
+            // Directly change the camera distance to zoom out
+            composer.CameraDistance = zoomOut;
         }
     }
 
     /// <summary>
     /// Removes all extra targets from the Player's CinemachineTargetGroup, leaving only the Player.
     /// </summary>
-    public void ClearCameraFocus()
+    public static void ClearCameraFocus()
     {
         if (Player.Instance == null) return;
 
-        CinemachineTargetGroup targetGroup = Player.Instance.GetComponentInChildren<CinemachineTargetGroup>();
-        if (targetGroup != null)
+        var vcam = Player.Instance.GetComponentInChildren<CinemachineCamera>();
+        if (vcam != null)
         {
-            targetGroup.Targets.Clear();
-            targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = Player.Instance.transform, Weight = 1f, Radius = 1f });
+            // Revert back to the Player
+            vcam.Target.TrackingTarget = Player.Instance.transform;
+        }
+
+        var composer = Player.Instance.GetComponentInChildren<CinemachinePositionComposer>();
+        if (composer != null)
+        {
+            // Revert to a default distance (or whatever the standard gameplay distance is)
+            composer.CameraDistance = 10f; // Default gameplay distance
         }
     }
 
-    private IEnumerator FlashRoutine(Color color, float duration)
+    private static IEnumerator FlashRoutine(Color color, float duration)
     {
         GameObject canvasObj = new GameObject("ScreenFlashCanvas");
         Canvas canvas = canvasObj.AddComponent<Canvas>();
@@ -154,6 +176,6 @@ public class EventHelpers : MonoBehaviour
             yield return null;
         }
 
-        Destroy(canvasObj);
+        GameObject.Destroy(canvasObj);
     }
 }
