@@ -48,6 +48,12 @@ public class SpellBook : MonoBehaviour
 
         Debug.Log($"Unlocked spell: {spell.spellName}");
 
+        if (Player.Instance != null)
+        {
+            Player.Instance.level++;
+            Debug.Log($"Player leveled up! Current level: {Player.Instance.level}");
+        }
+
         StartCoroutine(ShowSpellUnlockDelayed(spell));
     }
 

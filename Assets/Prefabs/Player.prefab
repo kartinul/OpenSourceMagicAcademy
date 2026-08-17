@@ -3054,6 +3054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 5
   rb: {fileID: 3211843804706520333}
+  level: 1
   canMove: 1
   animator: {fileID: 8252140732969534596}
 --- !u!61 &5683222881831752351
@@ -3143,6 +3144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Combatant
   combatantName: Rushil
   maxHP: 100
+  level: 1
   currentHP: 0
   musicAudioClip: {fileID: 0}
   spriteRenderer: {fileID: 8413230915687702150}
@@ -5327,10 +5329,6 @@ MonoBehaviour:
   unlockedSpells:
   - {fileID: 11400000, guid: 717d7b933c9625f40981f02c594dbd2f, type: 2}
   - {fileID: 11400000, guid: d567a51d0f310964f8e9df59e19ec4ba, type: 2}
-  - {fileID: 11400000, guid: 26be70bab1fe96b47b8b3860d5a776fc, type: 2}
-  - {fileID: 11400000, guid: e969f8831308340438b881857dfe25b7, type: 2}
-  - {fileID: 11400000, guid: cb779ce94ae210248927675da14bb2f8, type: 2}
-  - {fileID: 11400000, guid: 60eb222f5a8af6944ab0313505692a2d, type: 2}
   spellUnlockPanel: {fileID: 8076556770853247376}
   spellNameText: {fileID: 7126392269950830011}
   educationalDescriptionText: {fileID: 3777658950738322257}

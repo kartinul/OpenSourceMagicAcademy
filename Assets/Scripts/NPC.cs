@@ -31,6 +31,7 @@ public class NPC : MonoBehaviour, IInteractable
     if (onlyTalkOnce && hasTalked) return;
     
     DialogueData dataToPlay = dialogueData;
+    Combatant enemyToPass = enemy;
 
     if (enemy != null)
     {
@@ -39,6 +40,7 @@ public class NPC : MonoBehaviour, IInteractable
         dataToPlay = ScriptableObject.CreateInstance<DialogueData>();
         dataToPlay.speakerName = "System";
         dataToPlay.lines = new string[] { "Your level is too low." };
+        enemyToPass = null;
       }
       else
       {
@@ -53,7 +55,7 @@ public class NPC : MonoBehaviour, IInteractable
     OnNPCInteract?.Invoke(this, new InteractEventArgs
     {
       dialogueData = dataToPlay,
-      enemy = enemy,
+      enemy = enemyToPass,
       playTalkingSound = playTalkingSound,
       pitch = pitch
     });
