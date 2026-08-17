@@ -2015,11 +2015,7 @@ PrefabInstance:
       addedObject: {fileID: 993776362}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
-<<<<<<< HEAD
---- !u!43 &1377170745
-=======
 --- !u!43 &1484701318
->>>>>>> 2bbf6015 (a few linkups)
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
