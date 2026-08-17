@@ -5,19 +5,29 @@ using UnityEngine.UI;
 
 public class EventHelpers : MonoBehaviour
 {
+    private CinemachineImpulseSource impulseSource;
+
+    private void Start()
+    {
+        // Auto-fetch from the Player Singleton instance right away
+        if (Player.Instance != null)
+        {
+            impulseSource = Player.Instance.GetComponentInChildren<CinemachineImpulseSource>();
+        }
+    }
+
     /// <summary>
     /// Generates a default camera shake based on the impulse source attached to the Player.
     /// </summary>
-    public void ShakeScreen()
+    public void ShakeScreen(float duration = 0.5f)
     {
-        CinemachineImpulseSource impulseSource = GetImpulseSource();
-
         if (impulseSource != null)
         {
+            impulseSource.ImpulseDefinition.ImpulseDuration = duration;
+
             if (impulseSource.DefaultVelocity == Vector3.zero)
             {
-                // Kickstart it with a default force if it was left at (0,0,0)
-                impulseSource.GenerateImpulse(new Vector3(1f, 1f, 0f));
+                impulseSource.GenerateImpulseWithVelocity(new Vector3(1f, 1f, 0f));
             }
             else
             {
@@ -33,24 +43,13 @@ public class EventHelpers : MonoBehaviour
     /// <summary>
     /// Generates a camera shake with a specific force.
     /// </summary>
-    public void ShakeScreenWithForce(float force)
+    public void ShakeScreenWithForce(float force, float duration = 0.5f)
     {
-        CinemachineImpulseSource impulseSource = GetImpulseSource();
-
         if (impulseSource != null)
         {
+            impulseSource.ImpulseDefinition.ImpulseDuration = duration;
             impulseSource.GenerateImpulseWithForce(force);
         }
-    }
-
-    private CinemachineImpulseSource GetImpulseSource()
-    {
-        if (Player.Instance != null)
-        {
-            return Player.Instance.GetComponentInChildren<CinemachineImpulseSource>();
-        }
-
-        return null;
     }
 
     /// <summary>
@@ -90,21 +89,28 @@ public class EventHelpers : MonoBehaviour
 
     /// <summary>
     /// Adds a GameObject to the Player's CinemachineTargetGroup so the camera focuses on it.
+    /// This 1-argument version shows up in the Unity Inspector. It uses a default zoom out of 10.
     /// </summary>
     public void FocusCameraOn(GameObject target)
+    {
+        FocusCameraOnWithZoom(target, 10f);
+    }
+
+    /// <summary>
+    /// Advanced version for scripts that want to specify exactly how much to zoom out.
+    /// </summary>
+    public void FocusCameraOnWithZoom(GameObject target, float zoomOut)
     {
         if (target == null || Player.Instance == null) return;
 
         CinemachineTargetGroup targetGroup = Player.Instance.GetComponentInChildren<CinemachineTargetGroup>();
         if (targetGroup != null)
         {
-            // First check if it's already in the group
-            foreach (var t in targetGroup.Targets)
-            {
-                if (t.Object == target.transform) return;
-            }
+            // Clear the player and any other targets so the camera centers perfectly on the new target
+            targetGroup.Targets.Clear();
 
-            targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = target.transform, Weight = 1f, Radius = 1f });
+            // Using zoomOut as the radius forces the camera to frame it wider (zoom out)
+            targetGroup.Targets.Add(new CinemachineTargetGroup.Target { Object = target.transform, Weight = 1f, Radius = zoomOut });
         }
         else
         {

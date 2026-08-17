@@ -11,11 +11,14 @@ public class NPC : MonoBehaviour, IInteractable
   [SerializeField] private float pitch = 1f;
 
 
+  [SerializeField] private bool onlyTalkOnce = false;
 
   public static event EventHandler<InteractEventArgs> OnNPCInteract;
   public class InteractEventArgs : EventArgs { public DialogueData dialogueData; public Combatant enemy; public bool playTalkingSound; public float pitch; };
 
-  public string InteractionPrompt => interactionPrompt;
+  private bool hasTalked = false;
+
+  public string InteractionPrompt => (onlyTalkOnce && hasTalked) ? "" : interactionPrompt;
   private Combatant enemy;
 
   public void Start()
@@ -25,6 +28,9 @@ public class NPC : MonoBehaviour, IInteractable
 
   public void Interact()
   {
+    if (onlyTalkOnce && hasTalked) return;
+    hasTalked = true;
+
     OnNPCInteract?.Invoke(this, new InteractEventArgs
     {
       dialogueData = dialogueData,

@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
-  m_Name: DumbledoreIntro
+  m_Name: DumbledoreIntro 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: Humbledore
   lines:
-  - Ah! There you are.
-  - Welcome to the Open Source Magic Academy.
-  - Have you settled into your house and made friends yet? I assure you, the-
+  - 'Hmm?
+
+    That is... unusual.'
+  - Everyone, stay back!
