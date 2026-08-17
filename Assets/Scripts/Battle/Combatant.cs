@@ -7,6 +7,7 @@ public class Combatant : MonoBehaviour
   [Header("Stats")]
   public string combatantName = "Combatant";
   public int maxHP = 100;
+  public int level = 1;
 
   [HideInInspector]
   public int currentHP;

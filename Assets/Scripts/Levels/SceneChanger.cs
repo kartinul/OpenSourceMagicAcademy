@@ -7,6 +7,10 @@ public class SceneChanger : MonoBehaviour
   [SerializeField] private int spawnId = 0;
   [SerializeField] private AudioClip sceneMusic;
 
+  [Header("Boss Transition")]
+  [SerializeField] private bool goToBoss = false;
+  [SerializeField] private int minLevelForBoss = 5;
+
 
   private AudioManager audioManager;
 
@@ -34,15 +38,22 @@ public class SceneChanger : MonoBehaviour
 
   private void LoadWithTransition()
   {
+    string targetSceneName = sceneName;
+
+    if (goToBoss && Player.Instance != null && Player.Instance.level >= minLevelForBoss)
+    {
+      targetSceneName = "CollegeExteriorEnding";
+    }
+
     PlayerPrefs.SetInt("spawnId", spawnId);
 
     if (SceneFader.Instance != null)
     {
-      SceneFader.Instance.FadeAndLoad(sceneName);
+      SceneFader.Instance.FadeAndLoad(targetSceneName);
     }
     else
     {
-      SceneManager.LoadScene(sceneName);
+      SceneManager.LoadScene(targetSceneName);
     }
   }
   public static void LoadWithTransition(int spawnId, string sceneName)

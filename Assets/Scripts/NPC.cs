@@ -29,11 +29,30 @@ public class NPC : MonoBehaviour, IInteractable
   public void Interact()
   {
     if (onlyTalkOnce && hasTalked) return;
-    hasTalked = true;
+    
+    DialogueData dataToPlay = dialogueData;
+
+    if (enemy != null)
+    {
+      if (Player.Instance.level < enemy.level)
+      {
+        dataToPlay = ScriptableObject.CreateInstance<DialogueData>();
+        dataToPlay.speakerName = "System";
+        dataToPlay.lines = new string[] { "Your level is too low." };
+      }
+      else
+      {
+        hasTalked = true;
+      }
+    }
+    else
+    {
+      hasTalked = true;
+    }
 
     OnNPCInteract?.Invoke(this, new InteractEventArgs
     {
-      dialogueData = dialogueData,
+      dialogueData = dataToPlay,
       enemy = enemy,
       playTalkingSound = playTalkingSound,
       pitch = pitch

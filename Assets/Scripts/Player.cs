@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
   public float moveSpeed = 5f;
   public Rigidbody2D rb;
 
+  public int level = 1;
+
   public bool canMove = true;
   [Header("Animation")]
   public Animator animator;
