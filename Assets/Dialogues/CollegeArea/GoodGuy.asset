@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
   m_Name: GoodGuy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: 
+  speakerName: Harsh
   lines:
-  - OPen source good
+  - Karvy seems to think that open source is a liability.
+  - I disagree.
+  - The community driven nature of open source software....
+  - ....allows everyone to contribute to projects.
+  - And open source software has better security since it allows vulnerabilities
+    to be found fast.

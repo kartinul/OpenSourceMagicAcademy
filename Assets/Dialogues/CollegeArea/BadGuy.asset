@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
   m_Name: BadGuy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: 
+  speakerName: Karvy
   lines:
-  - Open SOurce is baddd
+  - I feel like open source software are unsecure.
+  - Not to mention the countless times projects to unmaintained....
+  - ....maybe Coldermort is right afterall.
