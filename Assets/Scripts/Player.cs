@@ -15,8 +15,20 @@ public class Player : MonoBehaviour
   private Vector2 movement;
   private Vector2 facingDirection = Vector2.down;
 
+  public static Player Instance { get; private set; }
+
   void Awake()
   {
+    if (Instance == null)
+    {
+      Instance = this;
+    }
+    else
+    {
+      Destroy(gameObject);
+      return;
+    }
+
     if (rb == null)
       rb = GetComponent<Rigidbody2D>();
 
