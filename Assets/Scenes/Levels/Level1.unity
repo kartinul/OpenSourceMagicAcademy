@@ -3433,6 +3433,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
+      propertyPath: spawnId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
+      propertyPath: sceneName
+      value: OpenArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: sceneToLoad
       value: 
       objectReference: {fileID: 102900000, guid: 467c39b09d442447e8c52bd13dfab8e3, type: 3}
@@ -8291,6 +8299,10 @@ PrefabInstance:
     - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
+      propertyPath: sceneName
+      value: Level1_Floor1
       objectReference: {fileID: 0}
     - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: sceneToLoad

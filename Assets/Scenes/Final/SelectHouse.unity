@@ -2015,7 +2015,11 @@ PrefabInstance:
       addedObject: {fileID: 993776362}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0123f1fb31a4f24818e3862214cb1d, type: 3}
+<<<<<<< HEAD
 --- !u!43 &1377170745
+=======
+--- !u!43 &1484701318
+>>>>>>> 2bbf6015 (a few linkups)
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2333,8 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b7bcbd7ae8c4101a6042279f4f111c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
-  sceneName: Level4
-  sceneToLoad: {fileID: 0}
+  sceneName: CollegeExterior
   spawnId: 0
 --- !u!1 &1969739300
 GameObject:

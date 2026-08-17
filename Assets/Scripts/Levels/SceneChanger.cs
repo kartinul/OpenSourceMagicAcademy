@@ -4,9 +4,6 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
   [SerializeField] private string sceneName;
-#if UNITY_EDITOR
-  [SerializeField] private Object sceneToLoad;
-#endif
   [SerializeField] private int spawnId = 0;
 
   public void changeScene()

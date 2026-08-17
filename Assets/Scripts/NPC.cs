@@ -8,11 +8,12 @@ public class NPC : MonoBehaviour, IInteractable
   [SerializeField] private string interactionPrompt = "Talk";
   [SerializeField] private DialogueData dialogueData;
   [SerializeField] private bool playTalkingSound = false;
+  [SerializeField] private float pitch = 1f;
 
 
 
   public static event EventHandler<InteractEventArgs> OnNPCInteract;
-  public class InteractEventArgs : EventArgs { public DialogueData dialogueData; public Combatant enemy; public bool playTalkingSound; };
+  public class InteractEventArgs : EventArgs { public DialogueData dialogueData; public Combatant enemy; public bool playTalkingSound; public float pitch; };
 
   public string InteractionPrompt => interactionPrompt;
   private Combatant enemy;
@@ -28,7 +29,8 @@ public class NPC : MonoBehaviour, IInteractable
     {
       dialogueData = dialogueData,
       enemy = enemy,
-      playTalkingSound = playTalkingSound
+      playTalkingSound = playTalkingSound,
+      pitch = pitch
     });
   }
 
