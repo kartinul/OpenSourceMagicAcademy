@@ -603,7 +603,13 @@ public class BattleManager : MonoBehaviour
             audioManagerInstance.StopMusic();
         }
     }
+    
     enemy.Revive();
+
+    if (State == BattleState.Victory && player != null)
+    {
+        player.Revive();
+    }
 
     Debug.Log("[BattleManager] Battle ended.");
   }
