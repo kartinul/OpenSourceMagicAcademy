@@ -27,8 +27,11 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current != null &&
-            Keyboard.current.eKey.wasPressedThisFrame)
+        bool interactPressed = false;
+        if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame) interactPressed = true;
+        if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) interactPressed = true;
+
+        if (interactPressed)
         {
             if (spellBook != null && spellBook.IsUnlockPanelOpen)
             {
@@ -47,8 +50,7 @@ public class PlayerInteraction : MonoBehaviour
             if (interactionText != null)
                 interactionText.text = currentInteractable.InteractionPrompt;
 
-            if (Keyboard.current != null &&
-                Keyboard.current.eKey.wasPressedThisFrame)
+            if (interactPressed)
             {
                 blockedInteractable = currentInteractable;
                 currentInteractable.Interact();

@@ -67,37 +67,28 @@ public class Player : MonoBehaviour
 
   void ReadInput()
   {
-
     movement = Vector2.zero;
 
-    if (!canMove || Keyboard.current == null)
+    if (!canMove)
       return;
 
-    if (Keyboard.current == null)
-      return;
-
-    if (Keyboard.current.wKey.isPressed ||
-        Keyboard.current.upArrowKey.isPressed)
+    if (Keyboard.current != null)
     {
-      movement.y += 1;
+      if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed) movement.y += 1;
+      if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed) movement.y -= 1;
+      if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed) movement.x -= 1;
+      if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) movement.x += 1;
     }
 
-    if (Keyboard.current.sKey.isPressed ||
-        Keyboard.current.downArrowKey.isPressed)
+    if (Gamepad.current != null)
     {
-      movement.y -= 1;
-    }
+      Vector2 stick = Gamepad.current.leftStick.ReadValue();
+      if (stick.sqrMagnitude > 0.01f) movement += stick;
 
-    if (Keyboard.current.aKey.isPressed ||
-        Keyboard.current.leftArrowKey.isPressed)
-    {
-      movement.x -= 1;
-    }
-
-    if (Keyboard.current.dKey.isPressed ||
-        Keyboard.current.rightArrowKey.isPressed)
-    {
-      movement.x += 1;
+      if (Gamepad.current.dpad.up.isPressed) movement.y += 1;
+      if (Gamepad.current.dpad.down.isPressed) movement.y -= 1;
+      if (Gamepad.current.dpad.left.isPressed) movement.x -= 1;
+      if (Gamepad.current.dpad.right.isPressed) movement.x += 1;
     }
 
     movement = movement.normalized;

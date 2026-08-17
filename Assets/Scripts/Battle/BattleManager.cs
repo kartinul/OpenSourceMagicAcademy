@@ -139,9 +139,8 @@ public class BattleManager : MonoBehaviour
     if (State == BattleState.PlayerTurn && spellButtons.Count > 0)
     {
       bool mouseMoved = Mouse.current != null && (Mouse.current.delta.ReadValue().sqrMagnitude > 0.1f || Mouse.current.leftButton.wasPressedThisFrame);
-      bool touched = Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed;
 
-      if (mouseMoved || touched)
+      if (mouseMoved)
       {
         if (isUsingKeyboard)
         {
@@ -153,39 +152,61 @@ public class BattleManager : MonoBehaviour
         }
       }
 
+      bool upPressed = false, downPressed = false, leftPressed = false, rightPressed = false, confirmPressed = false;
+
       if (Keyboard.current != null)
+      {
+        if (Keyboard.current.wKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame) upPressed = true;
+        else if (Keyboard.current.sKey.wasPressedThisFrame || Keyboard.current.downArrowKey.wasPressedThisFrame) downPressed = true;
+        else if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame) leftPressed = true;
+        else if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame) rightPressed = true;
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.enterKey.wasPressedThisFrame) confirmPressed = true;
+      }
+
+      if (Gamepad.current != null)
+      {
+        if (Gamepad.current.dpad.up.wasPressedThisFrame || Gamepad.current.leftStick.up.wasPressedThisFrame) upPressed = true;
+        else if (Gamepad.current.dpad.down.wasPressedThisFrame || Gamepad.current.leftStick.down.wasPressedThisFrame) downPressed = true;
+        else if (Gamepad.current.dpad.left.wasPressedThisFrame || Gamepad.current.leftStick.left.wasPressedThisFrame) leftPressed = true;
+        else if (Gamepad.current.dpad.right.wasPressedThisFrame || Gamepad.current.leftStick.right.wasPressedThisFrame) rightPressed = true;
+
+        if (Gamepad.current.buttonSouth.wasPressedThisFrame) confirmPressed = true;
+      }
+
+      if (upPressed || downPressed || leftPressed || rightPressed || confirmPressed)
       {
         int nextIndex = currentSpellSelectionIndex;
         int cols = spellButtons.Count <= 2 ? 1 : 2;
         int maxIndex = spellButtons.Count - 1;
-        bool keyboardPressedThisFrame = false;
+        bool directionalPressedThisFrame = false;
 
-        if (Keyboard.current.wKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame)
+        if (upPressed)
         {
           if (nextIndex - cols >= 0) nextIndex -= cols;
-          keyboardPressedThisFrame = true;
+          directionalPressedThisFrame = true;
         }
-        else if (Keyboard.current.sKey.wasPressedThisFrame || Keyboard.current.downArrowKey.wasPressedThisFrame)
+        else if (downPressed)
         {
           if (nextIndex + cols <= maxIndex) nextIndex += cols;
-          keyboardPressedThisFrame = true;
+          directionalPressedThisFrame = true;
         }
-        else if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame)
+        else if (leftPressed)
         {
           if (nextIndex % cols > 0) nextIndex -= 1;
-          keyboardPressedThisFrame = true;
+          directionalPressedThisFrame = true;
         }
-        else if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame)
+        else if (rightPressed)
         {
           if (nextIndex % cols < cols - 1 && nextIndex + 1 <= maxIndex) nextIndex += 1;
-          keyboardPressedThisFrame = true;
+          directionalPressedThisFrame = true;
         }
 
-        if (keyboardPressedThisFrame)
+        if (directionalPressedThisFrame)
         {
           if (!isUsingKeyboard)
           {
-            isUsingKeyboard = true;
+            isUsingKeyboard = true; // Still flags that we aren't using the mouse
             if (currentSpellSelectionIndex >= 0 && currentSpellSelectionIndex < spellButtons.Count)
             {
               spellButtons[currentSpellSelectionIndex].SetVisualActive();
@@ -197,7 +218,7 @@ public class BattleManager : MonoBehaviour
           }
         }
 
-        if (isUsingKeyboard && (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.enterKey.wasPressedThisFrame))
+        if (isUsingKeyboard && confirmPressed)
         {
           PlayerUseSpell(spellBook.UnlockedSpells[currentSpellSelectionIndex]);
         }
@@ -225,9 +246,15 @@ public class BattleManager : MonoBehaviour
     enemy = opponent;
     enemyAI = enemy.GetComponent<EnemyAI>();
 
-    Debug.Log(audioManagerInstance.name);
-    if (enemy.musicAudioClip)
-      audioManagerInstance.PlayMusic(enemy.musicAudioClip);
+    if (audioManagerInstance == null)
+      audioManagerInstance = AudioManager.Instance;
+
+    if (audioManagerInstance != null)
+    {
+      Debug.Log(audioManagerInstance.name);
+      if (enemy.musicAudioClip)
+        audioManagerInstance.PlayMusic(enemy.musicAudioClip);
+    }
 
     enemy.battleManager = this;
     enemy.RegisterVictoryReward();
@@ -426,7 +453,7 @@ public class BattleManager : MonoBehaviour
 
     SpellResult result = ResolveSpell(caster, target, spell);
     if (result.IsHit)
-      audioManagerInstance.PlaySFX(spell.spellAudio);
+      audioManagerInstance?.PlaySFX(spell.spellAudio);
 
     UpdateHealthUI(animate: true);
 
@@ -558,7 +585,7 @@ public class BattleManager : MonoBehaviour
     if (playerInteraction != null)
       playerInteraction.canInteract = true;
 
-    audioManagerInstance.StopMusic();
+    audioManagerInstance?.StopMusic();
     enemy.Revive();
 
     Debug.Log("[BattleManager] Battle ended.");

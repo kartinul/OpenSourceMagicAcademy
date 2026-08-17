@@ -95,10 +95,16 @@ public class DialogueManager : MonoBehaviour
 
   private void Update()
   {
-    if (!dialogueActive || Keyboard.current == null)
+    if (!dialogueActive)
       return;
 
-    if (Keyboard.current.spaceKey.wasPressedThisFrame)
+    bool advancePressed = false;
+    if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) advancePressed = true;
+    if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) advancePressed = true;
+    if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) advancePressed = true;
+    if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame) advancePressed = true;
+
+    if (advancePressed)
     {
       audioManagerInstance?.StopTalkingAudio();
       AdvanceDialogue();

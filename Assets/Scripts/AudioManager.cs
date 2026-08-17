@@ -120,7 +120,10 @@ public class AudioManager : MonoBehaviour
       if (talkingClip != null)
       {
         talkingAudioSource.pitch = Random.Range(minPitch, maxPitch);
-        talkingAudioSource.time = Random.Range(0f, talkingClip.length);
+        if (talkingClip.loadState == AudioDataLoadState.Loaded)
+        {
+          talkingAudioSource.time = Random.Range(0f, talkingClip.length);
+        }
         talkingAudioSource.volume = 0f;
         talkingAudioSource.Play();
       }
