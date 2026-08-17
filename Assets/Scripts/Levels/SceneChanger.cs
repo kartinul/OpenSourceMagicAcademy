@@ -38,6 +38,15 @@ public class SceneChanger : MonoBehaviour
 
   private void LoadWithTransition()
   {
+    if (Player.Instance != null)
+    {
+        Player.Instance.canMove = false;
+        if (Player.Instance.rb != null)
+        {
+            Player.Instance.rb.velocity = Vector2.zero;
+        }
+    }
+
     string targetSceneName = sceneName;
 
     if (goToBoss && Player.Instance != null && Player.Instance.level >= minLevelForBoss)
@@ -58,6 +67,15 @@ public class SceneChanger : MonoBehaviour
   }
   public static void LoadWithTransition(int spawnId, string sceneName)
   {
+    if (Player.Instance != null)
+    {
+        Player.Instance.canMove = false;
+        if (Player.Instance.rb != null)
+        {
+            Player.Instance.rb.velocity = Vector2.zero;
+        }
+    }
+
     PlayerPrefs.SetInt("spawnId", spawnId);
 
     if (SceneFader.Instance != null)

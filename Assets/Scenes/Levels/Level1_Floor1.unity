@@ -291,7 +291,7 @@ MonoBehaviour:
     rid: 7740770042762494110
   m_ShadowCastingSource: 2
   m_ShadowMesh:
-    m_Mesh: {fileID: 332133842}
+    m_Mesh: {fileID: 334003974}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0.039993286, y: 0.23999023, z: 0}
@@ -360,7 +360,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!43 &332133842
+--- !u!43 &334003974
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6490,7 +6490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: Fight
   dialogueData: {fileID: 11400000, guid: debc836f2722fdf4db937dc087282391, type: 2}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 1
 --- !u!4 &1771252380

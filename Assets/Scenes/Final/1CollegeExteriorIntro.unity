@@ -36864,7 +36864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: READ
   dialogueData: {fileID: 11400000, guid: e4e46a8cd24e03284acc93f4805b2592, type: 2}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 0
 --- !u!1 &463511631
@@ -37869,7 +37869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: EXAMINE
   dialogueData: {fileID: 11400000, guid: 31cfdaff69956be5bbbb409c73dd6a79, type: 2}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 0
 --- !u!1 &652388379
@@ -38247,7 +38247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: TALK
   dialogueData: {fileID: 11400000, guid: 37894cb0e6407c289ba5dd9b07271157, type: 2}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 0
 --- !u!1 &680105689
@@ -65113,7 +65113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: READ SIGN
   dialogueData: {fileID: 11400000, guid: 81b761cec1a168ded915335ceb8aab3c, type: 2}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 0
 --- !u!1 &1341127650
@@ -66012,7 +66012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: EXAMINE
   dialogueData: {fileID: 11400000, guid: 888ac6eeb7a7c3c4ebd14d8935b0ec84, type: 2}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 0
 --- !u!61 &1614721760
@@ -66169,7 +66169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: READ
   dialogueData: {fileID: 11400000, guid: 3b0b701717fd29f7e93010aac627ed6f, type: 2}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 0
 --- !u!1 &1649464047
@@ -114939,7 +114939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   interactionPrompt: Examine
   dialogueData: {fileID: 0}
-  playTalkingSound: 0
+  playTalkingSound: 1
   pitch: 1
   onlyTalkOnce: 0
 --- !u!61 &1659526214
