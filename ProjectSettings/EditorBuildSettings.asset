@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/SelectHouse.unity
     guid: 96377107c92bf8e40b40ba3b96a572a1
   - enabled: 1
-    path: Assets/Scenes/Levels/OpenWorld.unity
+    path: Assets/Scenes/Final/CollegeExterior.unity
     guid: 467c39b09d442447e8c52bd13dfab8e3
   - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
