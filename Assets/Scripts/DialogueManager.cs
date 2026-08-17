@@ -38,6 +38,7 @@ public class DialogueManager : MonoBehaviour
   private Coroutine typingCoroutine;
   private WaitForSeconds typingWait;
   public UnityEvent OnDialogueEnded = new UnityEvent();
+  public static event Action<DialogueData> DialogueCompleted;
   [SerializeField] private DialogueSpeaker currentSpeaker;
 
   [SerializeField] private DialogueData startingDialogue;
@@ -277,6 +278,7 @@ public class DialogueManager : MonoBehaviour
 
     SetPlayerControlsActive(true);
 
+    DialogueCompleted?.Invoke(currentDialogue);
     OnDialogueEnded?.Invoke();
     OnDialogueEnded.RemoveAllListeners();
   }
