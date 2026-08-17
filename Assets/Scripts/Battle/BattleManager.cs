@@ -69,6 +69,7 @@ public class BattleManager : MonoBehaviour
   private WaitForSeconds enemyDelayWait;
 
   public UnityEvent OnVictory;
+  public UnityEvent OnDefeat;
 
   private AudioManager audioManagerInstance;
 
@@ -424,6 +425,7 @@ public class BattleManager : MonoBehaviour
         break;
 
       case BattleState.Defeat:
+        OnDefeat?.Invoke();
         SetUIVisibility(showSpells: false, showDialogue: true, showHP: true);
         activeStateRoutine = StartCoroutine(ShowEndMessageRoutine("You were defeated..."));
         break;

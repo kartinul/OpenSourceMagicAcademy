@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public static class EventHelpers
 {
+    private static System.Collections.Generic.Dictionary<string, object> originalZones = new System.Collections.Generic.Dictionary<string, object>();
+
     /// <summary>
     /// Generates a default camera shake based on the impulse source attached to the Player.
     /// </summary>
@@ -130,6 +132,30 @@ public static class EventHelpers
         {
             // Directly change the camera distance to zoom out
             composer.CameraDistance = zoomOut;
+
+            // Aggressively center the camera by zeroing out any dead/soft zones.
+            // Using reflection makes this immune to Cinemachine 2 vs 3 API differences.
+            if (originalZones.Count == 0)
+            {
+                foreach (var prop in composer.GetType().GetProperties())
+                {
+                    if (prop.Name.Contains("Zone") && prop.CanWrite && (prop.PropertyType == typeof(Vector2) || prop.PropertyType == typeof(float)))
+                    {
+                        originalZones[prop.Name] = prop.GetValue(composer);
+                        if (prop.PropertyType == typeof(Vector2)) prop.SetValue(composer, Vector2.zero);
+                        if (prop.PropertyType == typeof(float)) prop.SetValue(composer, 0f);
+                    }
+                }
+                foreach (var field in composer.GetType().GetFields())
+                {
+                    if (field.Name.Contains("Zone") && !field.IsInitOnly && (field.FieldType == typeof(Vector2) || field.FieldType == typeof(float)))
+                    {
+                        originalZones[field.Name] = field.GetValue(composer);
+                        if (field.FieldType == typeof(Vector2)) field.SetValue(composer, Vector2.zero);
+                        if (field.FieldType == typeof(float)) field.SetValue(composer, 0f);
+                    }
+                }
+            }
         }
     }
 
@@ -152,6 +178,19 @@ public static class EventHelpers
         {
             // Revert to a default distance (or whatever the standard gameplay distance is)
             composer.CameraDistance = 10f; // Default gameplay distance
+
+            if (originalZones.Count > 0)
+            {
+                foreach (var kvp in originalZones)
+                {
+                    var prop = composer.GetType().GetProperty(kvp.Key);
+                    if (prop != null && prop.CanWrite) prop.SetValue(composer, kvp.Value);
+
+                    var field = composer.GetType().GetField(kvp.Key);
+                    if (field != null && !field.IsInitOnly) field.SetValue(composer, kvp.Value);
+                }
+                originalZones.Clear();
+            }
         }
     }
 

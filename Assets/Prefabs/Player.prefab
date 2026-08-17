@@ -4534,7 +4534,6 @@ GameObject:
   - component: {fileID: 1951811059619519614}
   - component: {fileID: 6000090844198225208}
   - component: {fileID: 1616840405258906196}
-  - component: {fileID: 5337061384583916274}
   m_Layer: 5
   m_Name: Joystick (1)
   m_TagString: Untagged
@@ -4599,43 +4598,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5337061384583916274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8799050000254285049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9d677f1681015749b15c436eec6d880, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.OnScreen.OnScreenStick
-  m_MovementRange: 50
-  m_DynamicOriginRange: 100
-  m_ControlPath: <Gamepad>/leftStick
-  m_Behaviour: 0
-  m_UseIsolatedInputActions: 0
-  m_PointerDownAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: be0cd425-c9f0-4ffe-9bf6-0882778f2371
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-    m_Priority: 0
-  m_PointerMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 48536be5-87ad-44ad-b612-134add01cbc8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-    m_Priority: 0
 --- !u!1 &8952586559860093351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,6 +4741,9 @@ MonoBehaviour:
   OnVictory:
     m_PersistentCalls:
       m_Calls: []
+  OnDefeat:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7701258027209241150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4801,6 +4766,7 @@ MonoBehaviour:
       m_Calls: []
   currentSpeaker: {fileID: 0}
   startingDialogue: {fileID: 0}
+  playStartingDialogueAudio: 0
 --- !u!114 &321021161267123270
 MonoBehaviour:
   m_ObjectHideFlags: 0
