@@ -3443,7 +3443,7 @@ PrefabInstance:
     - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: sceneMusic
       value: 
-      objectReference: {fileID: 8300000, guid: fd5ab0807f5092687afd8b49233ac827, type: 3}
+      objectReference: {fileID: 8300000, guid: 67fac127be40e3c13a46f4acd6857537, type: 3}
     - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: sceneToLoad
       value: 
