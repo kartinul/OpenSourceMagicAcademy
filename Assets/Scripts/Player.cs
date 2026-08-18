@@ -36,6 +36,24 @@ public class Player : MonoBehaviour
 
   }
 
+  void Start()
+  {
+    CheckEventSystem();
+  }
+
+  void CheckEventSystem()
+  {
+    if (UnityEngine.EventSystems.EventSystem.current == null)
+    {
+      GameObject prefab = Resources.Load<GameObject>("EventSystem");
+      if (prefab != null)
+      {
+          GameObject esObj = Instantiate(prefab);
+          esObj.name = "EventSystem";
+      }
+    }
+  }
+
   void OnEnable()
   {
     SceneManager.sceneLoaded += OnSceneLoaded;
@@ -52,16 +70,7 @@ public class Player : MonoBehaviour
     PlayerInteraction interact = GetComponent<PlayerInteraction>();
     if (interact != null) interact.canInteract = true;
 
-    if (UnityEngine.EventSystems.EventSystem.current == null)
-    {
-      GameObject prefab = Resources.Load<GameObject>("EventSystem");
-      if (prefab != null)
-      {
-          GameObject esObj = Instantiate(prefab);
-          esObj.name = "EventSystem";
-          // No need to DontDestroyOnLoad because it will just spawn one in each scene if missing
-      }
-    }
+    CheckEventSystem();
 
     GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("PlayerSpawn");
 
