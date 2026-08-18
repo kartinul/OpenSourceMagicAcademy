@@ -493,7 +493,7 @@ public class BattleManager : MonoBehaviour
 
     bool isEffective = spell.type switch
     {
-      SpellType.Damage => ApplyDamageSpell(target, spell.power, caster.transform),
+      SpellType.Damage => ApplyDamageSpell(target, spell.power, caster),
       SpellType.Heal => ApplyHealSpell(caster, spell.power),
       _ => HandleUnsupportedSpell(spell.type)
     };
@@ -501,16 +501,18 @@ public class BattleManager : MonoBehaviour
     return new SpellResult(isHit: true, isEffective: isEffective);
   }
 
-  private bool ApplyDamageSpell(Combatant target, int power, Transform casterTransform)
+  private bool ApplyDamageSpell(Combatant target, int power, Combatant caster)
   {
-    target.TakeDamage(power, casterTransform);
-    return power > 0;
+    int scaledPower = power * caster.level;
+    target.TakeDamage(scaledPower, caster.transform);
+    return scaledPower > 0;
   }
 
   private bool ApplyHealSpell(Combatant caster, int power)
   {
-    caster.Heal(power);
-    return power > 0;
+    int scaledPower = power * caster.level;
+    caster.Heal(scaledPower);
+    return scaledPower > 0;
   }
 
   private bool HandleUnsupportedSpell(SpellType type)
@@ -609,6 +611,26 @@ public class BattleManager : MonoBehaviour
     if (State == BattleState.Victory && player != null)
     {
         player.Revive();
+    }
+    else if (State == BattleState.Defeat && player != null)
+    {
+        player.Revive();
+        
+        if (playerController != null)
+        {
+            playerController.canMove = false;
+            if (playerController.rb != null)
+                playerController.rb.linearVelocity = Vector2.zero;
+        }
+
+        if (SceneFader.Instance != null)
+        {
+            SceneFader.Instance.FadeAndLoad(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        }
+        else
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        }
     }
 
     Debug.Log("[BattleManager] Battle ended.");
