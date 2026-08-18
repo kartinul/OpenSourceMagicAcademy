@@ -31,17 +31,6 @@ public class Player : MonoBehaviour
     if (rb == null)
       rb = GetComponent<Rigidbody2D>();
 
-    if (UnityEngine.EventSystems.EventSystem.current == null)
-    {
-      GameObject prefab = Resources.Load<GameObject>("EventSystem");
-      if (prefab != null)
-      {
-          GameObject esObj = Instantiate(prefab);
-          esObj.name = "EventSystem";
-          DontDestroyOnLoad(esObj);
-      }
-    }
-
     if (animator == null)
       animator = GetComponentInChildren<Animator>();
 
@@ -62,6 +51,17 @@ public class Player : MonoBehaviour
     canMove = true;
     PlayerInteraction interact = GetComponent<PlayerInteraction>();
     if (interact != null) interact.canInteract = true;
+
+    if (UnityEngine.EventSystems.EventSystem.current == null)
+    {
+      GameObject prefab = Resources.Load<GameObject>("EventSystem");
+      if (prefab != null)
+      {
+          GameObject esObj = Instantiate(prefab);
+          esObj.name = "EventSystem";
+          // No need to DontDestroyOnLoad because it will just spawn one in each scene if missing
+      }
+    }
 
     GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("PlayerSpawn");
 
