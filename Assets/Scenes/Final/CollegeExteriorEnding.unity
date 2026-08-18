@@ -1063,6 +1063,37 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &377218851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377218852}
+  m_Layer: 0
+  m_Name: Statue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &377218852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377218851}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.85, y: 17.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &380945404
 GameObject:
   m_ObjectHideFlags: 0
@@ -56764,7 +56795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Combatant
   combatantName: Coldemort
   maxHP: 2000
-  level: 8
+  level: 4
   currentHP: 0
   musicAudioClip: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -56788,7 +56819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   spells:
   - {fileID: 11400000, guid: d567a51d0f310964f8e9df59e19ec4ba, type: 2}
-  - {fileID: 11400000, guid: e969f8831308340438b881857dfe25b7, type: 2}
+  - {fileID: 11400000, guid: 26be70bab1fe96b47b8b3860d5a776fc, type: 2}
 --- !u!1 &1239598475
 GameObject:
   m_ObjectHideFlags: 0
@@ -66013,9 +66044,10 @@ MonoBehaviour:
   dumbledore: {fileID: 1864499732}
   coldemort: {fileID: 1219598847}
   statueNPC: {fileID: 1659526212}
+  statuePlayerPosition: {fileID: 377218852}
+  fightPlayerPosition: {fileID: 3043083110639913442}
   dumbledoreDeathAsset: {fileID: 11400000, guid: ea60fb811bafb5f44917f677bbfd8688, type: 2}
   spiritOfTorvaldsAsset: {fileID: 11400000, guid: 31cfdaff69956be5bbbb409c73dd6a79, type: 2}
-  rmRfSpell: {fileID: 11400000, guid: 60eb222f5a8af6944ab0313505692a2d, type: 2}
 --- !u!1 &1653877834
 GameObject:
   m_ObjectHideFlags: 0
@@ -123862,6 +123894,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 119e3bca63e6c7d469dbf348f221b64a, type: 3}
+--- !u!4 &3043083110639913442 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7265459486873363538, guid: 119e3bca63e6c7d469dbf348f221b64a, type: 3}
+  m_PrefabInstance: {fileID: 3043083110639913441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8795052042219641764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123941,3 +123978,4 @@ SceneRoots:
   - {fileID: 1864499734}
   - {fileID: 1219598849}
   - {fileID: 1648086589}
+  - {fileID: 377218852}

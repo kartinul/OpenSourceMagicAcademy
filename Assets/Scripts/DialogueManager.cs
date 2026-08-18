@@ -125,7 +125,7 @@ public class DialogueManager : MonoBehaviour
 
     if (playerInteraction != null && playerInteraction.currentInteractable != null)
     {
-      if (playerInteraction.currentInteractable is Component interactableComponent)
+      if (playerInteraction.currentInteractable is Component interactableComponent && interactableComponent != null)
       {
         npcTarget = interactableComponent.transform;
       }

@@ -4,233 +4,249 @@ using UnityEngine.SceneManagement;
 
 public class CollegeBossSequence : MonoBehaviour
 {
-    [Header("Core Dependencies")]
-    private DialogueManager dialogueManager;
-    private BattleManager battleManager;
+  [Header("Core Dependencies")]
+  private DialogueManager dialogueManager;
+  private BattleManager battleManager;
 
-    [Header("Scene Objects")]
-    [SerializeField] private GameObject dumbledore;
-    [SerializeField] private GameObject coldemort;
-    [SerializeField] private GameObject statueNPC;
+  [Header("Scene Objects")]
+  [SerializeField] private GameObject dumbledore;
+  [SerializeField] private GameObject coldemort;
+  [SerializeField] private GameObject statueNPC;
 
-    [Header("Dialogue Assets")]
-    [SerializeField] private DialogueData dumbledoreDeathAsset;
-    [SerializeField] private DialogueData spiritOfTorvaldsAsset;
-    [SerializeField] private Spell rmRfSpell;
+  [Header("Player Transforms")]
+  [SerializeField] private Transform statuePlayerPosition;
+  [SerializeField] private Transform fightPlayerPosition;
 
-    private float bossCameraZoom = 17.5f;
-    private float bossCameraXOffset = 2f;
-    private float bossCameraYOffset = -4f;
+  [Header("Dialogue Assets")]
+  [SerializeField] private DialogueData dumbledoreDeathAsset;
+  [SerializeField] private DialogueData spiritOfTorvaldsAsset;
 
-    private float secondFightZoom = 21.6f;
-    private float secondFightXOffset = 2f;
-    private float secondFightYOffset = -6.26f;
+  private float bossCameraZoom = 17.5f;
+  private float bossCameraXOffset = 2f;
+  private float bossCameraYOffset = -4f;
 
-    private bool battleEnded = false;
-    private bool battleWon = false;
-    private bool isSecondBattle = false;
-    private GameObject bossCameraTarget;
+  private float secondFightZoom = 21.6f;
+  private float secondFightXOffset = 2f;
+  private float secondFightYOffset = -6.26f;
 
-    private void Start()
+  private bool battleEnded = false;
+  private bool battleWon = false;
+  private bool isSecondBattle = false;
+  private GameObject bossCameraTarget;
+
+  private void Start()
+  {
+    dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>(true);
+    battleManager = Player.Instance.GetComponentInChildren<BattleManager>(true);
+
+    if (battleManager != null)
     {
-        dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>(true);
-        battleManager = Player.Instance.GetComponentInChildren<BattleManager>(true);
+      battleManager.OnVictory.AddListener(OnBattleVictory);
+      battleManager.OnDefeat.AddListener(OnBattleDefeat);
+      battleManager.bypassSceneReloadOnDefeat = true;
+    }
 
-        if (battleManager != null)
+    bossCameraTarget = new GameObject("BossCameraTarget");
+    bossCameraTarget.transform.SetParent(coldemort.transform);
+    bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
+
+    StartCoroutine(RunSequence());
+  }
+
+  private void OnDestroy()
+  {
+    if (battleManager != null)
+    {
+      battleManager.OnVictory.RemoveListener(OnBattleVictory);
+      battleManager.OnDefeat.RemoveListener(OnBattleDefeat);
+      battleManager.bypassSceneReloadOnDefeat = false;
+    }
+    if (bossCameraTarget != null) Destroy(bossCameraTarget);
+  }
+
+  private void OnBattleVictory()
+  {
+    battleEnded = true;
+    battleWon = true;
+  }
+
+  private void OnBattleDefeat()
+  {
+    battleEnded = true;
+    battleWon = false;
+  }
+
+  private IEnumerator RunSequence()
+  {
+    // 1. Coldemort Dialog
+    bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
+    EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, bossCameraZoom);
+    yield return PlayDialogueAndWait(CreateDialogue("Coldemort",
+        "This is the end for you. I have defeated your master."
+    ));
+
+    // 2. Pan to Dumbledore
+    EventHelpers.FocusCameraOn(dumbledore);
+    if (dumbledoreDeathAsset != null)
+    {
+      yield return PlayDialogueAndWait(dumbledoreDeathAsset);
+    }
+    else
+    {
+      Debug.LogWarning("DumbledoreDeath asset is missing!");
+    }
+
+    // 3. Back to boss & enter first fight
+    bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
+    EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, bossCameraZoom);
+    yield return new WaitForSeconds(0.5f);
+
+    Combatant coldemortCombatant = coldemort.GetComponentInChildren<Combatant>(true);
+    Combatant playerCombatant = Player.Instance.GetComponentInChildren<Combatant>(true);
+
+    if (coldemortCombatant != null && battleManager != null && playerCombatant != null)
+    {
+      battleEnded = false;
+      isSecondBattle = false;
+      battleManager.StartBattle(coldemortCombatant);
+
+      // Wait for battle to finish
+      yield return new WaitUntil(() => battleEnded);
+
+      // Wait an additional 3.5 seconds because BattleManager takes 3 seconds in ShowEndMessageRoutine before EndBattle()
+      yield return new WaitForSeconds(3.5f);
+
+      // The user assumes you lose the first time.
+      if (!battleWon)
+      {
+        // 4. After you lose, go to FIGURE (statue), play SpiritOfTorvalds.asset
+        EventHelpers.FocusCameraOn(statueNPC);
+
+        if (statuePlayerPosition != null && Player.Instance != null)
         {
-            battleManager.OnVictory.AddListener(OnBattleVictory);
-            battleManager.OnDefeat.AddListener(OnBattleDefeat);
+          Player.Instance.transform.position = statuePlayerPosition.position;
         }
 
-        bossCameraTarget = new GameObject("BossCameraTarget");
-        bossCameraTarget.transform.SetParent(coldemort.transform);
-        bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
-
-        StartCoroutine(RunSequence());
-    }
-
-    private void OnDestroy()
-    {
-        if (battleManager != null)
+        if (spiritOfTorvaldsAsset != null)
         {
-            battleManager.OnVictory.RemoveListener(OnBattleVictory);
-            battleManager.OnDefeat.RemoveListener(OnBattleDefeat);
-        }
-        if (bossCameraTarget != null) Destroy(bossCameraTarget);
-    }
-
-    private void OnBattleVictory()
-    {
-        battleEnded = true;
-        battleWon = true;
-    }
-
-    private void OnBattleDefeat()
-    {
-        battleEnded = true;
-        battleWon = false;
-    }
-
-    private IEnumerator RunSequence()
-    {
-        if (Player.Instance != null) {
-            Player.Instance.canMove = false;
-            PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
-            if (interact != null) interact.canInteract = false;
-        }
-        // 1. Coldemort Dialog
-        bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
-        EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, bossCameraZoom);
-        yield return PlayDialogueAndWait(CreateDialogue("Coldemort",
-            "This is the end for you. I have defeated your master."
-        ));
-
-        // 2. Pan to Dumbledore
-        EventHelpers.FocusCameraOn(dumbledore);
-        if (dumbledoreDeathAsset != null)
-        {
-            yield return PlayDialogueAndWait(dumbledoreDeathAsset);
+          yield return PlayDialogueAndWait(spiritOfTorvaldsAsset);
         }
         else
         {
-            Debug.LogWarning("DumbledoreDeath asset is missing!");
+          Debug.LogWarning("SpiritOfTorvalds asset is missing!");
         }
 
-        // 3. Back to boss & enter first fight
-        bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
-        EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, bossCameraZoom);
+        // Unlock final spell (rm -rf) manually before second battle
+        Spell finalSpell = Resources.Load<Spell>("Spells/rm -rf"); // Try loading from Resources if it exists
+
+#if UNITY_EDITOR
+        if (finalSpell == null)
+        {
+          finalSpell = UnityEditor.AssetDatabase.LoadAssetAtPath<Spell>("Assets/Scripts/Battle/Spells/rm -rf.asset");
+        }
+#endif
+        if (finalSpell != null)
+        {
+          SpellBook spellBook = FindFirstObjectByType<SpellBook>();
+          if (spellBook != null)
+          {
+            spellBook.UnlockSpell(finalSpell, true);
+            yield return null; // wait a frame for it to open
+          }
+        }
+
+        // 5. Go back to fight scene (second battle)
+        if (fightPlayerPosition != null && Player.Instance != null)
+        {
+          Player.Instance.transform.position = fightPlayerPosition.position;
+        }
+
+        bossCameraTarget.transform.localPosition = new Vector3(secondFightXOffset, secondFightYOffset, 0);
+        EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, secondFightZoom);
+
+        if (finalSpell != null)
+        {
+          SpellBook spellBook = FindFirstObjectByType<SpellBook>();
+          if (spellBook != null)
+          {
+            yield return new WaitUntil(() => !spellBook.IsUnlockPanelOpen);
+          }
+        }
+
         yield return new WaitForSeconds(0.5f);
 
-        Combatant coldemortCombatant = coldemort.GetComponentInChildren<Combatant>(true);
-        Combatant playerCombatant = Player.Instance.GetComponentInChildren<Combatant>(true);
+        battleEnded = false;
+        isSecondBattle = true;
 
-        if (coldemortCombatant != null && battleManager != null && playerCombatant != null)
+        // Revive player manually since they lost the last one
+        playerCombatant.Revive();
+
+        battleManager.StartBattle(coldemortCombatant);
+
+        yield return new WaitUntil(() => battleEnded);
+
+        if (battleWon)
         {
-            battleEnded = false;
-            isSecondBattle = false;
-            battleManager.StartBattle(coldemortCombatant);
+          // 6. If you win, pan back to statue and YAP
+          EventHelpers.FocusCameraOn(statueNPC);
+          yield return PlayDialogueAndWait(CreateDialogue("Spirit of Torvalds",
+              "You see, young wizard? This is the power of open source.",
+              "When we share our code, our knowledge, our magic...",
+              "We become stronger than any single proprietary force.",
+              "The community stands with you."
+          ));
 
-            // Wait for battle to finish
-            yield return new WaitUntil(() => battleEnded);
-
-            // Wait an additional 3.5 seconds because BattleManager takes 3 seconds in ShowEndMessageRoutine before EndBattle()
-            yield return new WaitForSeconds(3.5f);
-
-            // The user assumes you lose the first time.
-            if (!battleWon)
-            {
-                // 4. After you lose, go to FIGURE (statue), play SpiritOfTorvalds.asset
-                EventHelpers.FocusCameraOn(statueNPC);
-                if (spiritOfTorvaldsAsset != null)
-                {
-                    yield return PlayDialogueAndWait(spiritOfTorvaldsAsset);
-                }
-                else
-                {
-                    Debug.LogWarning("SpiritOfTorvalds asset is missing!");
-                }
-
-                // 5. Go back to fight scene (second battle)
-                bossCameraTarget.transform.localPosition = new Vector3(secondFightXOffset, secondFightYOffset, 0);
-                EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, secondFightZoom);
-                yield return new WaitForSeconds(0.5f);
-
-                battleEnded = false;
-                isSecondBattle = true;
-
-                // Revive player manually since they lost the last one
-                playerCombatant.Revive();
-
-                if (rmRfSpell != null)
-                {
-                    SpellBook spellBook = Player.Instance.GetComponentInChildren<SpellBook>(true);
-                    if (spellBook != null) 
-                    {
-                        spellBook.UnlockSpell(rmRfSpell);
-                        yield return new WaitForSeconds(3.5f); // wait for it to open
-                        yield return new WaitUntil(() => !spellBook.IsUnlockPanelOpen);
-                    }
-                }
-
-                battleManager.StartBattle(coldemortCombatant);
-
-                yield return new WaitUntil(() => battleEnded);
-                yield return new WaitForSeconds(3.5f);
-
-                if (battleWon)
-                {
-                    // 6. If you win, pan back to statue and YAP
-                    EventHelpers.FocusCameraOn(statueNPC);
-                    yield return PlayDialogueAndWait(CreateDialogue("Spirit of Torvalds",
-                        "You see, young wizard? This is the power of open source.",
-                        "When we share our code, our knowledge, our magic...",
-                        "We become stronger than any single proprietary force.",
-                        "The community stands with you."
-                    ));
-
-                    // Sequence end
-                    EventHelpers.ClearCameraFocus();
-                    Debug.Log("College Boss Sequence Completed.");
-                    
-                    if (Player.Instance != null) {
-                        Player.Instance.canMove = true;
-                        PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
-                        if (interact != null) interact.canInteract = true;
-                    }
-                }
-                else
-                {
-                    // 7. If you lose again, reload the entire scene
-                    Debug.Log("Player lost the second battle, reloading scene...");
-                    SceneChanger.changeScene(0, SceneManager.GetActiveScene().name);
-                }
-            }
-            else
-            {
-                // Edge case: if they somehow won the unwinnable fight
-                Debug.LogWarning("Player won the unwinnable first fight! Continuing sequence anyway?");
-                EventHelpers.ClearCameraFocus();
-            }
+          // Sequence end
+          EventHelpers.ClearCameraFocus();
+          Debug.Log("College Boss Sequence Completed.");
         }
         else
         {
-            Debug.LogError("Missing Combatant script or BattleManager!");
+          // 7. If you lose again, reload the entire scene
+          Debug.Log("Player lost the second battle, reloading scene...");
+          SceneChanger.changeScene(0, SceneManager.GetActiveScene().name);
         }
+      }
+      else
+      {
+        // Edge case: if they somehow won the unwinnable fight
+        Debug.LogWarning("Player won the unwinnable first fight! Continuing sequence anyway?");
+        EventHelpers.ClearCameraFocus();
+      }
     }
-
-    private DialogueData CreateDialogue(string speaker, params string[] lines)
+    else
     {
-        DialogueData data = ScriptableObject.CreateInstance<DialogueData>();
-        data.speakerName = speaker;
-        data.lines = lines;
-        return data;
+      Debug.LogError("Missing Combatant script or BattleManager!");
     }
+  }
 
-    private IEnumerator PlayDialogueAndWait(DialogueData data)
+  private DialogueData CreateDialogue(string speaker, params string[] lines)
+  {
+    DialogueData data = ScriptableObject.CreateInstance<DialogueData>();
+    data.speakerName = speaker;
+    data.lines = lines;
+    return data;
+  }
+
+  private IEnumerator PlayDialogueAndWait(DialogueData data)
+  {
+    if (data == null)
     {
-        if (data == null)
-        {
-            yield break;
-        }
-
-        bool isFinished = false;
-
-        UnityEngine.Events.UnityAction onEnd = null;
-        onEnd = () =>
-        {
-            isFinished = true;
-            dialogueManager.OnDialogueEnded.RemoveListener(onEnd);
-        };
-
-        dialogueManager.OnDialogueEnded.AddListener(onEnd);
-        dialogueManager.StartDialogue(data);
-
-        yield return new WaitUntil(() => isFinished);
-
-        if (Player.Instance != null) {
-            Player.Instance.canMove = false;
-            PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
-            if (interact != null) interact.canInteract = false;
-        }
+      yield break;
     }
+
+    bool isFinished = false;
+
+    UnityEngine.Events.UnityAction onEnd = null;
+    onEnd = () =>
+    {
+      isFinished = true;
+      dialogueManager.OnDialogueEnded.RemoveListener(onEnd);
+    };
+
+    dialogueManager.OnDialogueEnded.AddListener(onEnd);
+    dialogueManager.StartDialogue(data);
+
+    yield return new WaitUntil(() => isFinished);
+  }
 }

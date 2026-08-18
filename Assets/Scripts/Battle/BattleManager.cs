@@ -70,6 +70,7 @@ public class BattleManager : MonoBehaviour
 
   public UnityEvent OnVictory;
   public UnityEvent OnDefeat;
+  public bool bypassSceneReloadOnDefeat = false;
 
   private AudioManager audioManagerInstance;
   private AudioClip previousMusicClip;
@@ -510,16 +511,14 @@ public class BattleManager : MonoBehaviour
 
   private bool ApplyDamageSpell(Combatant target, int power, Combatant caster)
   {
-    int scaledPower = power * caster.level;
-    target.TakeDamage(scaledPower, caster.transform);
-    return scaledPower > 0;
+    target.TakeDamage(power, caster.transform);
+    return power > 0;
   }
 
   private bool ApplyHealSpell(Combatant caster, int power)
   {
-    int scaledPower = power * caster.level;
-    caster.Heal(scaledPower);
-    return scaledPower > 0;
+    caster.Heal(power);
+    return power > 0;
   }
 
   private bool HandleUnsupportedSpell(SpellType type)
@@ -630,13 +629,16 @@ public class BattleManager : MonoBehaviour
                 playerController.rb.linearVelocity = Vector2.zero;
         }
 
-        if (SceneFader.Instance != null)
+        if (!bypassSceneReloadOnDefeat)
         {
-            SceneFader.Instance.FadeAndLoad(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-        }
-        else
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            if (SceneFader.Instance != null)
+            {
+                SceneFader.Instance.FadeAndLoad(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            }
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            }
         }
     }
 

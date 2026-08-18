@@ -27,7 +27,7 @@ public class SpellBook : MonoBehaviour
     }
 
 
-    public void UnlockSpell(Spell spell)
+    public void UnlockSpell(Spell spell, bool instant = false)
     {
         if (spell == null)
             return;
@@ -61,7 +61,14 @@ public class SpellBook : MonoBehaviour
             Debug.Log($"Player leveled up! Current level: {Player.Instance.level}, MaxHP: {c?.maxHP}");
         }
 
-        StartCoroutine(ShowSpellUnlockDelayed(spell));
+        if (instant)
+        {
+            ShowSpellUnlock(spell);
+        }
+        else
+        {
+            StartCoroutine(ShowSpellUnlockDelayed(spell));
+        }
     }
 
     private IEnumerator ShowSpellUnlockDelayed(Spell spell)

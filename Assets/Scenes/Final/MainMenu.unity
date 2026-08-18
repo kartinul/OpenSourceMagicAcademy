@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   musicAudioSource: {fileID: 603083870}
   sfxAudioSource: {fileID: 1141834195}
-  talkingClip: {fileID: 8300000, guid: d46050f5d8a1e45e18c27b705388b91a, type: 3}
+  talkingClip: {fileID: 8300000, guid: dddead753286c6e41859d3338eedc98a, type: 3}
   minPitch: 0.9
   maxPitch: 1.1
   talkingFadeDuration: 0.2
