@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpellButton
   button: {fileID: 74754548461562839}
   spellText: {fileID: 5562030112593192244}
+  colorMultiplier: 1.6
 --- !u!1 &8733197792719813260
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,8 +237,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: git revert
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 36c34350dc4de264cada5673f20e15f4, type: 2}
-  m_sharedMaterial: {fileID: 2548881455621347821, guid: 36c34350dc4de264cada5673f20e15f4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
