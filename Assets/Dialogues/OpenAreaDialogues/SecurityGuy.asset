@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ce9f6737e6e845b50655fcc50fb57, type: 3}
   m_Name: SecurityGuy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: 
+  speakerName: Rushil
   lines:
   - I have been oredered by Humbledore to guard this area.
+  - We must stop Coldermort's evil plans. The world cannot function without open
+    source software.

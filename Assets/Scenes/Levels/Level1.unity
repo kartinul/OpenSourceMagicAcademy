@@ -3441,6 +3441,10 @@ PrefabInstance:
       value: OpenArea
       objectReference: {fileID: 0}
     - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: fd5ab0807f5092687afd8b49233ac827, type: 3}
+    - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: sceneToLoad
       value: 
       objectReference: {fileID: 102900000, guid: 467c39b09d442447e8c52bd13dfab8e3, type: 3}

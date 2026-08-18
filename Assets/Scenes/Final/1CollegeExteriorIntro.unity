@@ -37056,6 +37056,10 @@ PrefabInstance:
       value: 2Level5Dumble
       objectReference: {fileID: 0}
     - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: d52ced2842d25c7ac99a9cf5e3c43bc7, type: 3}
+    - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: sceneToLoad
       value: 
       objectReference: {fileID: 102900000, guid: d975c3ce0287644309b653b6ed0b29db, type: 3}
@@ -124096,6 +124100,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: 2Level5Dumble
       objectReference: {fileID: 0}
+    - target: {fileID: 3111061743380866116, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: d52ced2842d25c7ac99a9cf5e3c43bc7, type: 3}
     - target: {fileID: 7958785086983397583, guid: 6dfd160d3479142f4a2535b0293ccb09, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.35

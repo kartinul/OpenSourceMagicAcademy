@@ -32,6 +32,10 @@ public class SceneChanger : MonoBehaviour
   {
     if (other.gameObject.GetComponent<Player>() != null)
     {
+      if (audioManager != null)
+      {
+        audioManager.PlayMusic(sceneMusic);
+      }
       LoadWithTransition();
     }
   }
