@@ -21,6 +21,9 @@ public class CollegeBossSequence : MonoBehaviour
   [SerializeField] private DialogueData dumbledoreDeathAsset;
   [SerializeField] private DialogueData spiritOfTorvaldsAsset;
 
+  [Header("Spells")]
+  [SerializeField] private Spell finalSpellAsset;
+
   private float bossCameraZoom = 17.5f;
   private float bossCameraXOffset = 2f;
   private float bossCameraYOffset = -4f;
@@ -137,22 +140,18 @@ public class CollegeBossSequence : MonoBehaviour
         }
 
         // Unlock final spell (rm -rf) manually before second battle
-        Spell finalSpell = Resources.Load<Spell>("Spells/rm -rf"); // Try loading from Resources if it exists
-
-#if UNITY_EDITOR
-        if (finalSpell == null)
-        {
-          finalSpell = UnityEditor.AssetDatabase.LoadAssetAtPath<Spell>("Assets/Scripts/Battle/Spells/rm -rf.asset");
-        }
-#endif
-        if (finalSpell != null)
+        if (finalSpellAsset != null)
         {
           SpellBook spellBook = FindFirstObjectByType<SpellBook>();
           if (spellBook != null)
           {
-            spellBook.UnlockSpell(finalSpell, true);
+            spellBook.UnlockSpell(finalSpellAsset, true);
             yield return null; // wait a frame for it to open
           }
+        }
+        else
+        {
+          Debug.LogWarning("Final spell asset is missing!");
         }
 
         // 5. Go back to fight scene (second battle)
@@ -164,7 +163,7 @@ public class CollegeBossSequence : MonoBehaviour
         bossCameraTarget.transform.localPosition = new Vector3(secondFightXOffset, secondFightYOffset, 0);
         EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, secondFightZoom);
 
-        if (finalSpell != null)
+        if (finalSpellAsset != null)
         {
           SpellBook spellBook = FindFirstObjectByType<SpellBook>();
           if (spellBook != null)

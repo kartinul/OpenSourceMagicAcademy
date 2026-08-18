@@ -66048,6 +66048,7 @@ MonoBehaviour:
   fightPlayerPosition: {fileID: 3043083110639913442}
   dumbledoreDeathAsset: {fileID: 11400000, guid: ea60fb811bafb5f44917f677bbfd8688, type: 2}
   spiritOfTorvaldsAsset: {fileID: 11400000, guid: 31cfdaff69956be5bbbb409c73dd6a79, type: 2}
+  finalSpellAsset: {fileID: 11400000, guid: 60eb222f5a8af6944ab0313505692a2d, type: 2}
 --- !u!1 &1653877834
 GameObject:
   m_ObjectHideFlags: 0
