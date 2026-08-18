@@ -23,7 +23,6 @@ public class MapController : MonoBehaviour
   private Player player;
   private PlayerInteraction playerInteraction;
   private Coroutine lockedToastCoroutine;
-  private int currentLevel = 1;
   private bool hasMap;
   private bool isOpen;
   private bool previousCanMove;
@@ -47,7 +46,6 @@ public class MapController : MonoBehaviour
     if (lockedToastText != null)
       lockedToastText.text = "You haven't received the map yet.";
 
-    UpdateLevelForScene(SceneManager.GetActiveScene().name);
     UpdateMapImage();
   }
 
@@ -128,36 +126,7 @@ public class MapController : MonoBehaviour
     if (isOpen)
       CloseMap();
 
-    UpdateLevelForScene(scene.name);
     UpdateMapImage();
-  }
-
-  private void UpdateLevelForScene(string sceneName)
-  {
-    int sceneLevel = ResolveLevel(sceneName);
-    if (sceneLevel > currentLevel)
-      currentLevel = sceneLevel;
-  }
-
-  private static int ResolveLevel(string sceneName)
-  {
-    switch (sceneName)
-    {
-      case "Level1":
-      case "Level1_Floor1":
-        return 1;
-      case "Level2":
-        return 2;
-      case "Level3":
-      case "Level3_Floor1":
-        return 3;
-      case "Level4":
-        return 4;
-      case "3Level5":
-        return 5;
-      default:
-        return 0;
-    }
   }
 
   private void UpdateMapImage()
@@ -165,7 +134,13 @@ public class MapController : MonoBehaviour
     if (mapImage == null || levelMaps == null || levelMaps.Length == 0)
       return;
 
-    int mapIndex = Mathf.Clamp(currentLevel - 1, 0, levelMaps.Length - 1);
+    int pLevel = 1;
+    if (Player.Instance != null)
+        pLevel = Player.Instance.level;
+    else if (player != null)
+        pLevel = player.level;
+
+    int mapIndex = Mathf.Clamp(pLevel - 1, 0, levelMaps.Length - 1);
     mapImage.sprite = levelMaps[mapIndex];
     mapImage.preserveAspect = true;
   }
