@@ -56763,8 +56763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Combatant
   combatantName: Coldemort
-  maxHP: 1000
-  level: 4
+  maxHP: 2000
+  level: 8
   currentHP: 0
   musicAudioClip: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -66015,6 +66015,7 @@ MonoBehaviour:
   statueNPC: {fileID: 1659526212}
   dumbledoreDeathAsset: {fileID: 11400000, guid: ea60fb811bafb5f44917f677bbfd8688, type: 2}
   spiritOfTorvaldsAsset: {fileID: 11400000, guid: 31cfdaff69956be5bbbb409c73dd6a79, type: 2}
+  rmRfSpell: {fileID: 11400000, guid: 60eb222f5a8af6944ab0313505692a2d, type: 2}
 --- !u!1 &1653877834
 GameObject:
   m_ObjectHideFlags: 0

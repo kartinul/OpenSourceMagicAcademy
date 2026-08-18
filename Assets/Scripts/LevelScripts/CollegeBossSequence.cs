@@ -16,6 +16,7 @@ public class CollegeBossSequence : MonoBehaviour
     [Header("Dialogue Assets")]
     [SerializeField] private DialogueData dumbledoreDeathAsset;
     [SerializeField] private DialogueData spiritOfTorvaldsAsset;
+    [SerializeField] private Spell rmRfSpell;
 
     private float bossCameraZoom = 17.5f;
     private float bossCameraXOffset = 2f;
@@ -139,6 +140,17 @@ public class CollegeBossSequence : MonoBehaviour
 
                 // Revive player manually since they lost the last one
                 playerCombatant.Revive();
+
+                if (rmRfSpell != null)
+                {
+                    SpellBook spellBook = Player.Instance.GetComponentInChildren<SpellBook>(true);
+                    if (spellBook != null) 
+                    {
+                        spellBook.UnlockSpell(rmRfSpell);
+                        yield return new WaitForSeconds(3.5f); // wait for it to open
+                        yield return new WaitUntil(() => !spellBook.IsUnlockPanelOpen);
+                    }
+                }
 
                 battleManager.StartBattle(coldemortCombatant);
 
