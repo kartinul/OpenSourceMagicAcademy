@@ -33,10 +33,13 @@ public class Player : MonoBehaviour
 
     if (UnityEngine.EventSystems.EventSystem.current == null)
     {
-      GameObject esObj = new GameObject("EventSystem");
-      esObj.AddComponent<UnityEngine.EventSystems.EventSystem>();
-      esObj.AddComponent<UnityEngine.InputSystem.UI.InputSystemUIInputModule>();
-      DontDestroyOnLoad(esObj);
+      GameObject prefab = Resources.Load<GameObject>("EventSystem");
+      if (prefab != null)
+      {
+          GameObject esObj = Instantiate(prefab);
+          esObj.name = "EventSystem";
+          DontDestroyOnLoad(esObj);
+      }
     }
 
     if (animator == null)
