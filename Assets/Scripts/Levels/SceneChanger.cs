@@ -10,6 +10,7 @@ public class SceneChanger : MonoBehaviour
   [Header("Boss Transition")]
   [SerializeField] private bool goToBoss = false;
   [SerializeField] private int minLevelForBoss = 5;
+  [SerializeField] private AudioClip sceneMusicFinal;
 
 
   private AudioManager audioManager;
@@ -44,17 +45,18 @@ public class SceneChanger : MonoBehaviour
   {
     if (Player.Instance != null)
     {
-        Player.Instance.canMove = false;
-        if (Player.Instance.rb != null)
-        {
-            Player.Instance.rb.linearVelocity = Vector2.zero;
-        }
+      Player.Instance.canMove = false;
+      if (Player.Instance.rb != null)
+      {
+        Player.Instance.rb.linearVelocity = Vector2.zero;
+      }
     }
 
     string targetSceneName = sceneName;
 
     if (goToBoss && Player.Instance != null && Player.Instance.level >= minLevelForBoss)
     {
+      audioManager.PlayMusic(sceneMusicFinal);
       targetSceneName = "CollegeExteriorEnding";
     }
 
@@ -73,11 +75,11 @@ public class SceneChanger : MonoBehaviour
   {
     if (Player.Instance != null)
     {
-        Player.Instance.canMove = false;
-        if (Player.Instance.rb != null)
-        {
-            Player.Instance.rb.linearVelocity = Vector2.zero;
-        }
+      Player.Instance.canMove = false;
+      if (Player.Instance.rb != null)
+      {
+        Player.Instance.rb.linearVelocity = Vector2.zero;
+      }
     }
 
     PlayerPrefs.SetInt("spawnId", spawnId);

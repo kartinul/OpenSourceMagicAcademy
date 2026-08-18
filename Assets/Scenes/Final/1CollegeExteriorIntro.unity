@@ -926,6 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e804d3dd55d52442694f7f3851df847d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollegeExteriorSequence
+  sceneMusic: {fileID: 8300000, guid: d52ced2842d25c7ac99a9cf5e3c43bc7, type: 3}
   dialogueManager: {fileID: 0}
   dumbledore: {fileID: 2015265398}
   coldemort: {fileID: 432463243}
