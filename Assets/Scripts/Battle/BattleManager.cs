@@ -140,9 +140,17 @@ public class BattleManager : MonoBehaviour
   {
     if (State == BattleState.PlayerTurn && spellButtons.Count > 0)
     {
-      bool mouseMoved = Mouse.current != null && (Mouse.current.delta.ReadValue().sqrMagnitude > 0.1f || Mouse.current.leftButton.wasPressedThisFrame);
+      bool pointerUsed = false;
+      if (Mouse.current != null && (Mouse.current.delta.ReadValue().sqrMagnitude > 0.1f || Mouse.current.leftButton.wasPressedThisFrame))
+      {
+          pointerUsed = true;
+      }
+      if (UnityEngine.InputSystem.Touchscreen.current != null && UnityEngine.InputSystem.Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+      {
+          pointerUsed = true;
+      }
 
-      if (mouseMoved)
+      if (pointerUsed)
       {
         if (isUsingKeyboard)
         {
@@ -399,13 +407,12 @@ public class BattleManager : MonoBehaviour
         SetUIVisibility(showSpells: true, showDialogue: false, showHP: true);
         if (spellButtons.Count > 0)
         {
+          if (currentSpellSelectionIndex >= spellButtons.Count)
+              currentSpellSelectionIndex = spellButtons.Count - 1;
+
           if (isUsingKeyboard)
           {
-            SetSpellSelectionIndex(0);
-          }
-          else
-          {
-            currentSpellSelectionIndex = 0;
+            SetSpellSelectionIndex(currentSpellSelectionIndex);
           }
         }
         break;

@@ -30,6 +30,8 @@ public class PlayerInteraction : MonoBehaviour
         bool interactPressed = false;
         if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame) interactPressed = true;
         if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) interactPressed = true;
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) interactPressed = true;
+        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame) interactPressed = true;
 
         if (interactPressed)
         {

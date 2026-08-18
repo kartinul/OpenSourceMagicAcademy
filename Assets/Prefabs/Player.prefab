@@ -5328,7 +5328,7 @@ MonoBehaviour:
   unlockUIDelay: 3
   unlockedSpells:
   - {fileID: 11400000, guid: 717d7b933c9625f40981f02c594dbd2f, type: 2}
-  - {fileID: 11400000, guid: d567a51d0f310964f8e9df59e19ec4ba, type: 2}
+  - {fileID: 11400000, guid: cb779ce94ae210248927675da14bb2f8, type: 2}
   spellUnlockPanel: {fileID: 8076556770853247376}
   spellNameText: {fileID: 7126392269950830011}
   educationalDescriptionText: {fileID: 3777658950738322257}

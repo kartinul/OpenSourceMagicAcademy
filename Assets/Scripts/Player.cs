@@ -126,6 +126,33 @@ public class Player : MonoBehaviour
       if (Gamepad.current.dpad.right.isPressed) movement.x += 1;
     }
 
+    if (UnityEngine.InputSystem.Touchscreen.current != null && UnityEngine.InputSystem.Touchscreen.current.primaryTouch.press.isPressed)
+    {
+      Vector2 touchPos = UnityEngine.InputSystem.Touchscreen.current.primaryTouch.position.ReadValue();
+      if (Camera.main != null)
+      {
+        Vector2 worldPos = Camera.main.ScreenToWorldPoint(touchPos);
+        Vector2 dir = (worldPos - (Vector2)transform.position);
+        if (dir.sqrMagnitude > 0.1f)
+        {
+          movement += dir.normalized;
+        }
+      }
+    }
+    else if (Mouse.current != null && Mouse.current.leftButton.isPressed)
+    {
+      Vector2 mousePos = Mouse.current.position.ReadValue();
+      if (Camera.main != null)
+      {
+        Vector2 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        Vector2 dir = (worldPos - (Vector2)transform.position);
+        if (dir.sqrMagnitude > 0.1f)
+        {
+          movement += dir.normalized;
+        }
+      }
+    }
+
     movement = movement.normalized;
   }
 
