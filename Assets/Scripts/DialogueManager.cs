@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
   [SerializeField] private DialogueSpeaker currentSpeaker;
 
   [SerializeField] private DialogueData startingDialogue;
-  [SerializeField] private bool playStartingDialogueAudio = false;
+  [SerializeField] private bool playStartingDialogueAudio = true;
   public static event EventHandler<DialogueFinishArgs> OnDialogueFinish;
   public class DialogueFinishArgs : EventArgs { public Combatant enemy; };
 
@@ -116,7 +116,7 @@ public class DialogueManager : MonoBehaviour
 
   // this is really shitty architecture but i honestly dont know what to do at this point
   // im exhausted
-  public void StartDialogue(DialogueData dialogue, bool playAudio = false, float? pitch = null)
+  public void StartDialogue(DialogueData dialogue, bool playAudio = true, float? pitch = null)
   {
     Transform npcTarget = null;
 
@@ -134,7 +134,7 @@ public class DialogueManager : MonoBehaviour
     StartDialogue(dialogue, npcTarget, playAudio, pitch);
   }
 
-  public void StartDialogue(DialogueData dialogue, Transform npcTransform, bool playAudio = false, float? pitch = null)
+  public void StartDialogue(DialogueData dialogue, Transform npcTransform, bool playAudio = true, float? pitch = null)
   {
     this.playAudio = playAudio;
     this.currentPitch = pitch;
