@@ -56762,9 +56762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b32659757111944b2c54041ed8739c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Combatant
-  combatantName: Combatant
-  maxHP: 2000
-  level: 1
+  combatantName: Coldemort
+  maxHP: 1000
+  level: 4
   currentHP: 0
   musicAudioClip: {fileID: 0}
   spriteRenderer: {fileID: 0}

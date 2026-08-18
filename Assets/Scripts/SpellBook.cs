@@ -51,7 +51,14 @@ public class SpellBook : MonoBehaviour
         if (Player.Instance != null)
         {
             Player.Instance.level++;
-            Debug.Log($"Player leveled up! Current level: {Player.Instance.level}");
+            Combatant c = Player.Instance.GetComponent<Combatant>();
+            if (c != null)
+            {
+                c.level = Player.Instance.level;
+                c.maxHP += 50; 
+                c.currentHP = c.maxHP;
+            }
+            Debug.Log($"Player leveled up! Current level: {Player.Instance.level}, MaxHP: {c?.maxHP}");
         }
 
         StartCoroutine(ShowSpellUnlockDelayed(spell));
