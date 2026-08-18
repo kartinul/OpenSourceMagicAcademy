@@ -43,7 +43,7 @@ public class SceneChanger : MonoBehaviour
         Player.Instance.canMove = false;
         if (Player.Instance.rb != null)
         {
-            Player.Instance.rb.velocity = Vector2.zero;
+            Player.Instance.rb.linearVelocity = Vector2.zero;
         }
     }
 
@@ -72,7 +72,7 @@ public class SceneChanger : MonoBehaviour
         Player.Instance.canMove = false;
         if (Player.Instance.rb != null)
         {
-            Player.Instance.rb.velocity = Vector2.zero;
+            Player.Instance.rb.linearVelocity = Vector2.zero;
         }
     }
 

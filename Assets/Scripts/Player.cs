@@ -56,6 +56,10 @@ public class Player : MonoBehaviour
 
   void OnSceneLoaded(Scene scene, LoadSceneMode mode)
   {
+    canMove = true;
+    PlayerInteraction interact = GetComponent<PlayerInteraction>();
+    if (interact != null) interact.canInteract = true;
+
     GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("PlayerSpawn");
 
     if (spawnPoints.Length > 0)
