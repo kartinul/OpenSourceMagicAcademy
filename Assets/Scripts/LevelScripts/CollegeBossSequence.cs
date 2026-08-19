@@ -106,6 +106,19 @@ public class CollegeBossSequence : MonoBehaviour
 
     Combatant coldemortCombatant = coldemort.GetComponentInChildren<Combatant>(true);
     Combatant playerCombatant = Player.Instance.GetComponentInChildren<Combatant>(true);
+    EnemyAI coldemortAI = coldemort.GetComponentInChildren<EnemyAI>(true);
+
+    if (coldemortAI != null)
+    {
+      for (int i = 0; i < coldemortAI.spells.Length; i++)
+      {
+        if (coldemortAI.spells[i] != null)
+        {
+          coldemortAI.spells[i] = Instantiate(coldemortAI.spells[i]);
+          coldemortAI.spells[i].power *= 2;
+        }
+      }
+    }
 
     if (coldemortCombatant != null && battleManager != null && playerCombatant != null)
     {
