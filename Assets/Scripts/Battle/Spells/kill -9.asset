@@ -18,5 +18,5 @@ MonoBehaviour:
   educationalDescription: A force-quit signal sent directly by the OS kernel that
     instantly terminates a target process.
   type: 0
-  power: 30
-  accuracy: 0.837
+  power: 40
+  accuracy: 0.8

@@ -19,5 +19,5 @@ MonoBehaviour:
     for. Programmers use it to quickly find patterns, errors, and information across
     files.
   type: 0
-  power: 20
+  power: 25
   accuracy: 0.99
