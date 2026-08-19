@@ -73,18 +73,22 @@ public class MapController : MonoBehaviour
       CloseMap();
   }
 
+  private int frameOpened;
+
   private void Update()
   {
-    if (Keyboard.current == null)
-      return;
-
-    bool mapPressed = Keyboard.current.mKey.wasPressedThisFrame;
-    bool closePressed = Keyboard.current.escapeKey.wasPressedThisFrame;
+    bool mapPressed = Keyboard.current != null && Keyboard.current.mKey.wasPressedThisFrame;
+    bool closePressed = Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame;
 
     if (isOpen)
     {
-      if (mapPressed || closePressed)
+      bool anyClick = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+      bool anyTouch = Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame;
+
+      if (Time.frameCount > frameOpened && (mapPressed || closePressed || anyClick || anyTouch))
+      {
         CloseMap();
+      }
 
       return;
     }
@@ -145,7 +149,15 @@ public class MapController : MonoBehaviour
     mapImage.preserveAspect = true;
   }
 
-  private void OpenMap()
+  public void ToggleMap()
+  {
+    if (isOpen)
+      CloseMap();
+    else
+      OpenMap();
+  }
+
+  public void OpenMap()
   {
     if (mapOverlay == null || mapImage == null)
     {
@@ -166,11 +178,12 @@ public class MapController : MonoBehaviour
       playerInteraction.canInteract = false;
 
     isOpen = true;
+    frameOpened = Time.frameCount;
     mapOverlay.SetActive(true);
     Time.timeScale = 0f;
   }
 
-  private void CloseMap()
+  public void CloseMap()
   {
     if (!isOpen)
       return;

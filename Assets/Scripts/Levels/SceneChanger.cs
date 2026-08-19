@@ -21,7 +21,8 @@ public class SceneChanger : MonoBehaviour
   }
   public void changeScene()
   {
-    audioManager.PlayMusic(sceneMusic);
+    if (sceneMusic && audioManager)
+      audioManager.PlayMusic(sceneMusic);
     LoadWithTransition();
   }
   public static void changeScene(int spawnId, string sceneName)
