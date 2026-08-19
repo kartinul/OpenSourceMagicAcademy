@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: Karvy
   lines:
-  - I feel like open source software are unsecure.
-  - Not to mention the countless times projects to unmaintained....
+  - I feel like open source software isn't secure.
+  - Not to mention the countless times projects are left unmaintained and left  to
+    rot....
   - ....maybe Coldermort is right afterall.
