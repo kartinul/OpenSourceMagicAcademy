@@ -11,9 +11,15 @@ public class WinSceneManager : MonoBehaviour
   {
     string playerName = PlayerPrefs.GetString("PlayerName", "Wizard");
     string uuid = Guid.NewGuid().ToString();
-    playerNameText.text = playerName;
-    uuidText.text = uuid;
+
+    if (playerNameText != null)
+      playerNameText.text = playerName;
+
+    if (uuidText != null)
+      uuidText.text = uuid;
+
     GameObject player = GameObject.FindWithTag("Player");
-    Destroy(player);
+    if (player != null)
+      Destroy(player);
   }
 }

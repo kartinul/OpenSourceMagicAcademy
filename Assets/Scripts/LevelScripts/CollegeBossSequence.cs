@@ -24,6 +24,9 @@ public class CollegeBossSequence : MonoBehaviour
   [Header("Spells")]
   [SerializeField] private Spell finalSpellAsset;
 
+  [Header("Scene Transition")]
+  [SerializeField] private string nextSceneName = "WinScene";
+
   private float bossCameraZoom = 17.5f;
   private float bossCameraXOffset = 2f;
   private float bossCameraYOffset = -4f;
@@ -152,19 +155,14 @@ public class CollegeBossSequence : MonoBehaviour
           Debug.LogWarning("SpiritOfTorvalds asset is missing!");
         }
 
-        // Unlock final spell (rm -rf) manually before second battle
-        if (finalSpellAsset != null)
+        // Unlock final spell (rm -rf) after receiving it from Torvalds
+        UnlockFinalSpell();
+
+        SpellBook spellBook = FindFirstObjectByType<SpellBook>();
+        if (spellBook != null && finalSpellAsset != null)
         {
-          SpellBook spellBook = FindFirstObjectByType<SpellBook>();
-          if (spellBook != null)
-          {
-            spellBook.UnlockSpell(finalSpellAsset, true);
-            yield return null; // wait a frame for it to open
-          }
-        }
-        else
-        {
-          Debug.LogWarning("Final spell asset is missing!");
+          yield return null; // wait a frame for it to open
+          yield return new WaitUntil(() => !spellBook.IsUnlockPanelOpen);
         }
 
         // 5. Go back to fight scene (second battle)
@@ -175,15 +173,6 @@ public class CollegeBossSequence : MonoBehaviour
 
         bossCameraTarget.transform.localPosition = new Vector3(secondFightXOffset, secondFightYOffset, 0);
         EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, secondFightZoom);
-
-        if (finalSpellAsset != null)
-        {
-          SpellBook spellBook = FindFirstObjectByType<SpellBook>();
-          if (spellBook != null)
-          {
-            yield return new WaitUntil(() => !spellBook.IsUnlockPanelOpen);
-          }
-        }
 
         yield return new WaitForSeconds(0.5f);
 
@@ -211,6 +200,10 @@ public class CollegeBossSequence : MonoBehaviour
           // Sequence end
           EventHelpers.ClearCameraFocus();
           Debug.Log("College Boss Sequence Completed.");
+
+          yield return new WaitForSeconds(0.5f);
+
+          SceneChanger.changeScene(0, nextSceneName);
         }
         else
         {
@@ -260,5 +253,28 @@ public class CollegeBossSequence : MonoBehaviour
     dialogueManager.StartDialogue(data);
 
     yield return new WaitUntil(() => isFinished);
+  }
+
+  public void UnlockFinalSpell()
+  {
+    if (finalSpellAsset == null)
+    {
+      Debug.LogWarning("Final spell asset is missing!");
+      return;
+    }
+
+    SpellBook spellBook = FindFirstObjectByType<SpellBook>();
+
+    if (spellBook != null)
+      spellBook.UnlockSpell(finalSpellAsset, true);
+  }
+
+  [ContextMenu("Skip To Next Scene")]
+  public void SkipToNextScene()
+  {
+    if (!string.IsNullOrEmpty(nextSceneName))
+    {
+      SceneChanger.changeScene(0, nextSceneName);
+    }
   }
 }

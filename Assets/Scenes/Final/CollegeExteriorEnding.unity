@@ -66134,6 +66134,7 @@ MonoBehaviour:
   dumbledoreDeathAsset: {fileID: 11400000, guid: ea60fb811bafb5f44917f677bbfd8688, type: 2}
   spiritOfTorvaldsAsset: {fileID: 11400000, guid: 31cfdaff69956be5bbbb409c73dd6a79, type: 2}
   finalSpellAsset: {fileID: 11400000, guid: 60eb222f5a8af6944ab0313505692a2d, type: 2}
+  nextSceneName: WinScene
 --- !u!1 &1653877834
 GameObject:
   m_ObjectHideFlags: 0
@@ -114795,7 +114796,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1659526215}
   - component: {fileID: 1659526214}
-  - component: {fileID: 1659526213}
   m_Layer: 7
   m_Name: NonCombatGuardian
   m_TagString: Untagged
@@ -114803,23 +114803,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1659526213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659526212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69118490c9502d447b4f2f6c9b3e7be6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
-  interactionPrompt: Examine
-  dialogueData: {fileID: 0}
-  playTalkingSound: 1
-  pitch: 1
-  onlyTalkOnce: 0
 --- !u!61 &1659526214
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -115310,7 +115293,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1864499734}
-  - component: {fileID: 1864499733}
   m_Layer: 7
   m_Name: Dumbledore
   m_TagString: Untagged
@@ -115318,23 +115300,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1864499733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864499732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69118490c9502d447b4f2f6c9b3e7be6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
-  interactionPrompt: Talk
-  dialogueData: {fileID: 11400000, guid: ea60fb811bafb5f44917f677bbfd8688, type: 2}
-  playTalkingSound: 1
-  pitch: 1
-  onlyTalkOnce: 1
 --- !u!4 &1864499734
 Transform:
   m_ObjectHideFlags: 0
