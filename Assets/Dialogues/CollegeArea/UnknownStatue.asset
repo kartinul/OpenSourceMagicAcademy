@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: 
   lines:
-  - 'You sense a presence withint the statue.... '
+  - 'You sense a presence within the statue.... '
   - ....best to leave it unbothered for now.
