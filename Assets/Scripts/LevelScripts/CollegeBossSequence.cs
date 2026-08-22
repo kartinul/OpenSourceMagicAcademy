@@ -41,8 +41,13 @@ public class CollegeBossSequence : MonoBehaviour
 
   private void Start()
   {
-    dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>(true);
-    battleManager = Player.Instance.GetComponentInChildren<BattleManager>(true);
+    if (Player.Instance != null)
+    {
+      dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>(true);
+      battleManager = Player.Instance.GetComponentInChildren<BattleManager>(true);
+    }
+    if (dialogueManager == null) dialogueManager = FindFirstObjectByType<DialogueManager>();
+    if (battleManager == null) battleManager = FindFirstObjectByType<BattleManager>();
 
     if (Player.Instance != null)
     {
@@ -192,6 +197,7 @@ public class CollegeBossSequence : MonoBehaviour
         }
 
         // Unlock final spell (rm -rf) after receiving it from Torvalds
+        EventHelpers.FlashScreenWhite();
         UnlockFinalSpell();
 
         SpellBook spellBook = FindFirstObjectByType<SpellBook>();
@@ -273,6 +279,24 @@ public class CollegeBossSequence : MonoBehaviour
   {
     if (data == null)
     {
+      yield break;
+    }
+
+    if (dialogueManager == null)
+    {
+      if (Player.Instance != null)
+      {
+        dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>(true);
+      }
+      if (dialogueManager == null)
+      {
+        dialogueManager = FindFirstObjectByType<DialogueManager>();
+      }
+    }
+
+    if (dialogueManager == null)
+    {
+      Debug.LogError("[CollegeBossSequence] DialogueManager not found!");
       yield break;
     }
 

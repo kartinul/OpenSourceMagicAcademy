@@ -56819,7 +56819,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1219598849}
-  - component: {fileID: 1219598848}
   - component: {fileID: 1219598850}
   - component: {fileID: 1219598851}
   m_Layer: 7
@@ -56829,23 +56828,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1219598848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219598847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69118490c9502d447b4f2f6c9b3e7be6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
-  interactionPrompt: Talk
-  dialogueData: {fileID: 11400000, guid: 22cc83f996c50a94c860277f5ab351f4, type: 2}
-  playTalkingSound: 1
-  pitch: -1
-  onlyTalkOnce: 0
 --- !u!4 &1219598849
 Transform:
   m_ObjectHideFlags: 0

@@ -29,13 +29,13 @@ public class NPC : MonoBehaviour, IInteractable
   public void Interact()
   {
     if (onlyTalkOnce && hasTalked) return;
-    
+
     DialogueData dataToPlay = dialogueData;
     Combatant enemyToPass = enemy;
 
     if (enemy != null)
     {
-      if (Player.Instance.level < enemy.level)
+      if (Player.Instance != null && Player.Instance.level < enemy.level)
       {
         dataToPlay = ScriptableObject.CreateInstance<DialogueData>();
         dataToPlay.speakerName = "System";
@@ -49,6 +49,11 @@ public class NPC : MonoBehaviour, IInteractable
     }
     else
     {
+      if (dialogueData == null)
+      {
+        Debug.LogWarning($"[NPC] '{gameObject.name}' has no DialogueData assigned!");
+        return;
+      }
       hasTalked = true;
     }
 
