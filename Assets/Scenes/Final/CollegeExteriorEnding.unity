@@ -66129,7 +66129,6 @@ MonoBehaviour:
   dumbledore: {fileID: 1864499732}
   coldemort: {fileID: 1219598847}
   statueNPC: {fileID: 1659526212}
-  statuePlayerPosition: {fileID: 377218852}
   fightPlayerPosition: {fileID: 3043083110639913442}
   dumbledoreDeathAsset: {fileID: 11400000, guid: ea60fb811bafb5f44917f677bbfd8688, type: 2}
   spiritOfTorvaldsAsset: {fileID: 11400000, guid: 31cfdaff69956be5bbbb409c73dd6a79, type: 2}
@@ -123906,7 +123905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265459486873363538, guid: 119e3bca63e6c7d469dbf348f221b64a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.75
+      value: -10.88
       objectReference: {fileID: 0}
     - target: {fileID: 7265459486873363538, guid: 119e3bca63e6c7d469dbf348f221b64a, type: 3}
       propertyPath: m_LocalPosition.z

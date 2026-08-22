@@ -14,7 +14,6 @@ public class CollegeBossSequence : MonoBehaviour
   [SerializeField] private GameObject statueNPC;
 
   [Header("Player Transforms")]
-  [SerializeField] private Transform statuePlayerPosition;
   [SerializeField] private Transform fightPlayerPosition;
 
   [Header("Dialogue Assets")]
@@ -45,6 +44,21 @@ public class CollegeBossSequence : MonoBehaviour
     dialogueManager = Player.Instance.GetComponentInChildren<DialogueManager>(true);
     battleManager = Player.Instance.GetComponentInChildren<BattleManager>(true);
 
+    if (Player.Instance != null)
+    {
+      if (fightPlayerPosition != null)
+      {
+        Player.Instance.transform.position = fightPlayerPosition.position;
+      }
+      Player.Instance.canMove = false;
+      if (Player.Instance.rb != null)
+      {
+        Player.Instance.rb.linearVelocity = Vector2.zero;
+      }
+      PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+      if (interact != null) interact.canInteract = false;
+    }
+
     if (battleManager != null)
     {
       battleManager.OnVictory.AddListener(OnBattleVictory);
@@ -57,6 +71,18 @@ public class CollegeBossSequence : MonoBehaviour
     bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
 
     StartCoroutine(RunSequence());
+  }
+
+  private void Update()
+  {
+    if (Player.Instance != null)
+    {
+      Player.Instance.canMove = false;
+      if (Player.Instance.rb != null)
+      {
+        Player.Instance.rb.linearVelocity = Vector2.zero;
+      }
+    }
   }
 
   private void OnDestroy()
@@ -84,6 +110,21 @@ public class CollegeBossSequence : MonoBehaviour
 
   private IEnumerator RunSequence()
   {
+    if (Player.Instance != null)
+    {
+      if (fightPlayerPosition != null)
+      {
+        Player.Instance.transform.position = fightPlayerPosition.position;
+      }
+      Player.Instance.canMove = false;
+      if (Player.Instance.rb != null)
+      {
+        Player.Instance.rb.linearVelocity = Vector2.zero;
+      }
+      PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+      if (interact != null) interact.canInteract = false;
+    }
+
     // 1. Coldemort Dialog
     bossCameraTarget.transform.localPosition = new Vector3(bossCameraXOffset, bossCameraYOffset, 0);
     EventHelpers.FocusCameraOnWithZoom(bossCameraTarget, bossCameraZoom);
@@ -111,7 +152,7 @@ public class CollegeBossSequence : MonoBehaviour
     Combatant playerCombatant = Player.Instance.GetComponentInChildren<Combatant>(true);
     EnemyAI coldemortAI = coldemort.GetComponentInChildren<EnemyAI>(true);
 
-    if (coldemortAI != null)
+    if (coldemortAI != null && coldemortAI.spells != null)
     {
       for (int i = 0; i < coldemortAI.spells.Length; i++)
       {
@@ -140,11 +181,6 @@ public class CollegeBossSequence : MonoBehaviour
       {
         // 4. After you lose, go to FIGURE (statue), play SpiritOfTorvalds.asset
         EventHelpers.FocusCameraOn(statueNPC);
-
-        if (statuePlayerPosition != null && Player.Instance != null)
-        {
-          Player.Instance.transform.position = statuePlayerPosition.position;
-        }
 
         if (spiritOfTorvaldsAsset != null)
         {
@@ -251,8 +287,18 @@ public class CollegeBossSequence : MonoBehaviour
 
     dialogueManager.OnDialogueEnded.AddListener(onEnd);
     dialogueManager.StartDialogue(data);
-
     yield return new WaitUntil(() => isFinished);
+
+    if (Player.Instance != null)
+    {
+      Player.Instance.canMove = false;
+      if (Player.Instance.rb != null)
+      {
+        Player.Instance.rb.linearVelocity = Vector2.zero;
+      }
+      PlayerInteraction interact = Player.Instance.GetComponent<PlayerInteraction>();
+      if (interact != null) interact.canInteract = false;
+    }
   }
 
   public void UnlockFinalSpell()
