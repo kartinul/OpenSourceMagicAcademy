@@ -76,7 +76,7 @@ public class MakeWebGLFullscreen
                 var orientationOverlay = document.createElement('div');
                 orientationOverlay.id = 'orientation-overlay';
                 orientationOverlay.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; color: white; display: none; justify-content: center; align-items: center; font-size: 24px; font-family: sans-serif; z-index: 20000; flex-direction: column; text-align: center; padding: 20px; box-sizing: border-box;';
-                orientationOverlay.innerHTML = '<div style=""font-size: 48px; margin-bottom: 20px;"">📱⟳</div><div>Please rotate your device</div><div style=""font-size: 16px; margin-top: 10px; opacity: 0.7;"">Landscape mode is required to play</div>';
+                orientationOverlay.innerHTML = '<div>Please rotate your device</div><div style=""font-size: 16px; margin-top: 10px; opacity: 0.7;"">Landscape mode is required to play</div>';
                 document.body.appendChild(orientationOverlay);
 
                 overlay.onclick = function() {
