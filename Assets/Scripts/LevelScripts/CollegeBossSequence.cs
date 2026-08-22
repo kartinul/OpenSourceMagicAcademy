@@ -118,7 +118,7 @@ public class CollegeBossSequence : MonoBehaviour
         if (coldemortAI.spells[i] != null)
         {
           coldemortAI.spells[i] = Instantiate(coldemortAI.spells[i]);
-          coldemortAI.spells[i].power *= 2;
+          coldemortAI.spells[i].power = Mathf.RoundToInt(coldemortAI.spells[i].power * 1.5f);
         }
       }
     }

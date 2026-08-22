@@ -20,6 +20,11 @@ public class SceneFader : MonoBehaviour
 
     Instance = this;
     DontDestroyOnLoad(gameObject);
+
+    if (fadeImage != null)
+    {
+      fadeImage.raycastTarget = false;
+    }
   }
 
   public void FadeAndLoad(string sceneName)
@@ -29,6 +34,11 @@ public class SceneFader : MonoBehaviour
 
   private IEnumerator FadeAndLoadRoutine(string sceneName)
   {
+    if (fadeImage != null)
+    {
+      fadeImage.raycastTarget = true;
+    }
+
     yield return StartCoroutine(Fade(0f, 1f));
 
     AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
@@ -47,10 +57,17 @@ public class SceneFader : MonoBehaviour
     }
 
     yield return StartCoroutine(Fade(1f, 0f));
+
+    if (fadeImage != null)
+    {
+      fadeImage.raycastTarget = false;
+    }
   }
 
   private IEnumerator Fade(float from, float to)
   {
+    if (fadeImage == null) yield break;
+
     float t = 0f;
     Color c = fadeImage.color;
 
@@ -63,5 +80,9 @@ public class SceneFader : MonoBehaviour
     }
 
     fadeImage.color = new Color(c.r, c.g, c.b, to);
+    if (to == 0f)
+    {
+      fadeImage.raycastTarget = false;
+    }
   }
 }
