@@ -101,6 +101,11 @@ public class DialogueManager : MonoBehaviour
     if (!dialogueActive)
       return;
 
+    if (dialoguePanel != null && !dialoguePanel.activeSelf)
+      dialoguePanel.SetActive(true);
+    if (dialogueSpecificContainer != null && !dialogueSpecificContainer.activeSelf)
+      dialogueSpecificContainer.SetActive(true);
+
     bool advancePressed = false;
     if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) advancePressed = true;
     if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) advancePressed = true;
