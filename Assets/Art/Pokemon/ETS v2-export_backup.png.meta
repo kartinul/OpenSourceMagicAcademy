@@ -1,0 +1,4914 @@
+fileFormatVersion: 2
+guid: 48124d09337eb40409f290f8fcd6a86b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1782892463264202657
+    second: ETS v2-export_backup_0
+  - first:
+      213: 1009862401151250830
+    second: ETS v2-export_backup_1
+  - first:
+      213: 3663291294232080802
+    second: ETS v2-export_backup_2
+  - first:
+      213: 7184492119781207159
+    second: ETS v2-export_backup_3
+  - first:
+      213: 8722936182491390713
+    second: ETS v2-export_backup_4
+  - first:
+      213: -4568309447122844461
+    second: ETS v2-export_backup_5
+  - first:
+      213: -9040772925435969110
+    second: ETS v2-export_backup_6
+  - first:
+      213: -346590110138168591
+    second: ETS v2-export_backup_7
+  - first:
+      213: 5911795673949597532
+    second: ETS v2-export_backup_8
+  - first:
+      213: 5535162026753961503
+    second: ETS v2-export_backup_9
+  - first:
+      213: -6845973615715908523
+    second: ETS v2-export_backup_10
+  - first:
+      213: -1724196876511655561
+    second: ETS v2-export_backup_11
+  - first:
+      213: 7293855221056050123
+    second: ETS v2-export_backup_12
+  - first:
+      213: -4000615281442180860
+    second: ETS v2-export_backup_13
+  - first:
+      213: 8980375206200382856
+    second: ETS v2-export_backup_14
+  - first:
+      213: -5361021796475030376
+    second: ETS v2-export_backup_15
+  - first:
+      213: 4393165172330926116
+    second: ETS v2-export_backup_16
+  - first:
+      213: -3566959114991248039
+    second: ETS v2-export_backup_17
+  - first:
+      213: 8086706935374680149
+    second: ETS v2-export_backup_18
+  - first:
+      213: 9134367912504831093
+    second: ETS v2-export_backup_19
+  - first:
+      213: -3836475475981340286
+    second: ETS v2-export_backup_20
+  - first:
+      213: -1213093386399115170
+    second: ETS v2-export_backup_21
+  - first:
+      213: 9170510105059942466
+    second: ETS v2-export_backup_22
+  - first:
+      213: 2947079629610320931
+    second: ETS v2-export_backup_23
+  - first:
+      213: 681614030347837371
+    second: ETS v2-export_backup_24
+  - first:
+      213: -2614681902415915660
+    second: ETS v2-export_backup_25
+  - first:
+      213: -2314200013167756115
+    second: ETS v2-export_backup_26
+  - first:
+      213: 7221511775183328542
+    second: ETS v2-export_backup_27
+  - first:
+      213: 7692842284760707660
+    second: ETS v2-export_backup_28
+  - first:
+      213: 2402959290027332415
+    second: ETS v2-export_backup_29
+  - first:
+      213: -4418644997965554983
+    second: ETS v2-export_backup_30
+  - first:
+      213: 8259935341568957166
+    second: ETS v2-export_backup_31
+  - first:
+      213: -6516300525786182348
+    second: ETS v2-export_backup_32
+  - first:
+      213: -1316731527474857268
+    second: ETS v2-export_backup_33
+  - first:
+      213: 2114632675819190565
+    second: ETS v2-export_backup_34
+  - first:
+      213: 7531348654544324466
+    second: ETS v2-export_backup_35
+  - first:
+      213: -4131525497546000286
+    second: ETS v2-export_backup_36
+  - first:
+      213: 3875382038961470020
+    second: ETS v2-export_backup_37
+  - first:
+      213: 3950780563626059592
+    second: ETS v2-export_backup_38
+  - first:
+      213: 1232993597682883540
+    second: ETS v2-export_backup_39
+  - first:
+      213: 7944911565763487964
+    second: ETS v2-export_backup_40
+  - first:
+      213: 3790605775573703578
+    second: ETS v2-export_backup_41
+  - first:
+      213: 4627961131380017947
+    second: ETS v2-export_backup_42
+  - first:
+      213: 7507971622873768269
+    second: ETS v2-export_backup_43
+  - first:
+      213: 2514127399329078138
+    second: ETS v2-export_backup_44
+  - first:
+      213: 4619846875200399892
+    second: ETS v2-export_backup_45
+  - first:
+      213: 8123168275773018180
+    second: ETS v2-export_backup_46
+  - first:
+      213: -8506654257724308887
+    second: ETS v2-export_backup_47
+  - first:
+      213: -4827342857147679320
+    second: ETS v2-export_backup_48
+  - first:
+      213: -8217029294607637887
+    second: ETS v2-export_backup_49
+  - first:
+      213: 7146011514123566127
+    second: ETS v2-export_backup_50
+  - first:
+      213: 2974282200004599415
+    second: ETS v2-export_backup_51
+  - first:
+      213: -1384921289542496355
+    second: ETS v2-export_backup_52
+  - first:
+      213: -4095698454995956738
+    second: ETS v2-export_backup_53
+  - first:
+      213: -302652112587977931
+    second: ETS v2-export_backup_54
+  - first:
+      213: 1969342821878533525
+    second: ETS v2-export_backup_55
+  - first:
+      213: 1263976401964176193
+    second: ETS v2-export_backup_56
+  - first:
+      213: 6718667489394044330
+    second: ETS v2-export_backup_57
+  - first:
+      213: 3958615287454220742
+    second: ETS v2-export_backup_58
+  - first:
+      213: -4292647032457001649
+    second: ETS v2-export_backup_59
+  - first:
+      213: -2159763603920616499
+    second: ETS v2-export_backup_60
+  - first:
+      213: -1236766146749466487
+    second: ETS v2-export_backup_61
+  - first:
+      213: 5271960735953038763
+    second: ETS v2-export_backup_62
+  - first:
+      213: -8757201534376075135
+    second: ETS v2-export_backup_63
+  - first:
+      213: 3251928085233381767
+    second: ETS v2-export_backup_64
+  - first:
+      213: -1380376019968093818
+    second: ETS v2-export_backup_65
+  - first:
+      213: -7057765060160770736
+    second: ETS v2-export_backup_66
+  - first:
+      213: 2623397101116673879
+    second: ETS v2-export_backup_67
+  - first:
+      213: 7390854247188549621
+    second: ETS v2-export_backup_68
+  - first:
+      213: -9149905981572179933
+    second: ETS v2-export_backup_69
+  - first:
+      213: 387399849060098741
+    second: ETS v2-export_backup_70
+  - first:
+      213: 3002230325802090098
+    second: ETS v2-export_backup_71
+  - first:
+      213: -5265032251149704667
+    second: ETS v2-export_backup_72
+  - first:
+      213: -4699485186982420192
+    second: ETS v2-export_backup_73
+  - first:
+      213: -35843553961713609
+    second: ETS v2-export_backup_74
+  - first:
+      213: 153751254093329689
+    second: ETS v2-export_backup_75
+  - first:
+      213: 7137254495135569805
+    second: ETS v2-export_backup_76
+  - first:
+      213: -7770985148893280461
+    second: ETS v2-export_backup_77
+  - first:
+      213: -33599114689019691
+    second: ETS v2-export_backup_78
+  - first:
+      213: -4735413077454260281
+    second: ETS v2-export_backup_79
+  - first:
+      213: -7704936175962845534
+    second: ETS v2-export_backup_80
+  - first:
+      213: -3157217173059691252
+    second: ETS v2-export_backup_81
+  - first:
+      213: 5915543735956401924
+    second: ETS v2-export_backup_82
+  - first:
+      213: -4616262305541346929
+    second: ETS v2-export_backup_83
+  - first:
+      213: 8717058219236922729
+    second: ETS v2-export_backup_84
+  - first:
+      213: -1312744319660915609
+    second: ETS v2-export_backup_85
+  - first:
+      213: -6963623042323628902
+    second: ETS v2-export_backup_86
+  - first:
+      213: 5832469936463860916
+    second: ETS v2-export_backup_87
+  - first:
+      213: 8251545110198395078
+    second: ETS v2-export_backup_88
+  - first:
+      213: 7514299233350744446
+    second: ETS v2-export_backup_89
+  - first:
+      213: -717390760521457372
+    second: ETS v2-export_backup_90
+  - first:
+      213: -1003501950914313688
+    second: ETS v2-export_backup_91
+  - first:
+      213: -5284962837830276642
+    second: ETS v2-export_backup_92
+  - first:
+      213: 6383134304589430251
+    second: ETS v2-export_backup_93
+  - first:
+      213: -3777011993872473018
+    second: ETS v2-export_backup_94
+  - first:
+      213: -6383700194435356532
+    second: ETS v2-export_backup_95
+  - first:
+      213: -8067915055822362683
+    second: ETS v2-export_backup_96
+  - first:
+      213: -1058595768838019701
+    second: ETS v2-export_backup_97
+  - first:
+      213: -1438517451525438369
+    second: ETS v2-export_backup_98
+  - first:
+      213: 5447052410476367814
+    second: ETS v2-export_backup_99
+  - first:
+      213: 3419167866120773937
+    second: ETS v2-export_backup_100
+  - first:
+      213: -8424902596018269136
+    second: ETS v2-export_backup_101
+  - first:
+      213: 7625860261615192016
+    second: ETS v2-export_backup_102
+  - first:
+      213: -6526107234645914225
+    second: ETS v2-export_backup_103
+  - first:
+      213: 5567747886285591021
+    second: ETS v2-export_backup_104
+  - first:
+      213: 4564685418343269128
+    second: ETS v2-export_backup_105
+  - first:
+      213: 1658578294441878091
+    second: ETS v2-export_backup_106
+  - first:
+      213: -5408527850557516526
+    second: ETS v2-export_backup_107
+  - first:
+      213: 2580741572406750907
+    second: ETS v2-export_backup_108
+  - first:
+      213: -2957247428583038510
+    second: ETS v2-export_backup_109
+  - first:
+      213: -3110573385516480165
+    second: ETS v2-export_backup_110
+  - first:
+      213: 4163413393922529133
+    second: ETS v2-export_backup_111
+  - first:
+      213: 1598563560748104029
+    second: ETS v2-export_backup_112
+  - first:
+      213: 177872657935234174
+    second: ETS v2-export_backup_113
+  - first:
+      213: 203258698398017784
+    second: ETS v2-export_backup_114
+  - first:
+      213: -308693614767814638
+    second: ETS v2-export_backup_115
+  - first:
+      213: -4110803824931166742
+    second: ETS v2-export_backup_116
+  - first:
+      213: 5315786383610823284
+    second: ETS v2-export_backup_117
+  - first:
+      213: -2319667545793273591
+    second: ETS v2-export_backup_118
+  - first:
+      213: 4221783203322147048
+    second: ETS v2-export_backup_119
+  - first:
+      213: -2032045971997188635
+    second: ETS v2-export_backup_120
+  - first:
+      213: 5836941415794941504
+    second: ETS v2-export_backup_121
+  - first:
+      213: -5080529382808197976
+    second: ETS v2-export_backup_122
+  - first:
+      213: -1829996443388296109
+    second: ETS v2-export_backup_123
+  - first:
+      213: -2434778586020156128
+    second: ETS v2-export_backup_124
+  - first:
+      213: 8347430430117167289
+    second: ETS v2-export_backup_125
+  - first:
+      213: -8965906576925623520
+    second: ETS v2-export_backup_126
+  - first:
+      213: 3786963502782376044
+    second: ETS v2-export_backup_127
+  - first:
+      213: 4319186588276459233
+    second: ETS v2-export_backup_128
+  - first:
+      213: 8836143446048719158
+    second: ETS v2-export_backup_129
+  - first:
+      213: -5721357481572617204
+    second: ETS v2-export_backup_130
+  - first:
+      213: -3644094035243261110
+    second: ETS v2-export_backup_131
+  - first:
+      213: -7721881594038886450
+    second: ETS v2-export_backup_132
+  - first:
+      213: 1598581322337255031
+    second: ETS v2-export_backup_133
+  - first:
+      213: -451705460141583005
+    second: ETS v2-export_backup_134
+  - first:
+      213: -1417746649782231794
+    second: ETS v2-export_backup_135
+  - first:
+      213: 2737388729709407585
+    second: ETS v2-export_backup_136
+  - first:
+      213: 2564762042944564700
+    second: ETS v2-export_backup_137
+  - first:
+      213: 760622033598356908
+    second: ETS v2-export_backup_138
+  - first:
+      213: 5116594550534469262
+    second: ETS v2-export_backup_139
+  - first:
+      213: -6024509082395628711
+    second: ETS v2-export_backup_140
+  - first:
+      213: 3889562301378134059
+    second: ETS v2-export_backup_141
+  - first:
+      213: -8322253998030114569
+    second: ETS v2-export_backup_142
+  - first:
+      213: -8062317488656201631
+    second: ETS v2-export_backup_143
+  - first:
+      213: -2746101125498641714
+    second: ETS v2-export_backup_144
+  - first:
+      213: -1073516234339909111
+    second: ETS v2-export_backup_145
+  - first:
+      213: 8196423771445787946
+    second: ETS v2-export_backup_146
+  - first:
+      213: -9075707118784302825
+    second: ETS v2-export_backup_147
+  - first:
+      213: 2392909399173140629
+    second: ETS v2-export_backup_148
+  - first:
+      213: 8308458788417373423
+    second: ETS v2-export_backup_149
+  - first:
+      213: -6860108675693027085
+    second: ETS v2-export_backup_150
+  - first:
+      213: 4432492862870146492
+    second: ETS v2-export_backup_151
+  - first:
+      213: -3487133391783311933
+    second: ETS v2-export_backup_152
+  - first:
+      213: 6515536556878205833
+    second: ETS v2-export_backup_153
+  - first:
+      213: 1518484950581655685
+    second: ETS v2-export_backup_154
+  - first:
+      213: -6136433464704682165
+    second: ETS v2-export_backup_155
+  - first:
+      213: -7690056809179304304
+    second: ETS v2-export_backup_156
+  - first:
+      213: -826083133178499622
+    second: ETS v2-export_backup_157
+  - first:
+      213: 8246086043972465575
+    second: ETS v2-export_backup_158
+  - first:
+      213: -1175231289735071538
+    second: ETS v2-export_backup_159
+  - first:
+      213: 8611066839645748084
+    second: ETS v2-export_backup_160
+  - first:
+      213: -264303492395169020
+    second: ETS v2-export_backup_161
+  - first:
+      213: 7838085334331517862
+    second: ETS v2-export_backup_162
+  - first:
+      213: 8290732967313493004
+    second: ETS v2-export_backup_163
+  - first:
+      213: 6188394044815274101
+    second: ETS v2-export_backup_164
+  - first:
+      213: -5371708363688637765
+    second: ETS v2-export_backup_165
+  - first:
+      213: 2911641897189127463
+    second: ETS v2-export_backup_166
+  - first:
+      213: -8987196571746095171
+    second: ETS v2-export_backup_167
+  - first:
+      213: 5085229031150165853
+    second: ETS v2-export_backup_168
+  - first:
+      213: -967547294192632316
+    second: ETS v2-export_backup_169
+  - first:
+      213: 3504686505200038183
+    second: ETS v2-export_backup_170
+  - first:
+      213: 213822609427693190
+    second: ETS v2-export_backup_171
+  - first:
+      213: 3820123939383794083
+    second: ETS v2-export_backup_172
+  - first:
+      213: 2019969257689605172
+    second: ETS v2-export_backup_173
+  - first:
+      213: -128940393993294247
+    second: ETS v2-export_backup_174
+  - first:
+      213: -6054913558761922744
+    second: ETS v2-export_backup_175
+  - first:
+      213: 5461131141941806638
+    second: ETS v2-export_backup_176
+  - first:
+      213: -1807794374343456862
+    second: ETS v2-export_backup_177
+  - first:
+      213: -3015141490647371713
+    second: ETS v2-export_backup_178
+  - first:
+      213: -4167507760210602177
+    second: ETS v2-export_backup_179
+  - first:
+      213: 297927944234727197
+    second: ETS v2-export_backup_180
+  - first:
+      213: 5316614687573635736
+    second: ETS v2-export_backup_181
+  - first:
+      213: -58750071641125577
+    second: ETS v2-export_backup_182
+  - first:
+      213: -7323490067118711581
+    second: ETS v2-export_backup_183
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ETS v2-export_backup_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13439
+        width: 128
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f508a6630c4e147e0800000000000000
+      internalID: -1782892463264202657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13135
+        width: 128
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81b4acd080c30e00800000000000000
+      internalID: 1009862401151250830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13055
+        width: 128
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1fb7de500a6d230800000000000000
+      internalID: 3663291294232080802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 13135
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ce623948174b360800000000000000
+      internalID: 7184492119781207159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12425
+        width: 128
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f22dcbed381e0970800000000000000
+      internalID: 8722936182491390713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 13040
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d48e2403ca1a90c0800000000000000
+      internalID: -4568309447122844461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 13046
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa18b64ace8b88280800000000000000
+      internalID: -9040772925435969110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12357
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa0d82912aa03bf0800000000000000
+      internalID: -346590110138168591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 12353
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fe47ae7daea0250800000000000000
+      internalID: 5911795673949597532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 12356
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ea6ea6988d0dc40800000000000000
+      internalID: 5535162026753961503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12255
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5548e8d94473ef0a0800000000000000
+      internalID: -6845973615715908523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_11
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 12223
+        width: 65
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7794fa4731c6218e0800000000000000
+      internalID: -1724196876511655561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12207
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc39c26ddaaf83560800000000000000
+      internalID: 7293855221056050123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 12223
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401b3a20995fa78c0800000000000000
+      internalID: -4000615281442180860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 12207
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8859c438ba3b0ac70800000000000000
+      internalID: 8980375206200382856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 12179
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894bafb7413d995b0800000000000000
+      internalID: -5361021796475030376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12197
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4201760c278a7fc30800000000000000
+      internalID: 4393165172330926116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_17
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 12187
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95dda9e559d9f7ec0800000000000000
+      internalID: -3566959114991248039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_18
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 12192
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55012bdcc11c93070800000000000000
+      internalID: 8086706935374680149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_19
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 12169
+        width: 10
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ca390783bc3ce70800000000000000
+      internalID: 9134367912504831093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12178
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28172a091e912cac0800000000000000
+      internalID: -3836475475981340286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 12159
+        width: 66
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e581e480ef93a2fe0800000000000000
+      internalID: -1213093386399115170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 12128
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2406a356a52344f70800000000000000
+      internalID: 9170510105059942466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_23
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 12169
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32486bf0f4126e820800000000000000
+      internalID: 2947079629610320931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 12128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf1ec86954957900800000000000000
+      internalID: 681614030347837371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 12144
+        width: 46
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4755bd5b9a8c6bbd0800000000000000
+      internalID: -2614681902415915660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_26
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 12134
+        width: 46
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac7ee3695f42efd0800000000000000
+      internalID: -2314200013167756115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_27
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 12143
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e155a15c2b6f73460800000000000000
+      internalID: 7221511775183328542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 12127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c423440bc4772ca60800000000000000
+      internalID: 7692842284760707660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12015
+        width: 128
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33ddcb2eb6095120800000000000000
+      internalID: 2402959290027332415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11951
+        width: 33
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dad4bb09c1dda2c0800000000000000
+      internalID: -4418644997965554983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 11951
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea99ed1e6f21a270800000000000000
+      internalID: 8259935341568957166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_32
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 11951
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dc2d652337195a0800000000000000
+      internalID: -6516300525786182348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11889
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccabd40f6a70abde0800000000000000
+      internalID: -1316731527474857268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 11857
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529f2a0073fa85d10800000000000000
+      internalID: 2114632675819190565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11825
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2770bb1d2b9b48860800000000000000
+      internalID: 7531348654544324466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11760
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2683d42237fd9a6c0800000000000000
+      internalID: -4131525497546000286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_37
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11682
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a3a398e6f18c530800000000000000
+      internalID: 3875382038961470020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_38
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 11650
+        width: 76
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847e2709dfdf3d630800000000000000
+      internalID: 3950780563626059592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11590
+        width: 65
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db1838f4297c1110800000000000000
+      internalID: 1232993597682883540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11551
+        width: 65
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8a931a9fef14e60800000000000000
+      internalID: 7944911565763487964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_41
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 11553
+        width: 58
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b5d909edfea9430800000000000000
+      internalID: 3790605775573703578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10751
+        width: 128
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b88360122d93040800000000000000
+      internalID: 4627961131380017947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_43
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 10721
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41aa1d796ca13860800000000000000
+      internalID: 7507971622873768269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10656
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b161d9c89f3e220800000000000000
+      internalID: 2514127399329078138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10335
+        width: 128
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41aa409814efc1040800000000000000
+      internalID: 4619846875200399892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10246
+        width: 128
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4405c28228a4bb070800000000000000
+      internalID: 8123168275773018180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10239
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9624745d50b42f980800000000000000
+      internalID: -8506654257724308887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_48
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 10207
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad71be6f35d10db0800000000000000
+      internalID: -4827342857147679320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9903
+        width: 128
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182eee9646f37fd80800000000000000
+      internalID: -8217029294607637887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9839
+        width: 97
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cbf246c9bbb2360800000000000000
+      internalID: 7146011514123566127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_51
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 9877
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e9a0907e5c64920800000000000000
+      internalID: 2974282200004599415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_52
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 9842
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f81febc65c7cce0800000000000000
+      internalID: -1384921289542496355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9666
+        width: 128
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb89d284f72927c0800000000000000
+      internalID: -4095698454995956738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 9652
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b0ca2d183cccbf0800000000000000
+      internalID: -302652112587977931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 9652
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d090bccd2845b10800000000000000
+      internalID: 1969342821878533525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9519
+        width: 128
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1431d8b37db8a8110800000000000000
+      internalID: 1263976401964176193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_57
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 9471
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad2c4d0c708d3d50800000000000000
+      internalID: 6718667489394044330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9210
+        width: 128
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1c32b51a3dfe630800000000000000
+      internalID: 3958615287454220742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9185
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45044474447d64c0800000000000000
+      internalID: -4292647032457001649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_60
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 9199
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc38e75f17af602e0800000000000000
+      internalID: -2159763603920616499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_61
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 9201
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988f4c00ebf16dee0800000000000000
+      internalID: -1236766146749466487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_62
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 9199
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bada9487b54c92940800000000000000
+      internalID: 5271960735953038763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_63
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 9121
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18022052a9b287680800000000000000
+      internalID: -8757201534376075135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_64
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 9191
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781b3733d5b212d20800000000000000
+      internalID: 3251928085233381767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_65
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 9137
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6819559c25be7dce0800000000000000
+      internalID: -1380376019968093818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9167
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d24f84218cd0e90800000000000000
+      internalID: -7057765060160770736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_67
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 9176
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f49dc93cd286420800000000000000
+      internalID: 2623397101116673879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9130
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff4c5687c6919660800000000000000
+      internalID: 7390854247188549621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8870
+        width: 128
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3281b20fcf0050180800000000000000
+      internalID: -9149905981572179933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_70
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 9095
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b264453c12506500800000000000000
+      internalID: 387399849060098741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_71
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 9095
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eb65723901aa920800000000000000
+      internalID: 3002230325802090098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8161
+        width: 128
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5222f3b1019dee6b0800000000000000
+      internalID: -5265032251149704667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8129
+        width: 121
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021e3b21f1318ceb0800000000000000
+      internalID: -4699485186982420192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7471
+        width: 128
+        height: 658
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730ef924a78a08ff0800000000000000
+      internalID: -35843553961713609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_75
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 8129
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915f00473fb322200800000000000000
+      internalID: 153751254093329689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_76
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 7405
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d879d16062f9c0360800000000000000
+      internalID: 7137254495135569805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_77
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 7429
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3374165fd2ae72490800000000000000
+      internalID: -7770985148893280461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_78
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 7399
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0813088c1a88ff0800000000000000
+      internalID: -33599114689019691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7263
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7799535ee684eb0800000000000000
+      internalID: -4735413077454260281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7087
+        width: 128
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae8da6de51921590800000000000000
+      internalID: -7704936175962845534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_81
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 7261
+        width: 18
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d930175bf4f24d0800000000000000
+      internalID: -3157217173059691252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_82
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 7253
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40fe7fa9fab381250800000000000000
+      internalID: 5915543735956401924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7040
+        width: 128
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89ae2024edbfefb0800000000000000
+      internalID: -4616262305541346929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6999
+        width: 91
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9651404f34639f870800000000000000
+      internalID: 8717058219236922729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_85
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 6999
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76403b91ff138cde0800000000000000
+      internalID: -1312744319660915609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5903
+        width: 128
+        height: 1090
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c3394ecbd3c5f90800000000000000
+      internalID: -6963623042323628902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_87
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 5827
+        width: 72
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4d216618811f050800000000000000
+      internalID: 5832469936463860916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5842
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0ac752f80638270800000000000000
+      internalID: 8251545110198395078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_89
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 5845
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e797cdb1757284860800000000000000
+      internalID: 7514299233350744446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_90
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 5855
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421a8f977e05b06f0800000000000000
+      internalID: -717390760521457372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_91
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 5829
+        width: 12
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822475cda48d212f0800000000000000
+      internalID: -1003501950914313688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_92
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5711
+        width: 124
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed96cf7cc4a08a6b0800000000000000
+      internalID: -5284962837830276642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_93
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 5823
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedb9aaa4d2759850800000000000000
+      internalID: 6383134304589430251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5583
+        width: 126
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64467d06a9b559bc0800000000000000
+      internalID: -3777011993872473018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_95
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 5551
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88a616de7a8867a0800000000000000
+      internalID: -6383700194435356532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_96
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 5551
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7aeab9002090090800000000000000
+      internalID: -8067915055822362683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5407
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85ada5c1cc1f41f0800000000000000
+      internalID: -1058595768838019701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_98
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 5436
+        width: 117
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5440aadffb590ce0800000000000000
+      internalID: -1438517451525438369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5327
+        width: 128
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf016fbe41d79b40800000000000000
+      internalID: 5447052410476367814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_100
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 5183
+        width: 94
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1312f870f03537f20800000000000000
+      internalID: 3419167866120773937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_101
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 5199
+        width: 31
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0349019d9bbb41b80800000000000000
+      internalID: -8424902596018269136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5183
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d74750218f74d960800000000000000
+      internalID: 7625860261615192016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5071
+        width: 128
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8dc2d00c0c9e65a0800000000000000
+      internalID: -6526107234645914225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4799
+        width: 128
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de11cf0143d944d40800000000000000
+      internalID: 5567747886285591021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4541
+        width: 128
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80381c70435095f30800000000000000
+      internalID: 4564685418343269128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4399
+        width: 79
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42a168db24740710800000000000000
+      internalID: 1658578294441878091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_107
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 4459
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21556b5539c01f4b0800000000000000
+      internalID: -5408527850557516526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4079
+        width: 97
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe236869c2a0d320800000000000000
+      internalID: 2580741572406750907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_109
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 4179
+        width: 49
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1ee52c12fb5f6d0800000000000000
+      internalID: -2957247428583038510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_110
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 4131
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5981848cf505d4d0800000000000000
+      internalID: -3110573385516480165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_111
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 4083
+        width: 15
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d671bdd4c6a67c930800000000000000
+      internalID: 4163413393922529133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_112
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 4115
+        width: 12
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d593645c61d3f2610800000000000000
+      internalID: 1598563560748104029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_113
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3653
+        width: 128
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74fb7f6d3ee77200800000000000000
+      internalID: 177872657935234174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3414
+        width: 128
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8a58395be12d200800000000000000
+      internalID: 203258698398017784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3366
+        width: 128
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218455bfacc47bbf0800000000000000
+      internalID: -308693614767814638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_116
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3254
+        width: 118
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae529a183bd73f6c0800000000000000
+      internalID: -4110803824931166742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3206
+        width: 128
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4724bf83d8775c940800000000000000
+      internalID: 5315786383610823284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3013
+        width: 128
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9016dff38a2eecfd0800000000000000
+      internalID: -2319667545793273591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_119
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 3167
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e03ab89479c69a30800000000000000
+      internalID: 4221783203322147048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2607
+        width: 128
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed18d764f8bcc3e0800000000000000
+      internalID: -2032045971997188635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1919
+        width: 128
+        height: 753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e193fca4bf00150800000000000000
+      internalID: 5836941415794941504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1525
+        width: 128
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a468c2b1755e79b0800000000000000
+      internalID: -5080529382808197976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_123
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1282
+        width: 128
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354cc933eeb8a96e0800000000000000
+      internalID: -1829996443388296109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_124
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1257
+        width: 9
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d6a89a6cde53ed0800000000000000
+      internalID: -2434778586020156128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_125
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1235
+        width: 48
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b08b66efb708d370800000000000000
+      internalID: 8347430430117167289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_126
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1234
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b7201c873b29380800000000000000
+      internalID: -8965906576925623520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_127
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1231
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6866b8dd3ffd8430800000000000000
+      internalID: 3786963502782376044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1104
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e689d86155d0fb30800000000000000
+      internalID: 4319186588276459233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_129
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1201
+        width: 6
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6314126f5a940aa70800000000000000
+      internalID: 8836143446048719158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_130
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1183
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0437ddfea7a990b0800000000000000
+      internalID: -5721357481572617204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_131
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1103
+        width: 16
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43a43d38c39d6dc0800000000000000
+      internalID: -3644094035243261110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_132
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1169
+        width: 6
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf5fad3a9d56d490800000000000000
+      internalID: -7721881594038886450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_133
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1119
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e7c763e3d4f2610800000000000000
+      internalID: 1598581322337255031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_134
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1169
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3651829f6483bb9f0800000000000000
+      internalID: -451705460141583005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_135
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1169
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dda3efee6235ce0800000000000000
+      internalID: -1417746649782231794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_136
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1169
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16dac7edb882df520800000000000000
+      internalID: 2737388729709407585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_137
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1040
+        width: 7
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddad174d7dd79320800000000000000
+      internalID: 2564762042944564700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_138
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1071
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad17f8a5b54e8a00800000000000000
+      internalID: 760622033598356908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_139
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 975
+        width: 56
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e867e4482abc10740800000000000000
+      internalID: 5116594550534469262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_140
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1105
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ba1b5a8e4a46ca0800000000000000
+      internalID: -6024509082395628711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_141
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1105
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2005692e408af530800000000000000
+      internalID: 3889562301378134059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_142
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1055
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f037dcf41a618c80800000000000000
+      internalID: -8322253998030114569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_143
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1684a36c5f4ec1090800000000000000
+      internalID: -8062317488656201631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_144
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1040
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec26a596393e3e9d0800000000000000
+      internalID: -2746101125498641714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_145
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 991
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9020e8f2caa1a11f0800000000000000
+      internalID: -1073516234339909111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1040
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2df79d5efb8fb170800000000000000
+      internalID: 8196423771445787946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_147
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1040
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711b06be57c9c0280800000000000000
+      internalID: -9075707118784302825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_148
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 943
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590986d9b62553120800000000000000
+      internalID: 2392909399173140629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_149
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 863
+        width: 59
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4079a7f339d4370800000000000000
+      internalID: 8308458788417373423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_150
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 911
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0edb0818ffbc0a0800000000000000
+      internalID: -6860108675693027085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_151
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 799
+        width: 17
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd44d046c0638d30800000000000000
+      internalID: 4432492862870146492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_152
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 800
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c54a52e7a63b9fc0800000000000000
+      internalID: -3487133391783311933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_153
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 831
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9831cc94af5db6a50800000000000000
+      internalID: 6515536556878205833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_154
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 800
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588323c640eb21510800000000000000
+      internalID: 1518484950581655685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_155
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 800
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47357ca64207daa0800000000000000
+      internalID: -6136433464704682165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_156
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 751
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e2b42631e674590800000000000000
+      internalID: -7690056809179304304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_157
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 800
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add24f364c92984f0800000000000000
+      internalID: -826083133178499622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_158
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 831
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3f84e319bff6270800000000000000
+      internalID: 8246086043972465575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_159
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 800
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8ba6e5e5db0bfe0800000000000000
+      internalID: -1175231289735071538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_160
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 800
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47bfa32daa7a08770800000000000000
+      internalID: 8611066839645748084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_161
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 89
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b04eebf51055cf0800000000000000
+      internalID: -264303492395169020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_162
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 779
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab6708651976cc60800000000000000
+      internalID: 7838085334331517862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_163
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 751
+        width: 17
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c475425b99e0370800000000000000
+      internalID: 8290732967313493004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_164
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 751
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5707b53a89791e550800000000000000
+      internalID: 6188394044815274101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_165
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 712
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba085924bbd375b0800000000000000
+      internalID: -5371708363688637765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_166
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 687
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7253a1301ea386820800000000000000
+      internalID: 2911641897189127463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_167
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 687
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf277e8550174380800000000000000
+      internalID: -8987196571746095171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_168
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 655
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f95337cdc529640800000000000000
+      internalID: 5085229031150165853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_169
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 623
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ef14abcd49292f0800000000000000
+      internalID: -967547294192632316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 431
+        width: 82
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721bd8fcec523a030800000000000000
+      internalID: 3504686505200038183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_171
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 591
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e72e7c786a7f200800000000000000
+      internalID: 213822609427693190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_172
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 559
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9dfe4ab7ec30530800000000000000
+      internalID: 3820123939383794083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_173
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 517
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4346ccd665f580c10800000000000000
+      internalID: 2019969257689605172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_174
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 469
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ea4d21569e53ef0800000000000000
+      internalID: -128940393993294247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_175
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 81
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f9c48d230a8fba0800000000000000
+      internalID: -6054913558761922744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_176
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 421
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26c34bd6d5d9cb40800000000000000
+      internalID: 5461131141941806638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_177
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 373
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a70f4a389c69e6e0800000000000000
+      internalID: -1807794374343456862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_178
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 128
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30fb660ac01826d0800000000000000
+      internalID: -3015141490647371713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_179
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 287
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3796f1c5c90a26c0800000000000000
+      internalID: -4167507760210602177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 97
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17f5c403e3722400800000000000000
+      internalID: 297927944234727197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_181
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 79
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8927374c3e868c940800000000000000
+      internalID: 5316614687573635736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_182
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 47
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d4d410f174f2ff0800000000000000
+      internalID: -58750071641125577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ETS v2-export_backup_183
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 15
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec9941e59cbd5a90800000000000000
+      internalID: -7323490067118711581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ETS v2-export_backup_0: -1782892463264202657
+      ETS v2-export_backup_1: 1009862401151250830
+      ETS v2-export_backup_10: -6845973615715908523
+      ETS v2-export_backup_100: 3419167866120773937
+      ETS v2-export_backup_101: -8424902596018269136
+      ETS v2-export_backup_102: 7625860261615192016
+      ETS v2-export_backup_103: -6526107234645914225
+      ETS v2-export_backup_104: 5567747886285591021
+      ETS v2-export_backup_105: 4564685418343269128
+      ETS v2-export_backup_106: 1658578294441878091
+      ETS v2-export_backup_107: -5408527850557516526
+      ETS v2-export_backup_108: 2580741572406750907
+      ETS v2-export_backup_109: -2957247428583038510
+      ETS v2-export_backup_11: -1724196876511655561
+      ETS v2-export_backup_110: -3110573385516480165
+      ETS v2-export_backup_111: 4163413393922529133
+      ETS v2-export_backup_112: 1598563560748104029
+      ETS v2-export_backup_113: 177872657935234174
+      ETS v2-export_backup_114: 203258698398017784
+      ETS v2-export_backup_115: -308693614767814638
+      ETS v2-export_backup_116: -4110803824931166742
+      ETS v2-export_backup_117: 5315786383610823284
+      ETS v2-export_backup_118: -2319667545793273591
+      ETS v2-export_backup_119: 4221783203322147048
+      ETS v2-export_backup_12: 7293855221056050123
+      ETS v2-export_backup_120: -2032045971997188635
+      ETS v2-export_backup_121: 5836941415794941504
+      ETS v2-export_backup_122: -5080529382808197976
+      ETS v2-export_backup_123: -1829996443388296109
+      ETS v2-export_backup_124: -2434778586020156128
+      ETS v2-export_backup_125: 8347430430117167289
+      ETS v2-export_backup_126: -8965906576925623520
+      ETS v2-export_backup_127: 3786963502782376044
+      ETS v2-export_backup_128: 4319186588276459233
+      ETS v2-export_backup_129: 8836143446048719158
+      ETS v2-export_backup_13: -4000615281442180860
+      ETS v2-export_backup_130: -5721357481572617204
+      ETS v2-export_backup_131: -3644094035243261110
+      ETS v2-export_backup_132: -7721881594038886450
+      ETS v2-export_backup_133: 1598581322337255031
+      ETS v2-export_backup_134: -451705460141583005
+      ETS v2-export_backup_135: -1417746649782231794
+      ETS v2-export_backup_136: 2737388729709407585
+      ETS v2-export_backup_137: 2564762042944564700
+      ETS v2-export_backup_138: 760622033598356908
+      ETS v2-export_backup_139: 5116594550534469262
+      ETS v2-export_backup_14: 8980375206200382856
+      ETS v2-export_backup_140: -6024509082395628711
+      ETS v2-export_backup_141: 3889562301378134059
+      ETS v2-export_backup_142: -8322253998030114569
+      ETS v2-export_backup_143: -8062317488656201631
+      ETS v2-export_backup_144: -2746101125498641714
+      ETS v2-export_backup_145: -1073516234339909111
+      ETS v2-export_backup_146: 8196423771445787946
+      ETS v2-export_backup_147: -9075707118784302825
+      ETS v2-export_backup_148: 2392909399173140629
+      ETS v2-export_backup_149: 8308458788417373423
+      ETS v2-export_backup_15: -5361021796475030376
+      ETS v2-export_backup_150: -6860108675693027085
+      ETS v2-export_backup_151: 4432492862870146492
+      ETS v2-export_backup_152: -3487133391783311933
+      ETS v2-export_backup_153: 6515536556878205833
+      ETS v2-export_backup_154: 1518484950581655685
+      ETS v2-export_backup_155: -6136433464704682165
+      ETS v2-export_backup_156: -7690056809179304304
+      ETS v2-export_backup_157: -826083133178499622
+      ETS v2-export_backup_158: 8246086043972465575
+      ETS v2-export_backup_159: -1175231289735071538
+      ETS v2-export_backup_16: 4393165172330926116
+      ETS v2-export_backup_160: 8611066839645748084
+      ETS v2-export_backup_161: -264303492395169020
+      ETS v2-export_backup_162: 7838085334331517862
+      ETS v2-export_backup_163: 8290732967313493004
+      ETS v2-export_backup_164: 6188394044815274101
+      ETS v2-export_backup_165: -5371708363688637765
+      ETS v2-export_backup_166: 2911641897189127463
+      ETS v2-export_backup_167: -8987196571746095171
+      ETS v2-export_backup_168: 5085229031150165853
+      ETS v2-export_backup_169: -967547294192632316
+      ETS v2-export_backup_17: -3566959114991248039
+      ETS v2-export_backup_170: 3504686505200038183
+      ETS v2-export_backup_171: 213822609427693190
+      ETS v2-export_backup_172: 3820123939383794083
+      ETS v2-export_backup_173: 2019969257689605172
+      ETS v2-export_backup_174: -128940393993294247
+      ETS v2-export_backup_175: -6054913558761922744
+      ETS v2-export_backup_176: 5461131141941806638
+      ETS v2-export_backup_177: -1807794374343456862
+      ETS v2-export_backup_178: -3015141490647371713
+      ETS v2-export_backup_179: -4167507760210602177
+      ETS v2-export_backup_18: 8086706935374680149
+      ETS v2-export_backup_180: 297927944234727197
+      ETS v2-export_backup_181: 5316614687573635736
+      ETS v2-export_backup_182: -58750071641125577
+      ETS v2-export_backup_183: -7323490067118711581
+      ETS v2-export_backup_19: 9134367912504831093
+      ETS v2-export_backup_2: 3663291294232080802
+      ETS v2-export_backup_20: -3836475475981340286
+      ETS v2-export_backup_21: -1213093386399115170
+      ETS v2-export_backup_22: 9170510105059942466
+      ETS v2-export_backup_23: 2947079629610320931
+      ETS v2-export_backup_24: 681614030347837371
+      ETS v2-export_backup_25: -2614681902415915660
+      ETS v2-export_backup_26: -2314200013167756115
+      ETS v2-export_backup_27: 7221511775183328542
+      ETS v2-export_backup_28: 7692842284760707660
+      ETS v2-export_backup_29: 2402959290027332415
+      ETS v2-export_backup_3: 7184492119781207159
+      ETS v2-export_backup_30: -4418644997965554983
+      ETS v2-export_backup_31: 8259935341568957166
+      ETS v2-export_backup_32: -6516300525786182348
+      ETS v2-export_backup_33: -1316731527474857268
+      ETS v2-export_backup_34: 2114632675819190565
+      ETS v2-export_backup_35: 7531348654544324466
+      ETS v2-export_backup_36: -4131525497546000286
+      ETS v2-export_backup_37: 3875382038961470020
+      ETS v2-export_backup_38: 3950780563626059592
+      ETS v2-export_backup_39: 1232993597682883540
+      ETS v2-export_backup_4: 8722936182491390713
+      ETS v2-export_backup_40: 7944911565763487964
+      ETS v2-export_backup_41: 3790605775573703578
+      ETS v2-export_backup_42: 4627961131380017947
+      ETS v2-export_backup_43: 7507971622873768269
+      ETS v2-export_backup_44: 2514127399329078138
+      ETS v2-export_backup_45: 4619846875200399892
+      ETS v2-export_backup_46: 8123168275773018180
+      ETS v2-export_backup_47: -8506654257724308887
+      ETS v2-export_backup_48: -4827342857147679320
+      ETS v2-export_backup_49: -8217029294607637887
+      ETS v2-export_backup_5: -4568309447122844461
+      ETS v2-export_backup_50: 7146011514123566127
+      ETS v2-export_backup_51: 2974282200004599415
+      ETS v2-export_backup_52: -1384921289542496355
+      ETS v2-export_backup_53: -4095698454995956738
+      ETS v2-export_backup_54: -302652112587977931
+      ETS v2-export_backup_55: 1969342821878533525
+      ETS v2-export_backup_56: 1263976401964176193
+      ETS v2-export_backup_57: 6718667489394044330
+      ETS v2-export_backup_58: 3958615287454220742
+      ETS v2-export_backup_59: -4292647032457001649
+      ETS v2-export_backup_6: -9040772925435969110
+      ETS v2-export_backup_60: -2159763603920616499
+      ETS v2-export_backup_61: -1236766146749466487
+      ETS v2-export_backup_62: 5271960735953038763
+      ETS v2-export_backup_63: -8757201534376075135
+      ETS v2-export_backup_64: 3251928085233381767
+      ETS v2-export_backup_65: -1380376019968093818
+      ETS v2-export_backup_66: -7057765060160770736
+      ETS v2-export_backup_67: 2623397101116673879
+      ETS v2-export_backup_68: 7390854247188549621
+      ETS v2-export_backup_69: -9149905981572179933
+      ETS v2-export_backup_7: -346590110138168591
+      ETS v2-export_backup_70: 387399849060098741
+      ETS v2-export_backup_71: 3002230325802090098
+      ETS v2-export_backup_72: -5265032251149704667
+      ETS v2-export_backup_73: -4699485186982420192
+      ETS v2-export_backup_74: -35843553961713609
+      ETS v2-export_backup_75: 153751254093329689
+      ETS v2-export_backup_76: 7137254495135569805
+      ETS v2-export_backup_77: -7770985148893280461
+      ETS v2-export_backup_78: -33599114689019691
+      ETS v2-export_backup_79: -4735413077454260281
+      ETS v2-export_backup_8: 5911795673949597532
+      ETS v2-export_backup_80: -7704936175962845534
+      ETS v2-export_backup_81: -3157217173059691252
+      ETS v2-export_backup_82: 5915543735956401924
+      ETS v2-export_backup_83: -4616262305541346929
+      ETS v2-export_backup_84: 8717058219236922729
+      ETS v2-export_backup_85: -1312744319660915609
+      ETS v2-export_backup_86: -6963623042323628902
+      ETS v2-export_backup_87: 5832469936463860916
+      ETS v2-export_backup_88: 8251545110198395078
+      ETS v2-export_backup_89: 7514299233350744446
+      ETS v2-export_backup_9: 5535162026753961503
+      ETS v2-export_backup_90: -717390760521457372
+      ETS v2-export_backup_91: -1003501950914313688
+      ETS v2-export_backup_92: -5284962837830276642
+      ETS v2-export_backup_93: 6383134304589430251
+      ETS v2-export_backup_94: -3777011993872473018
+      ETS v2-export_backup_95: -6383700194435356532
+      ETS v2-export_backup_96: -8067915055822362683
+      ETS v2-export_backup_97: -1058595768838019701
+      ETS v2-export_backup_98: -1438517451525438369
+      ETS v2-export_backup_99: 5447052410476367814
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

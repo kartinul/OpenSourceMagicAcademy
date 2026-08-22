@@ -2,10 +2,14 @@ Shader "Custom/SpriteFlash"
 {
     Properties
     {
-        [MainTexture] _MainTex ("Sprite Texture", 2D) = "white" {}
-        [MainColor] _Color ("Tint", Color) = (1,1,1,1)
+        [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
+        _Color ("Tint", Color) = (1,1,1,1)
         _FlashAmount ("Flash Amount", Range(0, 1)) = 0
         _FlashColor ("Flash Color", Color) = (1,1,1,1)
+        [HideInInspector] _RendererColor ("RendererColor", Color) = (1,1,1,1)
+        [HideInInspector] _Flip ("Flip", Vector) = (1,1,1,1)
+        [HideInInspector] _AlphaTex ("External Alpha", 2D) = "white" {}
+        [HideInInspector] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
     }
 
     SubShader
@@ -23,13 +27,14 @@ Shader "Custom/SpriteFlash"
         Cull Off
         Lighting Off
         ZWrite Off
-        Blend One OneMinusSrcAlpha
+        Blend SrcAlpha OneMinusSrcAlpha
 
         Pass
         {
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #pragma multi_compile_instancing
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
@@ -38,6 +43,7 @@ Shader "Custom/SpriteFlash"
                 float4 positionOS   : POSITION;
                 float4 color        : COLOR;
                 float2 uv           : TEXCOORD0;
+                UNITY_VERTEX_INPUT_INSTANCE_ID
             };
 
             struct Varyings
@@ -45,6 +51,7 @@ Shader "Custom/SpriteFlash"
                 float4 positionCS   : SV_POSITION;
                 float4 color        : COLOR;
                 float2 uv           : TEXCOORD0;
+                UNITY_VERTEX_OUTPUT_STEREO
             };
 
             TEXTURE2D(_MainTex);
@@ -54,14 +61,20 @@ Shader "Custom/SpriteFlash"
                 float4 _Color;
                 float4 _FlashColor;
                 float _FlashAmount;
+                float4 _RendererColor;
+                float4 _Flip;
+                float _EnableExternalAlpha;
             CBUFFER_END
 
             Varyings vert(Attributes input)
             {
                 Varyings output;
+                UNITY_SETUP_INSTANCE_ID(input);
+                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
+
                 output.positionCS = TransformObjectToHClip(input.positionOS.xyz);
                 output.uv = input.uv;
-                output.color = input.color * _Color;
+                output.color = input.color * _Color * _RendererColor;
                 return output;
             }
 
@@ -70,8 +83,7 @@ Shader "Custom/SpriteFlash"
                 half4 mainTex = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);
                 half4 c = mainTex * input.color;
             
-                half3 flashResult = lerp(c.rgb, _FlashColor.rgb, _FlashAmount);
-                c.rgb = flashResult * c.a;
+                c.rgb = lerp(c.rgb, _FlashColor.rgb, _FlashAmount);
 
                 return c;
             }
